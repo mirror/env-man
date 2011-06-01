@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Font Name="Tahoma" Size="8.25" />
+  <Class Name="EnvManager.ImportExport.EnvironmentVariable" Collapsed="true">
+    <Position X="0.5" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>ImportExport\EnvironmentVariable.cs</FileName>
+      <HashCode>AAADAAAAAAAACAAAAAADAAAAAAAAAAAAAAAAAAAQAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EnvManager.ImportExport.ImportExportManager" Collapsed="true">
+    <Position X="3.5" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>ImportExport\ImportExportManager.cs</FileName>
+      <HashCode>AAAAgIAAAAAQAAAAAAAAAAAAAAAAAAACAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="EnvVariable" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="EnvManager.Handlers.VarImportCommand" Collapsed="true">
+    <Position X="6.75" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Handlers\VarImportCommand.cs</FileName>
+      <HashCode>QCAAgEAAAAAABARAAAIAQAABAAgIACAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="importExportManager" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+</ClassDiagram>

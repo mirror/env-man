@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Font Name="Tahoma" Size="8.25" />
+  <Comment CommentText="DataGridView Command Super Class">
+    <Position X="5.599" Y="1.828" Height="0.427" Width="1.481" />
+  </Comment>
+  <Comment CommentText="Command Pattern Class Diagram">
+    <Position X="2.5" Y="1" Height="0.263" Width="1.96" />
+  </Comment>
+  <Comment CommentText="Reciever">
+    <Position X="6.34" Y="0.656" Height="0.263" Width="0.7" />
+  </Comment>
+  <Comment CommentText="Undo/Redo Commands collection">
+    <Position X="5.394" Y="4.143" Height="0.263" Width="1.971" />
+  </Comment>
+  <Comment CommentText="Requester or Controller">
+    <Position X="6.873" Y="5.935" Height="0.281" Width="1.596" />
+  </Comment>
+  <Comment CommentText="Command Classes">
+    <Position X="9.322" Y="2.227" Height="0.312" Width="1.168" />
+  </Comment>
+  <Class Name="EnvManager.Handlers.DgvCommand" Collapsed="true">
+    <Position X="7.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Handlers\DgvCommand.cs</FileName>
+      <HashCode>AAAAAAAAAAAABARAAAAEQAAFAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="dgvHandler" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="EnvManager.Handlers.DgvDeleteCommand" Collapsed="true">
+    <Position X="0.5" Y="3" Width="1.75" />
+    <TypeIdentifier>
+      <FileName>Handlers\DgvDeleteCommand.cs</FileName>
+      <HashCode>AAAAAAAAAAAABAQAAAAAAAADAAAAAAAAAAACAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EnvManager.Handlers.DgvHandler" Collapsed="true">
+    <Position X="7.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Handlers\DgvHandler.cs</FileName>
+      <HashCode>gAAAREACAAAACAAACQAgAAAAAAAABACAEAAAAIBQAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EnvManager.Handlers.DgvMoveDownCommand" Collapsed="true">
+    <Position X="9.25" Y="3" Width="2" />
+    <TypeIdentifier>
+      <FileName>Handlers\DgvMoveDownCommand.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EnvManager.Handlers.DgvMoveToBottomCommand" Collapsed="true">
+    <Position X="2.5" Y="3" Width="2.25" />
+    <TypeIdentifier>
+      <FileName>Handlers\DgvMoveToBottomCommand.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EnvManager.Handlers.DgvMoveToTopCommand" Collapsed="true">
+    <Position X="5" Y="3" Width="2" />
+    <TypeIdentifier>
+      <FileName>Handlers\DgvMoveToTopCommand.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EnvManager.Handlers.DgvMoveUpCommand" Collapsed="true">
+    <Position X="7.25" Y="3" Width="1.75" />
+    <TypeIdentifier>
+      <FileName>Handlers\DgvMoveUpCommand.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EnvManager.Handlers.EditVarNameCommand" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="11.25" Y="1.5" Width="2" />
+    <TypeIdentifier>
+      <FileName>Handlers\EditVarNameCommand.cs</FileName>
+      <HashCode>AAAAAAAAAAAABERAAAAAQAABAAAAAAACACAAAgAAQAA=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="EnvManager.Handlers.UndoRedoCommandList" Collapsed="true">
+    <Position X="5.5" Y="4.5" Width="2" />
+    <TypeIdentifier>
+      <FileName>Handlers\UndoRedoCommandList.cs</FileName>
+      <HashCode>AAIAAAAARAAABEAAAAAAABkBAAABAABAAAAAAAFAAAA=</HashCode>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="commandsList" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="EnvManager.FrmEditEnvVar" Collapsed="true">
+    <Position X="5.25" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>FrmEditEnvVar.cs</FileName>
+      <HashCode>AAgQIIIwACCCFbMiCACEQYgCAATECAAIRAAgMIMJEDQ=</HashCode>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="commandsList" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="EnvManager.Handlers.DgvBrowseFolderCommand" Collapsed="true">
+    <Position X="12.75" Y="4.5" Width="2.25" />
+    <TypeIdentifier>
+      <FileName>Handlers\DgvBrowseFolderCommand.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EnvManager.Handlers.DgvModifyValueCommand" Collapsed="true">
+    <Position X="11.75" Y="3" Width="2" />
+    <TypeIdentifier>
+      <FileName>Handlers\DgvModifyValueCommand.cs</FileName>
+      <HashCode>AAAABAAAAAQABAAAAAAAEAABAAAAAAAAAAAEEAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EnvManager.Handlers.DgvEditCommand" Collapsed="true">
+    <Position X="11" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Handlers\DgvEditCommand.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EnvManager.Handlers.VarImportCommand" Collapsed="true">
+    <Position X="9.25" Y="1.5" Width="1.75" />
+    <TypeIdentifier>
+      <FileName>Handlers\VarImportCommand.cs</FileName>
+      <HashCode>QCAAgEAAAAAABARAAAIAQAABAAgIACAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Interface Name="EnvManager.Handlers.ICommand" Collapsed="true">
+    <Position X="2.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Handlers\ICommand.cs</FileName>
+      <HashCode>AAAAAAAAAAAABAQAAAAAQAABAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Interface>
+</ClassDiagram>

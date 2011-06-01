@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<VersionInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <DownloadWebPageAddress>http://env-man.blogspot.com/2007/04/envman-user-guide.html</DownloadWebPageAddress>
+  <Major>1</Major>
+  <Minor>5</Minor>
+  <Build>-1</Build>
+  <Revision>-1</Revision>
+</VersionInfo>

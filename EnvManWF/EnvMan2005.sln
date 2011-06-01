@@ -1,0 +1,77 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{D6CD9460-EE2F-43EA-A3BD-441E0B2EB68E}"
+	ProjectSection(SolutionItems) = preProject
+		BuildAll.cmd = BuildAll.cmd
+		CleanAll.cmd = CleanAll.cmd
+		EnvMan.Debug = EnvMan.Debug
+		EnvMan.Release = EnvMan.Release
+		license.txt = license.txt
+		Readme.txt = Readme.txt
+		EnvMan\ReleaseInfo.cs = EnvMan\ReleaseInfo.cs
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "EnvMan", "EnvMan", "{D8F2F0DC-7C02-46C1-8C0C-61D6AFF640B9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{5874BA29-9164-4848-934A-2B993BC1E2E0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EnvMan", "EnvMan\EnvMan\EnvMan.csproj", "{2704D52D-4FE5-49C1-8FCE-9619155B01F6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EnvManager", "EnvMan\EnvManager\EnvManager.csproj", "{93A8FFFE-31F3-405B-92A7-3BF9DAB60EF7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EnvManagerTest", "EnvMan.Tests\EnvManagerTest\EnvManagerTest.csproj", "{44087B80-BE0A-4B01-BC84-45D5AEEF2C39}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EnvManagerGUITest", "EnvMan.Tests\EnvManagerGUITest\EnvManagerGUITest.csproj", "{D36A4A3D-2655-40C4-A10C-40244CEAAC00}"
+EndProject
+Project("{930C7802-8A8C-48F9-8165-68863BCCD9DD}") = "EnvManSetup", "EnvManSetup\EnvManSetup.wixproj", "{BA22F1B1-9536-4AC3-8B28-3AE11A97A99E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EnvManTest", "EnvMan.Tests\EnvManTest\EnvManTest.csproj", "{6568444E-A2F0-4B7A-AADA-D8C511E0F629}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EnvManGUITest", "EnvMan.Tests\EnvManGUITest\EnvManGUITest.csproj", "{14C753D0-A4E7-4DF6-94DE-60F9058E609E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2704D52D-4FE5-49C1-8FCE-9619155B01F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2704D52D-4FE5-49C1-8FCE-9619155B01F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2704D52D-4FE5-49C1-8FCE-9619155B01F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2704D52D-4FE5-49C1-8FCE-9619155B01F6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{93A8FFFE-31F3-405B-92A7-3BF9DAB60EF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93A8FFFE-31F3-405B-92A7-3BF9DAB60EF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93A8FFFE-31F3-405B-92A7-3BF9DAB60EF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93A8FFFE-31F3-405B-92A7-3BF9DAB60EF7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{44087B80-BE0A-4B01-BC84-45D5AEEF2C39}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44087B80-BE0A-4B01-BC84-45D5AEEF2C39}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44087B80-BE0A-4B01-BC84-45D5AEEF2C39}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{D36A4A3D-2655-40C4-A10C-40244CEAAC00}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D36A4A3D-2655-40C4-A10C-40244CEAAC00}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA22F1B1-9536-4AC3-8B28-3AE11A97A99E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA22F1B1-9536-4AC3-8B28-3AE11A97A99E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA22F1B1-9536-4AC3-8B28-3AE11A97A99E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6568444E-A2F0-4B7A-AADA-D8C511E0F629}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6568444E-A2F0-4B7A-AADA-D8C511E0F629}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6568444E-A2F0-4B7A-AADA-D8C511E0F629}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{14C753D0-A4E7-4DF6-94DE-60F9058E609E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14C753D0-A4E7-4DF6-94DE-60F9058E609E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14C753D0-A4E7-4DF6-94DE-60F9058E609E}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{5874BA29-9164-4848-934A-2B993BC1E2E0} = {D8F2F0DC-7C02-46C1-8C0C-61D6AFF640B9}
+		{2704D52D-4FE5-49C1-8FCE-9619155B01F6} = {D8F2F0DC-7C02-46C1-8C0C-61D6AFF640B9}
+		{93A8FFFE-31F3-405B-92A7-3BF9DAB60EF7} = {D8F2F0DC-7C02-46C1-8C0C-61D6AFF640B9}
+		{44087B80-BE0A-4B01-BC84-45D5AEEF2C39} = {5874BA29-9164-4848-934A-2B993BC1E2E0}
+		{D36A4A3D-2655-40C4-A10C-40244CEAAC00} = {5874BA29-9164-4848-934A-2B993BC1E2E0}
+		{6568444E-A2F0-4B7A-AADA-D8C511E0F629} = {5874BA29-9164-4848-934A-2B993BC1E2E0}
+		{14C753D0-A4E7-4DF6-94DE-60F9058E609E} = {5874BA29-9164-4848-934A-2B993BC1E2E0}
+	EndGlobalSection
+	GlobalSection(DPCodeReviewSolutionGUID) = preSolution
+		DPCodeReviewSolutionGUID = {00000000-0000-0000-0000-000000000000}
+	EndGlobalSection
+EndGlobal

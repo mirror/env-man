@@ -1,0 +1,1 @@
+msiexec /i bin\%1\EnvManSetup.msi /l*v bin\%1\EnvManSetup.log

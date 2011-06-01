@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+		<Product Id="2aa9bf7e-f0cb-4b9b-8fe3-b754aff312cf" 
+             Name="Windows Environment Variables Manager" 
+             Language="1033" 
+             Version="1.4" 
+             Manufacturer="Anastasia Corporation" 
+             UpgradeCode="28eb7a51-f777-44ca-a356-af88c2870abe">
+		<Package InstallerVersion="200" Compressed="yes" />
+
+		<Media Id="1" Cabinet="EnvManSetup.cab" EmbedCab="yes" />
+
+    <Feature Id="Complete" Title="Complete" Level="1">
+      <ComponentRef Id="EnvMan" />
+    </Feature>
+	</Product>
+</Wix>

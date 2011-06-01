@@ -1,0 +1,204 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{93A8FFFE-31F3-405B-92A7-3BF9DAB60EF7}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EnvManager</RootNamespace>
+    <AssemblyName>EnvManager</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\ReleaseInfo.cs">
+      <Link>Properties\ReleaseInfo.cs</Link>
+    </Compile>
+    <Compile Include="Handlers\DgvBrowseFolderCommand.cs" />
+    <Compile Include="Handlers\DgvCommand.cs" />
+    <Compile Include="Handlers\DgvDeleteCommand.cs" />
+    <Compile Include="Handlers\DgvEditCommand.cs" />
+    <Compile Include="Handlers\DgvHandler.cs" />
+    <Compile Include="EnvManager.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="EnvManager.Designer.cs">
+      <DependentUpon>EnvManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EnvVarValueValidator.cs" />
+    <Compile Include="Handlers\DgvModifyValueCommand.cs" />
+    <Compile Include="Handlers\DgvMoveDownCommand.cs" />
+    <Compile Include="Handlers\DgvMoveToBottomCommand.cs" />
+    <Compile Include="Handlers\DgvMoveToTopCommand.cs" />
+    <Compile Include="Handlers\DgvMoveUpCommand.cs" />
+    <Compile Include="Handlers\EditVarNameCommand.cs" />
+    <Compile Include="Handlers\ICommand.cs" />
+    <Compile Include="ImportExport\EnvironmentVariable.cs" />
+    <Compile Include="ImportExport\ImportExportManager.cs" />
+    <Compile Include="Handlers\VarImportCommand.cs" />
+    <Compile Include="Handlers\UndoRedoCommandList.cs" />
+    <Compile Include="Properties\EnvManagerSettings.Designer.cs">
+      <DependentUpon>EnvManagerSettings.settings</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="EnvVarManager.cs" />
+    <Compile Include="FrmEditEnvVar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEditEnvVar.Designer.cs">
+      <DependentUpon>FrmEditEnvVar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\FrmEditEnvVarSettings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>FrmEditEnvVarSettings.settings</DependentUpon>
+    </Compile>
+    <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="EnvManager.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>EnvManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEditEnvVar.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmEditEnvVar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="res\Cancel.gif" />
+    <None Include="Diagrams\ImportExport.cd" />
+    <None Include="res\ValType\ValTypeNumberAdd.png" />
+    <None Include="res\ValType\ValTypeFolderAdd.png" />
+    <None Include="res\ValType\ValTypeFileAdd.png" />
+    <None Include="res\ValType\ValTypeErrorAdd.png" />
+    <None Include="res\ValType\ValTypeStringAdd.png" />
+    <None Include="Diagrams\EnvManager.cd" />
+    <None Include="Diagrams\FrmEditCommandPattern.cd" />
+    <None Include="res\ValType\ValTypeError.png" />
+    <None Include="res\Redo.png" />
+    <None Include="res\Import.png" />
+    <None Include="res\Export.png" />
+    <None Include="res\Undo.png" />
+    <None Include="Properties\EnvManagerSettings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>EnvManagerSettings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="res\ValType\ValTypeNull.png" />
+    <None Include="res\ValType\ValTypeNumber.png" />
+    <None Include="res\ValType\ValTypeFolder.png" />
+    <None Include="res\ValType\ValTypeFile.png" />
+    <None Include="res\ValType\ValTypeString.png" />
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\FrmEditEnvVarSettings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>FrmEditEnvVarSettings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="res\FolderExplore.png" />
+    <None Include="res\Edit.png" />
+    <None Include="res\Save.png" />
+    <None Include="res\MoveDown.png" />
+    <None Include="res\MoveBottom.png" />
+    <None Include="res\MoveUp.png" />
+    <None Include="res\MoveTop.png" />
+    <None Include="res\delete.png" />
+    <None Include="res\new.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="IWshRuntimeLibrary">
+      <Guid>{F935DC20-1CF0-11D0-ADB9-00C04FD58A0B}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

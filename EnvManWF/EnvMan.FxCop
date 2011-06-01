@@ -1,0 +1,1064 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FxCopProject Version="10.0" Name="EnvMan">
+ <ProjectOptions>
+  <SharedProject>True</SharedProject>
+  <Stylesheet Apply="False">$(ProjectDir)/../../../../../../program files/fxcop/Xml/FxCopReport.xsl</Stylesheet>
+  <SaveMessages>
+   <Project Status="Active, Excluded, Absent" NewOnly="False" />
+   <Report Status="Active" NewOnly="False" />
+  </SaveMessages>
+  <ProjectFile Compress="True" DefaultTargetCheck="True" DefaultRuleCheck="True" SaveByRuleGroup="" Deterministic="True" />
+  <EnableMultithreadedLoad>True</EnableMultithreadedLoad>
+  <EnableMultithreadedAnalysis>True</EnableMultithreadedAnalysis>
+  <SourceLookup>True</SourceLookup>
+  <AnalysisExceptionsThreshold>10</AnalysisExceptionsThreshold>
+  <RuleExceptionsThreshold>1</RuleExceptionsThreshold>
+  <Spelling Locale="en-US" />
+  <OverrideRuleVisibilities>False</OverrideRuleVisibilities>
+  <CustomDictionaries SearchFxCopDir="True" SearchUserProfile="True" SearchProjectDir="True" />
+  <SearchGlobalAssemblyCache>False</SearchGlobalAssemblyCache>
+  <DeadlockDetectionTimeout>120</DeadlockDetectionTimeout>
+  <IgnoreGeneratedCode>False</IgnoreGeneratedCode>
+ </ProjectOptions>
+ <Targets>
+  <AssemblyReferenceDirectories>
+   <Directory>$(ProjectDir)/EnvMan/EnvManager/bin/Debug/</Directory>
+   <Directory>$(ProjectDir)/EnvMan/EnvManager/bin/Debug/</Directory>
+   <Directory>$(ProjectDir)/EnvMan/EnvMan/bin/Debug/</Directory>
+   <Directory>$(ProjectDir)/EnvMan/EnvMan/bin/Debug/</Directory>
+  </AssemblyReferenceDirectories>
+  <Target Name="$(ProjectDir)/EnvMan/EnvMan/bin/Release/Envman.exe" Analyze="True" AnalyzeAllChildren="True" />
+  <Target Name="$(ProjectDir)/EnvMan/EnvMan/bin/Release/EnvManager.dll" Analyze="True" AnalyzeAllChildren="True" />
+ </Targets>
+ <Rules>
+  <RuleFiles>
+   <RuleFile Name="$(FxCopDir)\Rules\DesignRules.dll" Enabled="True" AllRulesEnabled="True" />
+   <RuleFile Name="$(FxCopDir)\Rules\GlobalizationRules.dll" Enabled="True" AllRulesEnabled="True" />
+   <RuleFile Name="$(FxCopDir)\Rules\InteroperabilityRules.dll" Enabled="True" AllRulesEnabled="True" />
+   <RuleFile Name="$(FxCopDir)\Rules\MobilityRules.dll" Enabled="True" AllRulesEnabled="True" />
+   <RuleFile Name="$(FxCopDir)\Rules\NamingRules.dll" Enabled="True" AllRulesEnabled="True" />
+   <RuleFile Name="$(FxCopDir)\Rules\PerformanceRules.dll" Enabled="True" AllRulesEnabled="True" />
+   <RuleFile Name="$(FxCopDir)\Rules\PortabilityRules.dll" Enabled="True" AllRulesEnabled="True" />
+   <RuleFile Name="$(FxCopDir)\Rules\SecurityRules.dll" Enabled="True" AllRulesEnabled="True" />
+   <RuleFile Name="$(FxCopDir)\Rules\UsageRules.dll" Enabled="True" AllRulesEnabled="True" />
+  </RuleFiles>
+  <Groups />
+  <Settings />
+ </Rules>
+ <FxCopReport Version="10.0">
+  <Namespaces>
+   <Namespace Name="EnvManager.ImportExport">
+    <Messages>
+     <Message TypeName="AvoidNamespacesWithFewTypes" Category="Microsoft.Design" CheckId="CA1020" Created="2011-01-25 00:15:46Z">
+      <Issue>
+       <Item>EnvManager.ImportExport</Item>
+      </Issue>
+     </Message>
+    </Messages>
+   </Namespace>
+  </Namespaces>
+  <Targets>
+   <Target Name="$(ProjectDir)/EnvMan/EnvMan/bin/Release/Envman.exe">
+    <Modules>
+     <Module Name="envman.exe">
+      <Messages>
+       <Message TypeName="AssembliesShouldHaveValidStrongNames" Category="Microsoft.Design" CheckId="CA2210" Created="2011-01-25 00:15:46Z">
+        <Issue Name="NoStrongName">
+         <Item>'Envman.exe'</Item>
+        </Issue>
+       </Message>
+       <Message TypeName="MarkAssembliesWithClsCompliant" Category="Microsoft.Design" CheckId="CA1014" Created="2011-01-25 00:15:46Z">
+        <Issue>
+         <Item>'Envman.exe'</Item>
+        </Issue>
+       </Message>
+       <Message TypeName="MarkAssembliesWithNeutralResourcesLanguage" Category="Microsoft.Performance" CheckId="CA1824" Created="2011-01-25 00:15:46Z">
+        <Issue>
+         <Item>'Envman.exe'</Item>
+        </Issue>
+       </Message>
+      </Messages>
+      <Namespaces>
+       <Namespace Name="Envman">
+        <Types>
+         <Type Name="FrmMain">
+          <Members>
+           <Member Name="#TsmiClick(System.Object,System.EventArgs)">
+            <Messages>
+             <Message TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031" Created="2011-01-25 00:15:46Z">
+              <Issue>
+               <Item>'FrmMain.TsmiClick(object, EventArgs)'</Item>
+               <Item>'Exception'</Item>
+              </Issue>
+             </Message>
+             <Message TypeName="SpecifyMessageBoxOptions" Category="Microsoft.Globalization" CheckId="CA1300" Status="Excluded" Created="2011-01-25 00:15:46Z">
+              <Issue>
+               <Item>'FrmMain.TsmiClick(object, EventArgs)'</Item>
+              </Issue>
+              <Notes>
+               <User Name="vsetchin">
+                <Note Id="2" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#VersionChecker_NewVersionChecked(System.Object,Envman.VersionManager.NewVersionEventArgs)">
+            <Messages>
+             <Message TypeName="SpecifyMessageBoxOptions" Category="Microsoft.Globalization" CheckId="CA1300" Status="Excluded" Created="2011-01-25 00:15:46Z">
+              <Issue>
+               <Item>'FrmMain.VersionChecker_NewVersionChecked(object, NewVersionEventArgs)'</Item>
+              </Issue>
+              <Notes>
+               <User Name="vsetchin">
+                <Note Id="2" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#WorkerDoWork(System.Object,System.ComponentModel.DoWorkEventArgs)">
+            <Messages>
+             <Message TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031" Created="2011-01-25 00:15:46Z">
+              <Issue>
+               <Item>'FrmMain.WorkerDoWork(object, DoWorkEventArgs)'</Item>
+               <Item>'Exception'</Item>
+              </Issue>
+             </Message>
+             <Message TypeName="SpecifyMessageBoxOptions" Category="Microsoft.Globalization" CheckId="CA1300" Status="Excluded" Created="2011-01-25 00:15:46Z">
+              <Issue>
+               <Item>'FrmMain.WorkerDoWork(object, DoWorkEventArgs)'</Item>
+              </Issue>
+              <Notes>
+               <User Name="vsetchin">
+                <Note Id="2" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+         <Type Name="SingleProgramInstance">
+          <Messages>
+           <Message TypeName="ImplementIDisposableCorrectly" Category="Microsoft.Design" CheckId="CA1063" Created="2011-01-25 00:15:46Z">
+            <Issue Name="ProvideDisposeBool">
+             <Item>'SingleProgramInstance'</Item>
+            </Issue>
+           </Message>
+          </Messages>
+          <Members>
+           <Member Name="#Dispose()">
+            <Messages>
+             <Message Id="processSync" TypeName="DisposableFieldsShouldBeDisposed" Category="Microsoft.Usage" CheckId="CA2213" Created="2011-01-25 00:15:46Z">
+              <Issue>
+               <Item>'SingleProgramInstance'</Item>
+               <Item>'SingleProgramInstance.processSync'</Item>
+               <Item>'Mutex'</Item>
+              </Issue>
+             </Message>
+             <Message TypeName="ImplementIDisposableCorrectly" Category="Microsoft.Design" CheckId="CA1063" Created="2011-01-25 00:15:46Z">
+              <Issue Name="DisposeImplementation">
+               <Item>'SingleProgramInstance.Dispose()'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#Finalize()">
+            <Messages>
+             <Message TypeName="ImplementIDisposableCorrectly" Category="Microsoft.Design" CheckId="CA1063" Created="2011-01-25 00:15:46Z">
+              <Issue Name="FinalizeImplementation">
+               <Item>'SingleProgramInstance.~SingleProgramInstance()'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#IsIconic(System.IntPtr)">
+            <Messages>
+             <Message TypeName="MarkBooleanPInvokeArgumentsWithMarshalAs" Category="Microsoft.Interoperability" CheckId="CA1414" Created="2011-01-25 00:15:46Z">
+              <Issue Name="Return">
+               <Item>'SingleProgramInstance.IsIconic(IntPtr)'</Item>
+              </Issue>
+             </Message>
+             <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Created="2011-01-25 00:15:46Z">
+              <Issue>
+               <Item>'SingleProgramInstance.IsIconic(IntPtr)'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#RaiseOtherProcess()">
+            <Messages>
+             <Message TypeName="DoNotIndirectlyExposeMethodsWithLinkDemands" Category="Microsoft.Security" CheckId="CA2122" Created="2011-01-25 00:15:46Z">
+              <Issue>
+               <Item>'SingleProgramInstance.RaiseOtherProcess()'</Item>
+               <Item>'Process.GetCurrentProcess()'</Item>
+               <Item>&#xD;&#xA;   -&gt;'SingleProgramInstance.RaiseOtherProcess()'&#xD;&#xA;   -&gt;'SingleProgramInstance.RaiseOtherProcess()'</Item>
+              </Issue>
+              <Issue>
+               <Item>'SingleProgramInstance.RaiseOtherProcess()'</Item>
+               <Item>'Process.GetProcessesByName(string)'</Item>
+               <Item>&#xD;&#xA;   -&gt;'SingleProgramInstance.RaiseOtherProcess()'&#xD;&#xA;   -&gt;'SingleProgramInstance.RaiseOtherProcess()'</Item>
+              </Issue>
+              <Issue>
+               <Item>'SingleProgramInstance.RaiseOtherProcess()'</Item>
+               <Item>'Process.Id.get()'</Item>
+               <Item>&#xD;&#xA;   -&gt;'SingleProgramInstance.RaiseOtherProcess()'&#xD;&#xA;   -&gt;'SingleProgramInstance.RaiseOtherProcess()'</Item>
+              </Issue>
+              <Issue>
+               <Item>'SingleProgramInstance.RaiseOtherProcess()'</Item>
+               <Item>'Process.MainWindowHandle.get()'</Item>
+               <Item>&#xD;&#xA;   -&gt;'SingleProgramInstance.RaiseOtherProcess()'&#xD;&#xA;   -&gt;'SingleProgramInstance.RaiseOtherProcess()'</Item>
+              </Issue>
+             </Message>
+             <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Created="2011-01-25 00:15:46Z" FixCategory="DependsOnFix">
+              <Issue>
+               <Item>'SingleProgramInstance.RaiseOtherProcess()'</Item>
+              </Issue>
+             </Message>
+             <Message TypeName="UseEventsWhereAppropriate" Category="Microsoft.Design" CheckId="CA1030" Created="2011-01-25 00:15:46Z">
+              <Issue>
+               <Item>'SingleProgramInstance.RaiseOtherProcess()'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#SetForegroundWindow(System.IntPtr)">
+            <Messages>
+             <Message TypeName="MarkBooleanPInvokeArgumentsWithMarshalAs" Category="Microsoft.Interoperability" CheckId="CA1414" Created="2011-01-25 00:15:46Z">
+              <Issue Name="Return">
+               <Item>'SingleProgramInstance.SetForegroundWindow(IntPtr)'</Item>
+              </Issue>
+             </Message>
+             <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Created="2011-01-25 00:15:46Z">
+              <Issue>
+               <Item>'SingleProgramInstance.SetForegroundWindow(IntPtr)'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#ShowWindowAsync(System.IntPtr,System.Int32)">
+            <Messages>
+             <Message TypeName="MarkBooleanPInvokeArgumentsWithMarshalAs" Category="Microsoft.Interoperability" CheckId="CA1414" Created="2011-01-25 00:15:46Z">
+              <Issue Name="Return">
+               <Item>'SingleProgramInstance.ShowWindowAsync(IntPtr, int)'</Item>
+              </Issue>
+             </Message>
+             <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Created="2011-01-25 00:15:46Z">
+              <Issue>
+               <Item>'SingleProgramInstance.ShowWindowAsync(IntPtr, int)'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+        </Types>
+       </Namespace>
+       <Namespace Name="Envman.VersionManager">
+        <Types>
+         <Type Name="FrmVersionInfo">
+          <Members>
+           <Member Name="#Message">
+            <Messages>
+             <Message TypeName="PropertiesShouldNotBeWriteOnly" Category="Microsoft.Design" CheckId="CA1044" Created="2011-01-25 00:15:46Z">
+              <Issue Name="AddGetter">
+               <Item>'FrmVersionInfo.Message'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+         <Type Name="VersionChecker">
+          <Messages>
+           <Message TypeName="TypesThatOwnDisposableFieldsShouldBeDisposable" Category="Microsoft.Design" CheckId="CA1001" Created="2011-01-25 00:15:46Z" FixCategory="DependsOnFix">
+            <Issue Name="DependsOnFix">
+             <Item>'VersionChecker'</Item>
+             <Item>'WebClient'</Item>
+            </Issue>
+           </Message>
+          </Messages>
+          <Members>
+           <Member Name="#InitProxySettings()">
+            <Messages>
+             <Message TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031" Created="2011-01-25 00:15:46Z">
+              <Issue>
+               <Item>'VersionChecker.InitProxySettings()'</Item>
+               <Item>'Exception'</Item>
+              </Issue>
+             </Message>
+             <Message Id="System.Int32.Parse(System.String)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Created="2011-01-25 00:15:46Z">
+              <Issue Name="IFormatProviderAlternate">
+               <Item>'int.Parse(string)'</Item>
+               <Item>'VersionChecker.InitProxySettings()'</Item>
+               <Item>'int.Parse(string, IFormatProvider)'</Item>
+               <Item>'CultureInfo.CurrentCulture'</Item>
+               <Item>'CultureInfo.InvariantCulture'</Item>
+              </Issue>
+             </Message>
+             <Message TypeName="SpecifyMessageBoxOptions" Category="Microsoft.Globalization" CheckId="CA1300" Status="Excluded" Created="2011-01-25 00:15:46Z">
+              <Issue>
+               <Item>'VersionChecker.InitProxySettings()'</Item>
+              </Issue>
+              <Notes>
+               <User Name="vsetchin">
+                <Note Id="2" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+        </Types>
+       </Namespace>
+       <Namespace Name="Envman.VersionManager.VersionInformation">
+        <Types>
+         <Type Name="VersionInfoManager">
+          <Members>
+           <Member Name="#Load(System.String)">
+            <Messages>
+             <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Created="2011-01-25 00:15:46Z">
+              <Issue>
+               <Item>'VersionInfoManager.Load(string)'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+        </Types>
+       </Namespace>
+       <Namespace Name="EnvManager">
+        <Types>
+         <Type Name="FrmAbout">
+          <Members>
+           <Member Name="#.ctor()">
+            <Messages>
+             <Message Id="System.String.Format(System.String,System.Object)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Created="2011-01-25 00:15:46Z">
+              <Issue Name="IFormatProviderAlternateString">
+               <Item>'string.Format(string, object)'</Item>
+               <Item>'FrmAbout.FrmAbout()'</Item>
+               <Item>'string.Format(IFormatProvider, string, params object[])'</Item>
+               <Item>'CultureInfo.CurrentCulture'</Item>
+               <Item>'CultureInfo.InvariantCulture'</Item>
+              </Issue>
+             </Message>
+             <Message Id="System.String.Format(System.String,System.Object,System.Object)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Created="2011-01-25 00:15:46Z">
+              <Issue Name="IFormatProviderAlternateString">
+               <Item>'string.Format(string, object, object)'</Item>
+               <Item>'FrmAbout.FrmAbout()'</Item>
+               <Item>'string.Format(IFormatProvider, string, params object[])'</Item>
+               <Item>'CultureInfo.CurrentCulture'</Item>
+               <Item>'CultureInfo.InvariantCulture'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#AssemblyCompany">
+            <Messages>
+             <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Created="2011-01-25 00:15:46Z" FixCategory="DependsOnFix">
+              <Issue>
+               <Item>'FrmAbout.AssemblyCompany'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#AssemblyCopyright">
+            <Messages>
+             <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Created="2011-01-25 00:15:46Z" FixCategory="DependsOnFix">
+              <Issue>
+               <Item>'FrmAbout.AssemblyCopyright'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#AssemblyDescription">
+            <Messages>
+             <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Created="2011-01-25 00:15:46Z" FixCategory="DependsOnFix">
+              <Issue>
+               <Item>'FrmAbout.AssemblyDescription'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#AssemblyFileVersion">
+            <Messages>
+             <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Created="2011-01-25 00:15:46Z" FixCategory="DependsOnFix">
+              <Issue>
+               <Item>'FrmAbout.AssemblyFileVersion'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#AssemblyInformationalVersion">
+            <Messages>
+             <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Created="2011-01-25 00:15:46Z" FixCategory="DependsOnFix">
+              <Issue>
+               <Item>'FrmAbout.AssemblyInformationalVersion'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#AssemblyProduct">
+            <Messages>
+             <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Created="2011-01-25 00:15:46Z" FixCategory="DependsOnFix">
+              <Issue>
+               <Item>'FrmAbout.AssemblyProduct'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#AssemblyTitle">
+            <Messages>
+             <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Created="2011-01-25 00:15:46Z" FixCategory="DependsOnFix">
+              <Issue>
+               <Item>'FrmAbout.AssemblyTitle'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#AssemblyVersion">
+            <Messages>
+             <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Created="2011-01-25 00:15:46Z" FixCategory="DependsOnFix">
+              <Issue>
+               <Item>'FrmAbout.AssemblyVersion'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#PackageVersion">
+            <Messages>
+             <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Created="2011-01-25 00:15:46Z" FixCategory="DependsOnFix">
+              <Issue>
+               <Item>'FrmAbout.PackageVersion'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+        </Types>
+       </Namespace>
+      </Namespaces>
+     </Module>
+    </Modules>
+   </Target>
+   <Target Name="$(ProjectDir)/EnvMan/EnvMan/bin/Release/EnvManager.dll">
+    <Modules>
+     <Module Name="envmanager.dll">
+      <Messages>
+       <Message TypeName="AssembliesShouldHaveValidStrongNames" Category="Microsoft.Design" CheckId="CA2210" Created="2011-01-25 00:15:46Z">
+        <Issue Name="NoStrongName">
+         <Item>'EnvManager.dll'</Item>
+        </Issue>
+       </Message>
+       <Message TypeName="MarkAssembliesWithClsCompliant" Category="Microsoft.Design" CheckId="CA1014" Created="2011-01-25 00:15:46Z">
+        <Issue>
+         <Item>'EnvManager.dll'</Item>
+        </Issue>
+       </Message>
+       <Message TypeName="MarkAssembliesWithNeutralResourcesLanguage" Category="Microsoft.Performance" CheckId="CA1824" Created="2011-01-25 00:15:46Z">
+        <Issue>
+         <Item>'EnvManager.dll'</Item>
+        </Issue>
+       </Message>
+      </Messages>
+      <Namespaces>
+       <Namespace Name="EnvManager">
+        <Types>
+         <Type Name="EnvManager">
+          <Messages>
+           <Message TypeName="TypeNamesShouldNotMatchNamespaces" Category="Microsoft.Naming" CheckId="CA1724" Created="2011-01-25 00:15:46Z">
+            <Issue>
+             <Item>'EnvManager'</Item>
+             <Item>EnvManager</Item>
+            </Issue>
+           </Message>
+          </Messages>
+          <Members>
+           <Member Name="#DeleteEnvVar(System.Windows.Forms.DataGridView,System.EnvironmentVariableTarget)">
+            <Messages>
+             <Message TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031" Created="2011-01-25 00:15:46Z">
+              <Issue>
+               <Item>'EnvManager.DeleteEnvVar(DataGridView, EnvironmentVariableTarget)'</Item>
+               <Item>'Exception'</Item>
+              </Issue>
+             </Message>
+             <Message TypeName="SpecifyMessageBoxOptions" Category="Microsoft.Globalization" CheckId="CA1300" Status="Excluded" Created="2011-01-25 00:15:46Z">
+              <Issue>
+               <Item>'EnvManager.DeleteEnvVar(DataGridView, EnvironmentVariableTarget)'</Item>
+              </Issue>
+              <Issue>
+               <Item>'EnvManager.DeleteEnvVar(DataGridView, EnvironmentVariableTarget)'</Item>
+              </Issue>
+              <Notes>
+               <User Name="vsetchin">
+                <Note Id="2" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#DgvVariableName(System.Windows.Forms.DataGridView)">
+            <Messages>
+             <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Created="2011-01-25 00:15:46Z" FixCategory="NonBreaking">
+              <Issue>
+               <Item>'EnvManager.DgvVariableName(DataGridView)'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#LoadEnvironmentVariables(System.Windows.Forms.DataGridView,System.EnvironmentVariableTarget)">
+            <Messages>
+             <Message TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031" Created="2011-01-25 00:15:46Z">
+              <Issue>
+               <Item>'EnvManager.LoadEnvironmentVariables(DataGridView, EnvironmentVariableTarget)'</Item>
+               <Item>'object'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+         <Type Name="EnvVarManager">
+          <Members>
+           <Member Name="#DeleteEnvironmentVariable(System.String,System.EnvironmentVariableTarget)">
+            <Messages>
+             <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Created="2011-01-25 00:15:46Z" FixCategory="DependsOnFix">
+              <Issue>
+               <Item>'EnvVarManager.DeleteEnvironmentVariable(string, EnvironmentVariableTarget)'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#ExpandEnvironmentVariable(System.String)">
+            <Messages>
+             <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Created="2011-01-25 00:15:46Z" FixCategory="DependsOnFix">
+              <Issue>
+               <Item>'EnvVarManager.ExpandEnvironmentVariable(string)'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#GetEnvVariables(System.EnvironmentVariableTarget)">
+            <Messages>
+             <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Created="2011-01-25 00:15:46Z" FixCategory="DependsOnFix">
+              <Issue>
+               <Item>'EnvVarManager.GetEnvVariables(EnvironmentVariableTarget)'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#HwndBroadcast">
+            <Messages>
+             <Message Id="Hwnd" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Created="2011-01-25 00:15:46Z">
+              <Issue Name="Member">
+               <Item>Hwnd</Item>
+               <Item>'EnvVarManager.HwndBroadcast'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#RegistryKey(System.EnvironmentVariableTarget)">
+            <Messages>
+             <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Created="2011-01-25 00:15:46Z" FixCategory="NonBreaking">
+              <Issue>
+               <Item>'EnvVarManager.RegistryKey(EnvironmentVariableTarget)'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#SendMessageTimeout(System.IntPtr,System.Int32,System.Int32,System.String,System.Int32,System.Int32,System.Int32&amp;)">
+            <Messages>
+             <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Created="2011-01-25 00:15:46Z">
+              <Issue>
+               <Item>'EnvVarManager.SendMessageTimeout(IntPtr, int, int, string, int, int, out int)'</Item>
+              </Issue>
+             </Message>
+             <Message Id="2" TypeName="PInvokeDeclarationsShouldBePortable" Category="Microsoft.Portability" CheckId="CA1901" Created="2011-01-25 00:15:46Z" FixCategory="NonBreaking">
+              <Issue Name="Parameter">
+               <Item>'wParam'</Item>
+               <Item>'EnvVarManager.SendMessageTimeout(IntPtr, int, int, string, int, int, out int)'</Item>
+               <Item>4</Item>
+               <Item>64-bit</Item>
+               <Item>8</Item>
+               <Item>'int'</Item>
+              </Issue>
+             </Message>
+             <Message Id="return" TypeName="PInvokeDeclarationsShouldBePortable" Category="Microsoft.Portability" CheckId="CA1901" Created="2011-01-25 00:15:46Z" FixCategory="NonBreaking">
+              <Issue Name="Return">
+               <Item>'EnvVarManager.SendMessageTimeout(IntPtr, int, int, string, int, int, out int)'</Item>
+               <Item>4</Item>
+               <Item>64-bit</Item>
+               <Item>8</Item>
+               <Item>'bool'</Item>
+              </Issue>
+             </Message>
+             <Message Id="3" TypeName="SpecifyMarshalingForPInvokeStringArguments" Category="Microsoft.Globalization" CheckId="CA2101" Created="2011-01-25 00:15:46Z">
+              <Issue Name="Parameter">
+               <Item>'lParam'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#ValidateVariables(System.String,System.String)">
+            <Messages>
+             <Message TypeName="DoNotRaiseReservedExceptionTypes" Category="Microsoft.Usage" CheckId="CA2201" Created="2011-01-25 00:15:46Z">
+              <Issue Name="TooGeneric">
+               <Item>'EnvVarManager.ValidateVariables(string, string)'</Item>
+               <Item>'Exception'</Item>
+              </Issue>
+              <Issue Name="TooGeneric">
+               <Item>'EnvVarManager.ValidateVariables(string, string)'</Item>
+               <Item>'Exception'</Item>
+              </Issue>
+             </Message>
+             <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Created="2011-01-25 00:15:46Z" FixCategory="NonBreaking">
+              <Issue>
+               <Item>'EnvVarManager.ValidateVariables(string, string)'</Item>
+              </Issue>
+             </Message>
+             <Message TypeName="TestForEmptyStringsUsingStringLength" Category="Microsoft.Performance" CheckId="CA1820" Status="Absent" Created="2011-01-25 00:15:46Z">
+              <Issue Name="IsNullOrEmpty">Replace the call to 'string.operator ==(string, string)' in 'EnvVarManager.ValidateVariables(string, string)' with a call to 'String.IsNullOrEmpty'.</Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+         <Type Name="EnvVarValueValidator">
+          <Members>
+           <Member Name="#IsNumber(System.String)">
+            <Messages>
+             <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Created="2011-01-25 00:15:46Z" FixCategory="NonBreaking">
+              <Issue>
+               <Item>'EnvVarValueValidator.IsNumber(string)'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+         <Type Name="FrmEditEnvVar">
+          <Members>
+           <Member Name="#DgvValuesList_CellValidating(System.Object,System.Windows.Forms.DataGridViewCellValidatingEventArgs)">
+            <Messages>
+             <Message TypeName="TestForEmptyStringsUsingStringLength" Category="Microsoft.Performance" CheckId="CA1820" Created="2011-01-25 00:15:46Z">
+              <Issue Name="IsNullOrEmpty">
+               <Item>'string.operator ==(string, string)'</Item>
+               <Item>'FrmEditEnvVar.DgvValuesList_CellValidating(object, DataGridViewCellValidatingEventArgs)'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#DgvValuesList_UserDeletingRow(System.Object,System.Windows.Forms.DataGridViewRowCancelEventArgs)">
+            <Messages>
+             <Message TypeName="SpecifyMessageBoxOptions" Category="Microsoft.Globalization" CheckId="CA1300" Status="Excluded" Created="2011-01-25 00:15:46Z">
+              <Issue>
+               <Item>'FrmEditEnvVar.DgvValuesList_UserDeletingRow(object, DataGridViewRowCancelEventArgs)'</Item>
+              </Issue>
+              <Notes>
+               <User Name="vsetchin">
+                <Note Id="2" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#ExportEnvironmentVariable()">
+            <Messages>
+             <Message TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031" Created="2011-01-25 00:15:46Z">
+              <Issue>
+               <Item>'FrmEditEnvVar.ExportEnvironmentVariable()'</Item>
+               <Item>'Exception'</Item>
+              </Issue>
+             </Message>
+             <Message TypeName="SpecifyMessageBoxOptions" Category="Microsoft.Globalization" CheckId="CA1300" Status="Excluded" Created="2011-01-25 00:15:46Z">
+              <Issue>
+               <Item>'FrmEditEnvVar.ExportEnvironmentVariable()'</Item>
+              </Issue>
+              <Issue>
+               <Item>'FrmEditEnvVar.ExportEnvironmentVariable()'</Item>
+              </Issue>
+              <Notes>
+               <User Name="vsetchin">
+                <Note Id="2" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#FrmEditEnvVar_FormClosing(System.Object,System.Windows.Forms.FormClosingEventArgs)">
+            <Messages>
+             <Message TypeName="SpecifyMessageBoxOptions" Category="Microsoft.Globalization" CheckId="CA1300" Status="Excluded" Created="2011-01-25 00:15:46Z">
+              <Issue>
+               <Item>'FrmEditEnvVar.FrmEditEnvVar_FormClosing(object, FormClosingEventArgs)'</Item>
+              </Issue>
+              <Notes>
+               <User Name="vsetchin">
+                <Note Id="2" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#ImportEnvironmentVariable()">
+            <Messages>
+             <Message TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031" Created="2011-01-25 00:15:46Z">
+              <Issue>
+               <Item>'FrmEditEnvVar.ImportEnvironmentVariable()'</Item>
+               <Item>'Exception'</Item>
+              </Issue>
+             </Message>
+             <Message TypeName="SpecifyMessageBoxOptions" Category="Microsoft.Globalization" CheckId="CA1300" Status="Excluded" Created="2011-01-25 00:15:46Z">
+              <Issue>
+               <Item>'FrmEditEnvVar.ImportEnvironmentVariable()'</Item>
+              </Issue>
+              <Notes>
+               <User Name="vsetchin">
+                <Note Id="2" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#LocateInWindowsExplorer()">
+            <Messages>
+             <Message TypeName="SpecifyMessageBoxOptions" Category="Microsoft.Globalization" CheckId="CA1300" Status="Excluded" Created="2011-01-25 00:15:46Z">
+              <Issue>
+               <Item>'FrmEditEnvVar.LocateInWindowsExplorer()'</Item>
+              </Issue>
+              <Notes>
+               <User Name="vsetchin">
+                <Note Id="2" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#LocateInWindowsExplorer(System.String)">
+            <Messages>
+             <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Created="2011-01-25 00:15:46Z" FixCategory="NonBreaking">
+              <Issue>
+               <Item>'FrmEditEnvVar.LocateInWindowsExplorer(string)'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#SaveEnvironmentVariable()">
+            <Messages>
+             <Message TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031" Created="2011-01-25 00:15:46Z">
+              <Issue>
+               <Item>'FrmEditEnvVar.SaveEnvironmentVariable()'</Item>
+               <Item>'Exception'</Item>
+              </Issue>
+             </Message>
+             <Message TypeName="SpecifyMessageBoxOptions" Category="Microsoft.Globalization" CheckId="CA1300" Status="Excluded" Created="2011-01-25 00:15:46Z">
+              <Issue>
+               <Item>'FrmEditEnvVar.SaveEnvironmentVariable()'</Item>
+              </Issue>
+              <Notes>
+               <User Name="vsetchin">
+                <Note Id="2" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#validator">
+            <Messages>
+             <Message TypeName="AvoidUnusedPrivateFields" Category="Microsoft.Performance" CheckId="CA1823" Created="2011-01-25 00:15:46Z">
+              <Issue>
+               <Item>'FrmEditEnvVar.validator'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+        </Types>
+       </Namespace>
+       <Namespace Name="EnvManager.Handlers">
+        <Types>
+         <Type Name="DgvHandler">
+          <Members>
+           <Member Name="#.ctor(System.Windows.Forms.DataGridView&amp;)">
+            <Messages>
+             <Message Id="0#" TypeName="DoNotPassTypesByReference" Category="Microsoft.Design" CheckId="CA1045" Created="2011-01-25 00:15:46Z">
+              <Issue Level="CriticalWarning">
+               <Item>'dgv'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#DeleteRow(System.Int32)">
+            <Messages>
+             <Message TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031" Created="2011-01-25 00:15:46Z">
+              <Issue>
+               <Item>'DgvHandler.DeleteRow(int)'</Item>
+               <Item>'Exception'</Item>
+              </Issue>
+             </Message>
+             <Message TypeName="SpecifyMessageBoxOptions" Category="Microsoft.Globalization" CheckId="CA1300" Status="Excluded" Created="2011-01-25 00:15:46Z">
+              <Issue>
+               <Item>'DgvHandler.DeleteRow(int)'</Item>
+              </Issue>
+              <Notes>
+               <User Name="vsetchin">
+                <Note Id="2" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+         <Type Name="DgvModifyValueCommand">
+          <Members>
+           <Member Name="#CloneRow(System.Windows.Forms.DataGridViewRow)">
+            <Messages>
+             <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Created="2011-01-25 00:15:46Z" FixCategory="DependsOnFix">
+              <Issue>
+               <Item>'DgvModifyValueCommand.CloneRow(DataGridViewRow)'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#NewRow">
+            <Messages>
+             <Message TypeName="PropertiesShouldNotBeWriteOnly" Category="Microsoft.Design" CheckId="CA1044" Created="2011-01-25 00:15:46Z">
+              <Issue Name="AddGetter">
+               <Item>'DgvModifyValueCommand.NewRow'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+         <Type Name="EditVarNameCommand">
+          <Members>
+           <Member Name="#NewVarName">
+            <Messages>
+             <Message TypeName="PropertiesShouldNotBeWriteOnly" Category="Microsoft.Design" CheckId="CA1044" Created="2011-01-25 00:15:46Z">
+              <Issue Name="AddGetter">
+               <Item>'EditVarNameCommand.NewVarName'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+         <Type Name="VarImportCommand">
+          <Members>
+           <Member Name="#Execute()">
+            <Messages>
+             <Message TypeName="SpecifyMessageBoxOptions" Category="Microsoft.Globalization" CheckId="CA1300" Status="Excluded" Created="2011-01-25 00:15:46Z">
+              <Issue>
+               <Item>'VarImportCommand.Execute()'</Item>
+              </Issue>
+              <Notes>
+               <User Name="vsetchin">
+                <Note Id="2" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#GetValuesToImport()">
+            <Messages>
+             <Message Id="System.String.ToUpper" TypeName="SpecifyCultureInfo" Category="Microsoft.Globalization" CheckId="CA1304" Created="2011-01-25 00:15:46Z">
+              <Issue>
+               <Item>'string.ToUpper()'</Item>
+               <Item>'VarImportCommand.GetValuesToImport()'</Item>
+               <Item>'string.ToUpper(CultureInfo)'</Item>
+              </Issue>
+              <Issue>
+               <Item>'string.ToUpper()'</Item>
+               <Item>'VarImportCommand.GetValuesToImport()'</Item>
+               <Item>'string.ToUpper(CultureInfo)'</Item>
+              </Issue>
+             </Message>
+             <Message Id="System.String.CompareTo(System.String)" TypeName="SpecifyStringComparison" Category="Microsoft.Globalization" CheckId="CA1307" Created="2011-01-25 00:15:46Z">
+              <Issue>
+               <Item>'string.CompareTo(string)'</Item>
+               <Item>'VarImportCommand.GetValuesToImport()'</Item>
+               <Item>'string.Compare(string, string, StringComparison)'</Item>
+              </Issue>
+             </Message>
+             <Message Id="System.String.IndexOf(System.String)" TypeName="SpecifyStringComparison" Category="Microsoft.Globalization" CheckId="CA1307" Created="2011-01-25 00:15:46Z">
+              <Issue>
+               <Item>'string.IndexOf(string)'</Item>
+               <Item>'VarImportCommand.GetValuesToImport()'</Item>
+               <Item>'string.IndexOf(string, StringComparison)'</Item>
+              </Issue>
+             </Message>
+             <Message TypeName="SpecifyMessageBoxOptions" Category="Microsoft.Globalization" CheckId="CA1300" Status="Excluded" Created="2011-01-25 00:15:46Z">
+              <Issue>
+               <Item>'VarImportCommand.GetValuesToImport()'</Item>
+              </Issue>
+              <Issue>
+               <Item>'VarImportCommand.GetValuesToImport()'</Item>
+              </Issue>
+              <Notes>
+               <User Name="vsetchin">
+                <Note Id="2" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+        </Types>
+       </Namespace>
+       <Namespace Name="EnvManager.ImportExport">
+        <Types>
+         <Type Name="EnvironmentVariable">
+          <Members>
+           <Member Name="#VarValues">
+            <Messages>
+             <Message TypeName="PropertiesShouldNotBeWriteOnly" Category="Microsoft.Design" CheckId="CA1044" Created="2011-01-25 00:15:46Z">
+              <Issue Name="AddGetter">
+               <Item>'EnvironmentVariable.VarValues'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#VarValuesList">
+            <Messages>
+             <Message TypeName="CollectionPropertiesShouldBeReadOnly" Category="Microsoft.Usage" CheckId="CA2227" Created="2011-01-25 00:15:46Z">
+              <Issue>
+               <Item>'EnvironmentVariable.VarValuesList'</Item>
+              </Issue>
+             </Message>
+             <Message TypeName="DoNotExposeGenericLists" Category="Microsoft.Design" CheckId="CA1002" Created="2011-01-25 00:15:46Z">
+              <Issue>
+               <Item>'List&lt;string&gt;'</Item>
+               <Item>'EnvironmentVariable.VarValuesList'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+         <Type Name="ImportExportManager">
+          <Members>
+           <Member Name="#Load(System.String)">
+            <Messages>
+             <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Created="2011-01-25 00:15:46Z">
+              <Issue>
+               <Item>'ImportExportManager.Load(string)'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+        </Types>
+       </Namespace>
+      </Namespaces>
+     </Module>
+    </Modules>
+   </Target>
+  </Targets>
+  <Notes>
+   <User Name="vsetchin">
+    <Note Id="2" Modified="2011-01-25 00:16:59Z">Application is not designed to be used in the right to left environment at the moment.</Note>
+   </User>
+  </Notes>
+  <Rules>
+   <Rule TypeName="AssembliesShouldHaveValidStrongNames" Category="Microsoft.Design" CheckId="CA2210">
+    <Resolution Name="NoStrongName">Sign {0} with a strong name key.</Resolution>
+   </Rule>
+   <Rule TypeName="AvoidNamespacesWithFewTypes" Category="Microsoft.Design" CheckId="CA1020">
+    <Resolution Name="Default">Consider merging the types defined in '{0}' with another namespace.</Resolution>
+   </Rule>
+   <Rule TypeName="AvoidUnusedPrivateFields" Category="Microsoft.Performance" CheckId="CA1823">
+    <Resolution Name="Default">It appears that field {0} is never used or is only ever assigned to. Use this field or remove it.</Resolution>
+   </Rule>
+   <Rule TypeName="CollectionPropertiesShouldBeReadOnly" Category="Microsoft.Usage" CheckId="CA2227">
+    <Resolution Name="Default">Change {0} to be read-only by removing the property setter.</Resolution>
+   </Rule>
+   <Rule TypeName="DisposableFieldsShouldBeDisposed" Category="Microsoft.Usage" CheckId="CA2213">
+    <Resolution Name="Default">{0} contains field {1} that is of IDisposable type: {2}. Change the Dispose method on {0} to call Dispose or Close on this field.</Resolution>
+   </Rule>
+   <Rule TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031">
+    <Resolution Name="Default">Modify {0} to catch a more specific exception than {1} or rethrow the exception.</Resolution>
+   </Rule>
+   <Rule TypeName="DoNotExposeGenericLists" Category="Microsoft.Design" CheckId="CA1002">
+    <Resolution Name="Default">Change {0} in {1} to use Collection&lt;T&gt;, ReadOnlyCollection&lt;T&gt; or KeyedCollection&lt;K,V&gt;</Resolution>
+   </Rule>
+   <Rule TypeName="DoNotIndirectlyExposeMethodsWithLinkDemands" Category="Microsoft.Security" CheckId="CA2122">
+    <Resolution Name="Default">{0} calls into {1} which has a LinkDemand. By making this call, {1} is indirectly exposed to user code. Review the following call stack that might expose a way to circumvent security protection: {2}</Resolution>
+   </Rule>
+   <Rule TypeName="DoNotPassTypesByReference" Category="Microsoft.Design" CheckId="CA1045">
+    <Resolution Name="Default">Consider a design that does not require that {0} be a reference parameter.</Resolution>
+   </Rule>
+   <Rule TypeName="DoNotRaiseReservedExceptionTypes" Category="Microsoft.Usage" CheckId="CA2201">
+    <Resolution Name="TooGeneric">{0} creates an exception of type {1}, an exception type that is not sufficiently specific and should never be raised by user code. If this exception instance might be thrown, use a different exception type.</Resolution>
+   </Rule>
+   <Rule TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704">
+    <Resolution Name="Member">Correct the spelling of '{0}' in member name {1} or remove it entirely if it represents any sort of Hungarian notation.</Resolution>
+   </Rule>
+   <Rule TypeName="ImplementIDisposableCorrectly" Category="Microsoft.Design" CheckId="CA1063">
+    <Resolution Name="DisposeImplementation">Modify {0} so that it calls Dispose(true), then calls GC.SuppressFinalize on the current object instance ('this' or 'Me' in Visual Basic), and then returns.</Resolution>
+    <Resolution Name="FinalizeImplementation">Modify {0} so that it calls Dispose(false) and then returns.</Resolution>
+    <Resolution Name="ProvideDisposeBool">Provide an overridable implementation of Dispose(bool) on {0} or mark the type as sealed. A call to Dispose(false) should only clean up native resources. A call to Dispose(true) should clean up both managed and native resources.</Resolution>
+   </Rule>
+   <Rule TypeName="MarkAssembliesWithClsCompliant" Category="Microsoft.Design" CheckId="CA1014">
+    <Resolution Name="Default">Mark {0} with CLSCompliant(true) because it exposes externally visible types.</Resolution>
+   </Rule>
+   <Rule TypeName="MarkAssembliesWithNeutralResourcesLanguage" Category="Microsoft.Performance" CheckId="CA1824">
+    <Resolution Name="Default">Because assembly {0} contains a ResX-based resource file, mark it with the NeutralResourcesLanguage attribute, specifying the language of the resources within the assembly. This could improve lookup performance the first time a resource is retrieved.</Resolution>
+   </Rule>
+   <Rule TypeName="MarkBooleanPInvokeArgumentsWithMarshalAs" Category="Microsoft.Interoperability" CheckId="CA1414">
+    <Resolution Name="Return">Add the MarshalAsAttribute to the return type of P/Invoke {0}. If the corresponding unmanaged return type is a 4-byte Win32 'BOOL', use MarshalAs(UnmanagedType.Bool). For a 1-byte C++ 'bool', use MarshalAs(UnmanagedType.U1).</Resolution>
+   </Rule>
+   <Rule TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822">
+    <Resolution Name="Default">The 'this' parameter (or 'Me' in Visual Basic) of {0} is never used. Mark the member as static (or Shared in Visual Basic) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Resolution>
+   </Rule>
+   <Rule TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060">
+    <Resolution Name="Default">Because it is a P/Invoke method, {0} should be defined in a class named NativeMethods, SafeNativeMethods, or UnsafeNativeMethods.</Resolution>
+   </Rule>
+   <Rule TypeName="PInvokeDeclarationsShouldBePortable" Category="Microsoft.Portability" CheckId="CA1901">
+    <Resolution Name="Parameter">As it is declared in your code, parameter {0} of P/Invoke {1} will be {2} bytes wide on {3} platforms. This is not correct, as the actual native declaration of this API indicates it should be {4} bytes wide on {3} platforms. Consult the MSDN Platform SDK documentation for help determining what data type should be used instead of {5}.</Resolution>
+    <Resolution Name="Return">As it is declared in your code, the return type of P/Invoke {0} will be {1} bytes wide on {2} platforms. This is not correct, as the actual native declaration of this API indicates it should be {3} bytes wide on {2} platforms. Consult the MSDN Platform SDK documentation for help determining what data type should be used instead of {4}.</Resolution>
+   </Rule>
+   <Rule TypeName="PropertiesShouldNotBeWriteOnly" Category="Microsoft.Design" CheckId="CA1044">
+    <Resolution Name="AddGetter">Because property {0} is write-only, either add a property getter with an accessibility that is greater than or equal to its setter or convert this property into a method.</Resolution>
+   </Rule>
+   <Rule TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200">
+    <Resolution Name="Default">{0} rethrows a caught exception and specifies it explicitly as an argument. Use 'throw' without an argument instead, in order to preserve the stack location where the exception was initially raised.</Resolution>
+   </Rule>
+   <Rule TypeName="SpecifyCultureInfo" Category="Microsoft.Globalization" CheckId="CA1304">
+    <Resolution Name="Default">Because the behavior of {0} could vary based on the current user's locale settings, replace this call in {1} with a call to {2}. If the result of {2} will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'CultureInfo' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Resolution>
+   </Rule>
+   <Rule TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305">
+    <Resolution Name="IFormatProviderAlternate">Because the behavior of {0} could vary based on the current user's locale settings, replace this call in {1} with a call to {2}. If the result of {2} will be based on input from the user, specify {3} as the 'IFormatProvider' parameter. Otherwise, if the result will based on input stored and accessed by software, such as when it is loaded from disk or from a database, specify {4}.</Resolution>
+    <Resolution Name="IFormatProviderAlternateString">Because the behavior of {0} could vary based on the current user's locale settings, replace this call in {1} with a call to {2}. If the result of {2} will be displayed to the user, specify {3} as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify {4}.</Resolution>
+   </Rule>
+   <Rule TypeName="SpecifyMarshalingForPInvokeStringArguments" Category="Microsoft.Globalization" CheckId="CA2101">
+    <Resolution Name="Parameter">To reduce security risk, marshal parameter {0} as Unicode, by setting DllImport.CharSet to CharSet.Unicode, or by explicitly marshaling the parameter as UnmanagedType.LPWStr. If you need to marshal this string as ANSI or system-dependent, set BestFitMapping=false; for added security, also set ThrowOnUnmappableChar=true.</Resolution>
+   </Rule>
+   <Rule TypeName="SpecifyMessageBoxOptions" Category="Microsoft.Globalization" CheckId="CA1300">
+    <Resolution Name="Default">Change {0} to call the MessageBox.Show overload that specifies MessageBoxOptions, and make sure to set MessageBoxOptions.RightAlign and MessageBoxOptions.RtlReading if RightToLeft is set to RightToLeft.Yes on the parent control.</Resolution>
+   </Rule>
+   <Rule TypeName="SpecifyStringComparison" Category="Microsoft.Globalization" CheckId="CA1307">
+    <Resolution Name="Default">Because the behavior of {0} could vary based on the current user's locale settings, replace this call in {1} with a call to {2}. If the result of {2} will be displayed to the user, such as when sorting a list of items for display in a list box, specify 'StringComparison.CurrentCulture' or 'StringComparison.CurrentCultureIgnoreCase' as the 'StringComparison' parameter. If comparing case-insensitive identifiers, such as file paths, environment variables, or registry keys and values, specify 'StringComparison.OrdinalIgnoreCase'. Otherwise, if comparing case-sensitive identifiers, specify 'StringComparison.Ordinal'.</Resolution>
+   </Rule>
+   <Rule TypeName="TestForEmptyStringsUsingStringLength" Category="Microsoft.Performance" CheckId="CA1820">
+    <Resolution Name="IsNullOrEmpty">Replace the call to {0} in {1} with a call to 'String.IsNullOrEmpty'.</Resolution>
+   </Rule>
+   <Rule TypeName="TypeNamesShouldNotMatchNamespaces" Category="Microsoft.Naming" CheckId="CA1724">
+    <Resolution Name="Default">The type name {0} conflicts in whole or in part with the namespace name '{1}'. Change either name to eliminate the conflict.</Resolution>
+   </Rule>
+   <Rule TypeName="TypesThatOwnDisposableFieldsShouldBeDisposable" Category="Microsoft.Design" CheckId="CA1001">
+    <Resolution Name="DependsOnFix">Implement IDisposable on {0} because it creates members of the following IDisposable types: {1}. If {0} has previously shipped, adding new members that implement IDisposable to this type is considered a breaking change to existing consumers.</Resolution>
+   </Rule>
+   <Rule TypeName="UseEventsWhereAppropriate" Category="Microsoft.Design" CheckId="CA1030">
+    <Resolution Name="Default">Consider making {0} an event.</Resolution>
+   </Rule>
+  </Rules>
+ </FxCopReport>
+</FxCopProject>

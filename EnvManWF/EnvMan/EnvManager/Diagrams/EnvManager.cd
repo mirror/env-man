@@ -1,0 +1,192 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Font Name="Tahoma" Size="8.25" />
+  <Class Name="EnvManager.EnvManager" Collapsed="true">
+    <Position X="0.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>EnvManager.cs</FileName>
+      <HashCode>AAAAACAAQHAAAKGgDQCCAAQCAECIQQIgIIQgAEAAAEA=</HashCode>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="variableManger" />
+      <Field Name="settings" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="EnvManager.EnvVarManager" Collapsed="true">
+    <Position X="0.75" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>EnvVarManager.cs</FileName>
+      <HashCode>AACEAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EnvManager.EnvVarValueValidator" Collapsed="true">
+    <Position X="5.75" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>EnvVarValueValidator.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAEAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EnvManager.FrmEditEnvVar" Collapsed="true">
+    <Position X="3.5" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>FrmEditEnvVar.cs</FileName>
+      <HashCode>AAgQIIIwACCCFbMiCACEQYgCAATECAAIRAAgMIMJEDQ=</HashCode>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="validator" />
+      <Field Name="commandsList" />
+      <Field Name="variableManager" />
+      <Field Name="variableType" />
+      <Field Name="settings" />
+    </ShowAsAssociation>
+    <AssociationLine Name="validator" Type="EnvManager.EnvVarValueValidator" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="5" Y="6.625" />
+        <Point X="6.094" Y="6.625" />
+        <Point X="6.094" Y="7.5" />
+      </Path>
+    </AssociationLine>
+  </Class>
+  <Class Name="EnvManager.Handlers.DgvCommand" Collapsed="true">
+    <Position X="7.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Handlers\DgvCommand.cs</FileName>
+      <HashCode>AAAAAAAAAAAABARAAAAEQAAFAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="dgvHandler" />
+    </ShowAsAssociation>
+    <Lollipop Orientation="Left" Position="0.1" />
+  </Class>
+  <Class Name="EnvManager.Handlers.DgvDeleteCommand" Collapsed="true">
+    <Position X="3.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Handlers\DgvDeleteCommand.cs</FileName>
+      <HashCode>AAAAAAAAAAAABAQAAAAAAAADAAAAAAAAAAACAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EnvManager.Handlers.DgvHandler" Collapsed="true">
+    <Position X="7.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Handlers\DgvHandler.cs</FileName>
+      <HashCode>gAAAREACAAAACAAACQAgAAAAAAAABACAEAAAAIBQAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EnvManager.Handlers.DgvMoveDownCommand" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="5.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Handlers\DgvMoveDownCommand.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EnvManager.Handlers.DgvMoveToBottomCommand" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="7.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Handlers\DgvMoveToBottomCommand.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EnvManager.Handlers.DgvMoveToTopCommand" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="9" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Handlers\DgvMoveToTopCommand.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EnvManager.Handlers.DgvMoveUpCommand" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="10.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Handlers\DgvMoveUpCommand.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EnvManager.Handlers.UndoRedoCommandList" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="6.5" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Handlers\UndoRedoCommandList.cs</FileName>
+      <HashCode>AAIAAAAARAAABEAAAAAAABkBAAABAABAAAAAAAFAAAA=</HashCode>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="commandsList" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="EnvManager.Properties.EnvManagerSettings" Collapsed="true">
+    <Position X="0.5" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAABAEAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EnvManager.Properties.FrmEditEnvVarSettings" Collapsed="true">
+    <Position X="3.5" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAAAAAAACgAAAAAIAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EnvManager.Properties.Resources" Collapsed="true">
+    <Position X="8.75" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAJgCRAQJBQAAIEALFQCBgQAAAgACQAAAIAAQgJA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EnvManager.Handlers.DgvModifyValueCommand" Collapsed="true">
+    <Position X="12.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Handlers\DgvModifyValueCommand.cs</FileName>
+      <HashCode>AAAABAAAAAQABAAAAAAAEAABAAAAAAAAAAAEEAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EnvManager.Handlers.EditVarNameCommand" Collapsed="true">
+    <Position X="10" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Handlers\EditVarNameCommand.cs</FileName>
+      <HashCode>AAAAAAAAAAAABERAAAAAQAABAAAAAAACACAAAgAAQAA=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="EnvManager.Handlers.VarImportCommand" Collapsed="true">
+    <Position X="12" Y="2.5" Width="1.75" />
+    <TypeIdentifier>
+      <FileName>Handlers\VarImportCommand.cs</FileName>
+      <HashCode>QCAAgEAAAAAABARAAAIAQAABAAgIACAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="importExportManager" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="EnvManager.ImportExport.EnvironmentVariable" Collapsed="true">
+    <Position X="14.75" Y="2.75" Width="1.75" />
+    <TypeIdentifier>
+      <FileName>ImportExport\EnvironmentVariable.cs</FileName>
+      <HashCode>AAADAAAAAAAACAAAAAADAAAAAAAAAAAAAAAAAAAQAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EnvManager.ImportExport.ImportExportManager" Collapsed="true">
+    <Position X="14.75" Y="1.75" Width="1.75" />
+    <TypeIdentifier>
+      <FileName>ImportExport\ImportExportManager.cs</FileName>
+      <HashCode>AAAAgIAAAAAQAAAAAAAAAAAAAAAAAAACAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="EnvVariable" />
+    </ShowAsAssociation>
+  </Class>
+  <Interface Name="EnvManager.Handlers.ICommand" Collapsed="true">
+    <Position X="6.5" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Handlers\ICommand.cs</FileName>
+      <HashCode>AAAAAAAAAAAABAQAAAAAQAABAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="EnvManager.EnvironmentValueType" Collapsed="true">
+    <Position X="8.75" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>EnvVarValueValidator.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAQAAQEAAAAAAAAAEAAAAAAAAAAAABAA=</HashCode>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="System.EnvironmentVariableTarget" Collapsed="true">
+    <Position X="3.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier />
+  </Enum>
+</ClassDiagram>

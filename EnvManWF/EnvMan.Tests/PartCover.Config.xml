@@ -1,0 +1,6 @@
+<PartCoverSettings>
+  <Target>D:\Dev\Projects\EnvMan\src\EnvMan\NUnit\bin\net-2.0\nunit-console.exe</Target>
+  <TargetWorkDir>D:\Dev\Projects\EnvMan\src\EnvMan\NUnit\bin\net-2.0</TargetWorkDir>
+  <TargetArgs>/noshadow D:\Dev\Projects\EnvMan\src\EnvMan\trunk\EnvMan.Tests\EnvMan.Tests.nunit</TargetArgs>
+  <Rule>+[*EnvMan*]*</Rule>
+</PartCoverSettings>

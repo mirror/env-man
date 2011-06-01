@@ -1,0 +1,1 @@
+msiexec /x bin\%1\EnvManSetup.msi

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+  <Fragment>
+    <Directory Id="TARGETDIR" Name="SourceDir">
+      <!--Directory Id="ProgramMenuFolder" Name="Programs">
+        <Directory Id="EnvManMenu" Name="Windows Environment Variable Manager"/>
+      </Directory-->
+      
+      <Directory Id="ProgramFilesFolder">
+        <Directory Id="INSTALLLOCATION" Name="EnvMan">
+
+          <Component Id="EnvMan" Guid="ac12ffc1-c506-44e1-850a-f7fe9f96de34" KeyPath="yes">
+            <!-- TODO: Insert your files, registry keys, and other resources here. -->
+            <File Id="EnvManExe" Name="EnvMan.exe" Source="..\EnvMan\Release\EnvMan.exe" Vital="yes">
+              <!--Shortcut Id="startmenuEnvMan" Directory="EnvManMenu"
+                        Name="Windows Environment Variable Manager"
+                        WorkingDirectory="INSTALLDIR" Advertise="yes"/-->
+            </File>
+            <File Id="LicenseTxt" Name="license.txt" Source="..\EnvMan\Release\license.txt" Vital="yes"/>
+            <File Id="ReadmeTXT" Name="Readme.txt" Source="..\EnvMan\Release\Readme.txt" Vital="yes"/>
+
+          </Component>
+
+        </Directory>
+      </Directory>
+      
+    </Directory>
+  </Fragment>
+</Wix>
