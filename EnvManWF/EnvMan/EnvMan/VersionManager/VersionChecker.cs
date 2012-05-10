@@ -41,6 +41,11 @@ namespace Envman.VersionManager
     {
         #region Variables
         /// <summary>
+        /// Program Icon
+        /// </summary>
+        private Icon programIcon = null;
+
+        /// <summary>
         /// Version Information Manager
         /// </summary>
         private VersionInfoManager versionInfoManager = null;
@@ -73,6 +78,17 @@ namespace Envman.VersionManager
         /// </summary>
         public VersionChecker()
         {
+            this.InitVersionChecker();
+        }
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="VersionChecker"/> class.
+        /// </summary>
+        /// <param name="programIcon">The program icon.</param>
+        public VersionChecker(Icon programIcon)
+        {
+            this.programIcon = programIcon;
+
             this.InitVersionChecker();
         }
         #endregion Constructor

@@ -71,10 +71,6 @@ Global
 		{44087B80-BE0A-4B01-BC84-45D5AEEF2C39} = {5874BA29-9164-4848-934A-2B993BC1E2E0}
 		{6568444E-A2F0-4B7A-AADA-D8C511E0F629} = {5874BA29-9164-4848-934A-2B993BC1E2E0}
 	EndGlobalSection
-	GlobalSection(SubversionScc) = preSolution
-		Svn-Managed = True
-		Manager = AnkhSVN - Subversion Support for Visual Studio
-	EndGlobalSection
 	GlobalSection(DPCodeReviewSolutionGUID) = preSolution
 		DPCodeReviewSolutionGUID = {00000000-0000-0000-0000-000000000000}
 	EndGlobalSection

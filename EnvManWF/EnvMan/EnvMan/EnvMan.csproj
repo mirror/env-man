@@ -160,24 +160,12 @@
     <None Include="Resources\Language.png" />
     <None Include="Resources\SendFeedback.png" />
     <None Include="Resources\EnvMan.png" />
-    <None Include="VersionManager\VersionInformation\.svn\all-wcprops" />
-    <None Include="VersionManager\VersionInformation\.svn\entries" />
-    <None Include="VersionManager\VersionInformation\.svn\format" />
-    <None Include="VersionManager\VersionInformation\.svn\text-base\VersionInfo.cs.svn-base" />
-    <None Include="VersionManager\VersionInformation\.svn\text-base\VersionInfoManager.cs.svn-base" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\EnvManager\EnvManager.csproj">
       <Project>{93A8FFFE-31F3-405B-92A7-3BF9DAB60EF7}</Project>
       <Name>EnvManager</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="VersionManager\VersionInformation\.svn\prop-base\" />
-    <Folder Include="VersionManager\VersionInformation\.svn\props\" />
-    <Folder Include="VersionManager\VersionInformation\.svn\tmp\prop-base\" />
-    <Folder Include="VersionManager\VersionInformation\.svn\tmp\props\" />
-    <Folder Include="VersionManager\VersionInformation\.svn\tmp\text-base\" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include="Microsoft.Net.Client.3.5">

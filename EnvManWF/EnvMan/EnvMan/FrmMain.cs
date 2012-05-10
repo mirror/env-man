@@ -90,7 +90,8 @@ namespace Envman
             this.Text += " " + this.frmAbout.PackageVersion;
             this.MinimumSize = new Size(472, 504);
 
-            this.versionChecker = new VersionChecker();
+            this.versionChecker 
+                = new VersionChecker(Properties.Resources.EnvManICO);
             this.versionChecker.VersionChecked
                 += new EventHandler<NewVersionEventArgs>(
                     this.VersionChecker_NewVersionChecked);
