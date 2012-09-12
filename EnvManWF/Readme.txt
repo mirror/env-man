@@ -76,7 +76,7 @@ file to desktop or start menu. You are now ready to run application.
 UPGRADE
 
 If you are using earlier version of the project. Download a latest release and replace 
-corresponding exe and dll files by removing the old ones and installing new versions.
+corresponding exe and DLL files by removing the old ones and installing new versions.
 
 Enjoy!
 

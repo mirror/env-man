@@ -1,6 +1,6 @@
 //------------------------------------------------------------------------
 // <copyright file="EditVarNameCommand.cs" company="SETCHIN Freelance Consulting">
-// Copyright (C) 2006-2011 SETCHIN Freelance Consulting
+// Copyright (C) 2006-2013 SETCHIN Freelance Consulting
 // </copyright>
 // <author>
 // Vlad Setchin
@@ -8,7 +8,7 @@
 //------------------------------------------------------------------------
 
 // EnvMan - The Open-Source Windows Environment Variables Manager
-// Copyright (C) 2006-2011 SETCHIN Freelance Consulting 
+// Copyright (C) 2006-2013 SETCHIN Freelance Consulting 
 // <http://www.setchinfc.com.au>
 // EnvMan Development Group: <mailto:envman-dev@googlegroups.com>
 //  
