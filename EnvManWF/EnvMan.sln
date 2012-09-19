@@ -26,6 +26,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EnvManTest", "EnvMan.Tests\
 EndProject
 Project("{930C7802-8A8C-48F9-8165-68863BCCD9DD}") = "EnvManSetup", "EnvManSetup\EnvManSetup.wixproj", "{F3910A6A-D4DA-4673-8C6C-BB7BD40D65AB}"
 EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "EnvManWFSetup", "EnvManWFSetup\EnvManWFSetup.vdproj", "{74D5B41D-2382-49D4-9DC9-32FB3F1513C9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -90,6 +92,12 @@ Global
 		{F3910A6A-D4DA-4673-8C6C-BB7BD40D65AB}.Release|Mixed Platforms.Build.0 = Release|x86
 		{F3910A6A-D4DA-4673-8C6C-BB7BD40D65AB}.Release|x86.ActiveCfg = Release|x86
 		{F3910A6A-D4DA-4673-8C6C-BB7BD40D65AB}.Release|x86.Build.0 = Release|x86
+		{74D5B41D-2382-49D4-9DC9-32FB3F1513C9}.Debug|Any CPU.ActiveCfg = Debug
+		{74D5B41D-2382-49D4-9DC9-32FB3F1513C9}.Debug|Mixed Platforms.ActiveCfg = Debug
+		{74D5B41D-2382-49D4-9DC9-32FB3F1513C9}.Debug|x86.ActiveCfg = Debug
+		{74D5B41D-2382-49D4-9DC9-32FB3F1513C9}.Release|Any CPU.ActiveCfg = Release
+		{74D5B41D-2382-49D4-9DC9-32FB3F1513C9}.Release|Mixed Platforms.ActiveCfg = Release
+		{74D5B41D-2382-49D4-9DC9-32FB3F1513C9}.Release|x86.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
