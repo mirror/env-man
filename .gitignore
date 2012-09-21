@@ -7,3 +7,8 @@
 /EnvManWF/EnvMan.Tests/EnvManTest/obj
 /EnvManWF/EnvMan/EnvManager/bin
 /EnvManWF/EnvMan/EnvManager/obj
+/EnvManWF/EnvManSetup/*.user
+/EnvManWF/EnvManSetup/bin
+/EnvManWF/EnvManSetup/obj
+/EnvManWF/EnvManWFSetup/Debug
+/EnvManWF/EnvManWFSetup/Release
