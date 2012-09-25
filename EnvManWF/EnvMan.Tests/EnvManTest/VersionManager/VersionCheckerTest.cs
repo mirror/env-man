@@ -7,7 +7,7 @@
 // </author>
 //------------------------------------------------------------------------
 
-// EnvMan - The Open-Source Windows Environment Variables Manager
+// EnvMan - The Open-Source Environment Variables Manager
 // Copyright (C) 2006-2013 SETCHIN Freelance Consulting 
 // <http://www.setchinfc.com.au>
 // EnvMan Development Group: <mailto:envman-dev@googlegroups.com>
@@ -25,12 +25,12 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-namespace Envman.Tests.VersionManager
+namespace SFC.EnvMan.Tests.VersionManager
 {
     using System;
 
-    using Envman.VersionManager;
-    using Envman.VersionManager.VersionInformation;
+    using SFC.EnvMan.VersionManager;
+    using SFC.EnvMan.VersionManager.VersionInformation;
     using NUnit.Framework;
 
     /// <summary>
@@ -145,7 +145,7 @@ namespace Envman.Tests.VersionManager
         /// Handles the VersionChecked event of the versionChecker control.
         /// </summary>
         /// <param name="sender">The source of the event.</param>
-        /// <param name="e">The <see cref="Envman.VersionManager.NewVersionEventArgs"/> instance containing the event data.</param>
+        /// <param name="e">The <see cref="SFC.EnvMan.VersionManager.NewVersionEventArgs"/> instance containing the event data.</param>
         private void VersionChecker_VersionChecked(
             object sender, NewVersionEventArgs e)
         {

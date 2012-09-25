@@ -7,7 +7,7 @@
 // </author>
 //------------------------------------------------------------------------
 
-// EnvMan - The Open-Source Windows Environment Variables Manager
+// EnvMan - The Open-Source Environment Variables Manager
 // Copyright (C) 2006-2013 SETCHIN Freelance Consulting 
 // <http://www.setchinfc.com.au>
 // EnvMan Development Group: <mailto:envman-dev@googlegroups.com>
@@ -25,9 +25,9 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-using EnvManager.Properties;
+using SFC.EnvMan.Properties;
 
-namespace EnvManager
+namespace SFC.EnvMan
 {
     partial class EnvManager
     {
@@ -125,14 +125,14 @@ namespace EnvManager
             // 
             this.btnDeleteUserVariable.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnDeleteUserVariable.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDeleteUserVariable.Image = global::EnvManager.Properties.Resources.delete;
+            this.btnDeleteUserVariable.Image = global::SFC.EnvMan.Properties.Resources.delete;
             this.btnDeleteUserVariable.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnDeleteUserVariable.Location = new System.Drawing.Point(268, 168);
             this.btnDeleteUserVariable.Name = "btnDeleteUserVariable";
             this.btnDeleteUserVariable.Size = new System.Drawing.Size(84, 23);
             this.btnDeleteUserVariable.TabIndex = 7;
             this.btnDeleteUserVariable.Text = "&Delete";
-            this.toolTip.SetToolTip(this.btnDeleteUserVariable, global::EnvManager.Properties.Resources.ToolTipDeleteVariable);
+            this.toolTip.SetToolTip(this.btnDeleteUserVariable, global::SFC.EnvMan.Properties.Resources.ToolTipDeleteVariable);
             this.btnDeleteUserVariable.UseVisualStyleBackColor = true;
             this.btnDeleteUserVariable.Click += new System.EventHandler(this.BtnClick);
             // 
@@ -140,14 +140,14 @@ namespace EnvManager
             // 
             this.btnEditUserVariable.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnEditUserVariable.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEditUserVariable.Image = global::EnvManager.Properties.Resources.Edit;
+            this.btnEditUserVariable.Image = global::SFC.EnvMan.Properties.Resources.Edit;
             this.btnEditUserVariable.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnEditUserVariable.Location = new System.Drawing.Point(178, 168);
             this.btnEditUserVariable.Name = "btnEditUserVariable";
             this.btnEditUserVariable.Size = new System.Drawing.Size(84, 23);
             this.btnEditUserVariable.TabIndex = 6;
             this.btnEditUserVariable.Text = "&Edit";
-            this.toolTip.SetToolTip(this.btnEditUserVariable, global::EnvManager.Properties.Resources.ToolTipEditVariable);
+            this.toolTip.SetToolTip(this.btnEditUserVariable, global::SFC.EnvMan.Properties.Resources.ToolTipEditVariable);
             this.btnEditUserVariable.UseVisualStyleBackColor = true;
             this.btnEditUserVariable.Click += new System.EventHandler(this.BtnClick);
             // 
@@ -155,14 +155,14 @@ namespace EnvManager
             // 
             this.btnNewUserVariable.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnNewUserVariable.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNewUserVariable.Image = global::EnvManager.Properties.Resources.NewRecord;
+            this.btnNewUserVariable.Image = global::SFC.EnvMan.Properties.Resources.NewRecord;
             this.btnNewUserVariable.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnNewUserVariable.Location = new System.Drawing.Point(88, 168);
             this.btnNewUserVariable.Name = "btnNewUserVariable";
             this.btnNewUserVariable.Size = new System.Drawing.Size(84, 23);
             this.btnNewUserVariable.TabIndex = 5;
             this.btnNewUserVariable.Text = "&New";
-            this.toolTip.SetToolTip(this.btnNewUserVariable, global::EnvManager.Properties.Resources.ToolTipCreateNewVariable);
+            this.toolTip.SetToolTip(this.btnNewUserVariable, global::SFC.EnvMan.Properties.Resources.ToolTipCreateNewVariable);
             this.btnNewUserVariable.UseVisualStyleBackColor = true;
             this.btnNewUserVariable.Click += new System.EventHandler(this.BtnClick);
             // 
@@ -226,14 +226,14 @@ namespace EnvManager
             // 
             this.btnDeleteSystemVariable.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnDeleteSystemVariable.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDeleteSystemVariable.Image = global::EnvManager.Properties.Resources.delete;
+            this.btnDeleteSystemVariable.Image = global::SFC.EnvMan.Properties.Resources.delete;
             this.btnDeleteSystemVariable.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnDeleteSystemVariable.Location = new System.Drawing.Point(268, 184);
             this.btnDeleteSystemVariable.Name = "btnDeleteSystemVariable";
             this.btnDeleteSystemVariable.Size = new System.Drawing.Size(84, 23);
             this.btnDeleteSystemVariable.TabIndex = 7;
             this.btnDeleteSystemVariable.Text = "De&lete";
-            this.toolTip.SetToolTip(this.btnDeleteSystemVariable, global::EnvManager.Properties.Resources.ToolTipDeleteVariable);
+            this.toolTip.SetToolTip(this.btnDeleteSystemVariable, global::SFC.EnvMan.Properties.Resources.ToolTipDeleteVariable);
             this.btnDeleteSystemVariable.UseVisualStyleBackColor = true;
             this.btnDeleteSystemVariable.Click += new System.EventHandler(this.BtnClick);
             // 
@@ -241,14 +241,14 @@ namespace EnvManager
             // 
             this.btnEditSystemVariable.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnEditSystemVariable.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEditSystemVariable.Image = global::EnvManager.Properties.Resources.Edit;
+            this.btnEditSystemVariable.Image = global::SFC.EnvMan.Properties.Resources.Edit;
             this.btnEditSystemVariable.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnEditSystemVariable.Location = new System.Drawing.Point(178, 184);
             this.btnEditSystemVariable.Name = "btnEditSystemVariable";
             this.btnEditSystemVariable.Size = new System.Drawing.Size(84, 23);
             this.btnEditSystemVariable.TabIndex = 6;
             this.btnEditSystemVariable.Text = "Ed&it";
-            this.toolTip.SetToolTip(this.btnEditSystemVariable, global::EnvManager.Properties.Resources.ToolTipEditVariable);
+            this.toolTip.SetToolTip(this.btnEditSystemVariable, global::SFC.EnvMan.Properties.Resources.ToolTipEditVariable);
             this.btnEditSystemVariable.UseVisualStyleBackColor = true;
             this.btnEditSystemVariable.Click += new System.EventHandler(this.BtnClick);
             // 
@@ -256,14 +256,14 @@ namespace EnvManager
             // 
             this.btnNewSystemVariable.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnNewSystemVariable.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNewSystemVariable.Image = global::EnvManager.Properties.Resources.NewRecord;
+            this.btnNewSystemVariable.Image = global::SFC.EnvMan.Properties.Resources.NewRecord;
             this.btnNewSystemVariable.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnNewSystemVariable.Location = new System.Drawing.Point(88, 184);
             this.btnNewSystemVariable.Name = "btnNewSystemVariable";
             this.btnNewSystemVariable.Size = new System.Drawing.Size(84, 23);
             this.btnNewSystemVariable.TabIndex = 5;
             this.btnNewSystemVariable.Text = "Ne&w";
-            this.toolTip.SetToolTip(this.btnNewSystemVariable, global::EnvManager.Properties.Resources.ToolTipCreateNewVariable);
+            this.toolTip.SetToolTip(this.btnNewSystemVariable, global::SFC.EnvMan.Properties.Resources.ToolTipCreateNewVariable);
             this.btnNewSystemVariable.UseVisualStyleBackColor = true;
             this.btnNewSystemVariable.Click += new System.EventHandler(this.BtnClick);
             // 

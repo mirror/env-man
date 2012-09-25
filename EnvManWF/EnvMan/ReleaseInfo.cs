@@ -7,7 +7,7 @@
 // </author>
 //------------------------------------------------------------------------
 
-// EnvMan - The Open-Source Windows Environment Variables Manager
+// EnvMan - The Open-Source Environment Variables Manager
 // Copyright (C) 2006-2013 SETCHIN Freelance Consulting 
 // <http://www.setchinfc.com.au>
 // EnvMan Development Group: <mailto:envman-dev@googlegroups.com>
@@ -29,8 +29,8 @@ using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
-[assembly: AssemblyTitle("Windows Environment Variables Manager")]
-[assembly: AssemblyProduct("Windows Environment Variables Manager")]
+[assembly: AssemblyTitle("Environment Variables Manager")]
+[assembly: AssemblyProduct("Environment Variables Manager")]
 [assembly: AssemblyDescription("This program is distributed under the terms of the GNU General Public License v3 or later.")]
 [assembly: AssemblyCompany("SETCHIN Freelance Consulting")]
 [assembly: AssemblyCopyright("Copyright © SETCHIN Freelance Consulting 2013")]

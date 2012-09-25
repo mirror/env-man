@@ -7,7 +7,7 @@
 // </author>
 //------------------------------------------------------------------------
 
-// EnvMan - The Open-Source Windows Environment Variables Manager
+// EnvMan - The Open-Source Environment Variables Manager
 // Copyright (C) 2006-2013 SETCHIN Freelance Consulting 
 // <http://www.setchinfc.com.au>
 // EnvMan Development Group: <mailto:envman-dev@googlegroups.com>
@@ -25,7 +25,7 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-namespace EnvManager
+namespace SFC.EnvMan
 {
     partial class FrmAbout
     {
@@ -109,7 +109,7 @@ namespace EnvManager
             this.txtDescription.TabIndex = 42;
             this.txtDescription.TabStop = false;
             this.txtDescription.Text = "This program is distributed under the terms of the GNU General Public License v2 " +
-                "or later.";
+    "or later.";
             // 
             // okButton
             // 
@@ -124,7 +124,7 @@ namespace EnvManager
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::Envman.Properties.Resources.EnvMan;
+            this.pictureBox1.Image = global::SFC.EnvMan.Properties.Resources.EnvMan;
             this.pictureBox1.Location = new System.Drawing.Point(8, 12);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(96, 99);

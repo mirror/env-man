@@ -7,7 +7,7 @@
 // </author>
 //------------------------------------------------------------------------
 
-// EnvMan - The Open-Source Windows Environment Variables Manager
+// EnvMan - The Open-Source Environment Variables Manager
 // Copyright (C) 2006-2013 SETCHIN Freelance Consulting 
 // <http://www.setchinfc.com.au>
 // EnvMan Development Group: <mailto:envman-dev@googlegroups.com>
@@ -29,7 +29,7 @@ namespace Envman.Tests.VersionManager.VersionInformation
 {
     using System;
     using System.IO;
-    using Envman.VersionManager.VersionInformation;
+    using SFC.EnvMan.VersionManager.VersionInformation;
     using NUnit.Framework;
 
     /// <summary>

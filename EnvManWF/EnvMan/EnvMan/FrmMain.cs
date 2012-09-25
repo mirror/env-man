@@ -7,7 +7,7 @@
 // </author>
 //------------------------------------------------------------------------
 
-// EnvMan - The Open-Source Windows Environment Variables Manager
+// EnvMan - The Open-Source Environment Variables Manager
 // Copyright (C) 2006-2013 SETCHIN Freelance Consulting 
 // <http://www.setchinfc.com.au>
 // EnvMan Development Group: <mailto:envman-dev@googlegroups.com>
@@ -25,15 +25,14 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-namespace Envman
+namespace SFC.EnvMan
 {
     using System;
     using System.ComponentModel;
     using System.Drawing;
     using System.Windows.Forms;
-    using Envman.VersionManager;
-    using Envman.VersionManager.VersionInformation;
-    using EnvManager;
+    using SFC.EnvMan.VersionManager;
+    using SFC.EnvMan.VersionManager.VersionInformation;
 
     /// <summary>
     /// Main Form Class

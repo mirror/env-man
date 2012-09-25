@@ -8,9 +8,10 @@
     <ProjectGuid>{2704D52D-4FE5-49C1-8FCE-9619155B01F6}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Envman</RootNamespace>
-    <AssemblyName>Envman</AssemblyName>
-    <StartupObject>Envman.Program</StartupObject>
+    <RootNamespace>SFC.EnvMan</RootNamespace>
+    <AssemblyName>EnvMan</AssemblyName>
+    <StartupObject>
+    </StartupObject>
     <ApplicationIcon>EnvManICO.ico</ApplicationIcon>
     <FileUpgradeFlags>
     </FileUpgradeFlags>

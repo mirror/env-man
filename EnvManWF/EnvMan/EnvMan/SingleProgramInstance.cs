@@ -7,7 +7,7 @@
 // </author>
 //------------------------------------------------------------------------
 
-// EnvMan - The Open-Source Windows Environment Variables Manager
+// EnvMan - The Open-Source Environment Variables Manager
 // Copyright (C) 2006-2013 SETCHIN Freelance Consulting 
 // <http://www.setchinfc.com.au>
 // EnvMan Development Group: <mailto:envman-dev@googlegroups.com>
@@ -27,7 +27,7 @@
 
 // This code is borrowed from Code Project post by Michael Potter
 // http://www.codeproject.com/KB/cs/cssingprocess.aspx
-namespace Envman
+namespace SFC.EnvMan
 {
     using System;
     using System.Diagnostics;

@@ -7,7 +7,7 @@
 // </author>
 //------------------------------------------------------------------------
 
-// EnvMan - The Open-Source Windows Environment Variables Manager
+// EnvMan - The Open-Source Environment Variables Manager
 // Copyright (C) 2006-2013 SETCHIN Freelance Consulting 
 // <http://www.setchinfc.com.au>
 // EnvMan Development Group: <mailto:envman-dev@googlegroups.com>
@@ -25,7 +25,7 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-namespace Envman
+namespace SFC.EnvMan
 {
     partial class FrmMain
     {
@@ -77,7 +77,7 @@ namespace Envman
             this.TsmiNewVersionInfo = new System.Windows.Forms.ToolStripMenuItem();
             this.tsMain = new System.Windows.Forms.StatusStrip();
             this.tslblStatus = new System.Windows.Forms.ToolStripStatusLabel();
-            this.envManager = new EnvManager.EnvManager();
+            this.envManager = new EnvManager();
             this.msMain.SuspendLayout();
             this.tsMain.SuspendLayout();
             this.SuspendLayout();
@@ -118,7 +118,7 @@ namespace Envman
             // 
             // TsmiExit
             // 
-            this.TsmiExit.Image = global::Envman.Properties.Resources.ShutDown;
+            this.TsmiExit.Image = global::SFC.EnvMan.Properties.Resources.ShutDown;
             this.TsmiExit.Name = "TsmiExit";
             this.TsmiExit.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.X)));
             this.TsmiExit.Size = new System.Drawing.Size(133, 22);
@@ -145,7 +145,7 @@ namespace Envman
             // 
             // TsmiProjectiWebsite
             // 
-            this.TsmiProjectiWebsite.Image = global::Envman.Properties.Resources.Website;
+            this.TsmiProjectiWebsite.Image = global::SFC.EnvMan.Properties.Resources.Website;
             this.TsmiProjectiWebsite.Name = "TsmiProjectiWebsite";
             this.TsmiProjectiWebsite.Size = new System.Drawing.Size(233, 22);
             this.TsmiProjectiWebsite.Text = "EnvMan &Project Website...";
@@ -157,14 +157,14 @@ namespace Envman
             this.TsmiJoinForum,
             this.TsmiAskAQuestion,
             this.TsmiForumWebsite});
-            this.TsmiForum.Image = global::Envman.Properties.Resources.News;
+            this.TsmiForum.Image = global::SFC.EnvMan.Properties.Resources.News;
             this.TsmiForum.Name = "TsmiForum";
             this.TsmiForum.Size = new System.Drawing.Size(233, 22);
             this.TsmiForum.Text = "EnvMan &Forum...";
             // 
             // TsmiJoinForum
             // 
-            this.TsmiJoinForum.Image = global::Envman.Properties.Resources.Members;
+            this.TsmiJoinForum.Image = global::SFC.EnvMan.Properties.Resources.Members;
             this.TsmiJoinForum.Name = "TsmiJoinForum";
             this.TsmiJoinForum.Size = new System.Drawing.Size(163, 22);
             this.TsmiJoinForum.Text = "&Join Forum...";
@@ -172,7 +172,7 @@ namespace Envman
             // 
             // TsmiAskAQuestion
             // 
-            this.TsmiAskAQuestion.Image = global::Envman.Properties.Resources.Mail;
+            this.TsmiAskAQuestion.Image = global::SFC.EnvMan.Properties.Resources.Mail;
             this.TsmiAskAQuestion.Name = "TsmiAskAQuestion";
             this.TsmiAskAQuestion.Size = new System.Drawing.Size(163, 22);
             this.TsmiAskAQuestion.Text = "Ask a &Question...";
@@ -180,7 +180,7 @@ namespace Envman
             // 
             // TsmiForumWebsite
             // 
-            this.TsmiForumWebsite.Image = global::Envman.Properties.Resources.Forum;
+            this.TsmiForumWebsite.Image = global::SFC.EnvMan.Properties.Resources.Forum;
             this.TsmiForumWebsite.Name = "TsmiForumWebsite";
             this.TsmiForumWebsite.Size = new System.Drawing.Size(163, 22);
             this.TsmiForumWebsite.Text = "Forum Website...";
@@ -188,7 +188,7 @@ namespace Envman
             // 
             // TsmiDonate
             // 
-            this.TsmiDonate.Image = global::Envman.Properties.Resources.SupportProject;
+            this.TsmiDonate.Image = global::SFC.EnvMan.Properties.Resources.SupportProject;
             this.TsmiDonate.Name = "TsmiDonate";
             this.TsmiDonate.Size = new System.Drawing.Size(233, 22);
             this.TsmiDonate.Text = "&Support this Project...";
@@ -196,7 +196,7 @@ namespace Envman
             // 
             // TsmiPostFeedbackOrBugReport
             // 
-            this.TsmiPostFeedbackOrBugReport.Image = global::Envman.Properties.Resources.SendFeedback;
+            this.TsmiPostFeedbackOrBugReport.Image = global::SFC.EnvMan.Properties.Resources.SendFeedback;
             this.TsmiPostFeedbackOrBugReport.Name = "TsmiPostFeedbackOrBugReport";
             this.TsmiPostFeedbackOrBugReport.Size = new System.Drawing.Size(233, 22);
             this.TsmiPostFeedbackOrBugReport.Text = "Post feedback or bug report ...";
@@ -209,7 +209,7 @@ namespace Envman
             // 
             // TsmiLanguage
             // 
-            this.TsmiLanguage.Image = global::Envman.Properties.Resources.Language;
+            this.TsmiLanguage.Image = global::SFC.EnvMan.Properties.Resources.Language;
             this.TsmiLanguage.Name = "TsmiLanguage";
             this.TsmiLanguage.Size = new System.Drawing.Size(233, 22);
             this.TsmiLanguage.Text = "&Language";
@@ -217,7 +217,7 @@ namespace Envman
             // 
             // TsmiCheckForUpdates
             // 
-            this.TsmiCheckForUpdates.Image = global::Envman.Properties.Resources.Updates;
+            this.TsmiCheckForUpdates.Image = global::SFC.EnvMan.Properties.Resources.Updates;
             this.TsmiCheckForUpdates.Name = "TsmiCheckForUpdates";
             this.TsmiCheckForUpdates.Size = new System.Drawing.Size(233, 22);
             this.TsmiCheckForUpdates.Text = "Check for &Updates...";
@@ -230,7 +230,7 @@ namespace Envman
             // 
             // TsmiAbout
             // 
-            this.TsmiAbout.Image = global::Envman.Properties.Resources.EnvManAbout;
+            this.TsmiAbout.Image = global::SFC.EnvMan.Properties.Resources.EnvManAbout;
             this.TsmiAbout.Name = "TsmiAbout";
             this.TsmiAbout.Size = new System.Drawing.Size(233, 22);
             this.TsmiAbout.Text = "&About";
@@ -238,7 +238,7 @@ namespace Envman
             // 
             // TsmiNewVersionInfo
             // 
-            this.TsmiNewVersionInfo.Image = global::Envman.Properties.Resources.Updates;
+            this.TsmiNewVersionInfo.Image = global::SFC.EnvMan.Properties.Resources.Updates;
             this.TsmiNewVersionInfo.Name = "TsmiNewVersionInfo";
             this.TsmiNewVersionInfo.Size = new System.Drawing.Size(101, 20);
             this.TsmiNewVersionInfo.Text = " Version Info";
@@ -298,7 +298,7 @@ namespace Envman
 
         #endregion
 
-        private EnvManager.EnvManager envManager;
+        private SFC.EnvMan.EnvManager envManager;
         private System.Windows.Forms.MenuStrip msMain;
         private System.Windows.Forms.ToolStripMenuItem TsmiFile;
         private System.Windows.Forms.ToolStripMenuItem TsmiExit;

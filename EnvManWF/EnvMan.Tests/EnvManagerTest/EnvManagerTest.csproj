@@ -8,7 +8,7 @@
     <ProjectGuid>{44087B80-BE0A-4B01-BC84-45D5AEEF2C39}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>EnvManager.Tests</RootNamespace>
+    <RootNamespace>SFC.EnvMan.Tests</RootNamespace>
     <AssemblyName>EnvManagerTest</AssemblyName>
     <FileUpgradeFlags>
     </FileUpgradeFlags>

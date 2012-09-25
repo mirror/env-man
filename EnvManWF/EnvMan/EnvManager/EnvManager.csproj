@@ -8,7 +8,7 @@
     <ProjectGuid>{93A8FFFE-31F3-405B-92A7-3BF9DAB60EF7}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>EnvManager</RootNamespace>
+    <RootNamespace>SFC.EnvMan</RootNamespace>
     <AssemblyName>EnvManager</AssemblyName>
     <FileUpgradeFlags>
     </FileUpgradeFlags>

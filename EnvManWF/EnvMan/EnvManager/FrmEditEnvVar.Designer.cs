@@ -1,5 +1,5 @@
 /*
-   EnvMan - The Open-Source Windows Environment Variables Manager
+   EnvMan - The Open-Source Environment Variables Manager
    Copyright (C) 2006-2009 Vlad Setchin <envman-dev@googlegroups.com>
 
    This program is free software: you can redistribute it and/or modify
@@ -16,7 +16,7 @@
    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
-namespace EnvManager
+namespace SFC.EnvMan
 {
     partial class FrmEditEnvVar
     {
@@ -155,7 +155,7 @@ namespace EnvManager
             // 
             // tsmiLocateInWindowsExplorer
             // 
-            this.tsmiLocateInWindowsExplorer.Image = global::EnvManager.Properties.Resources.FolderExplore;
+            this.tsmiLocateInWindowsExplorer.Image = global::SFC.EnvMan.Properties.Resources.FolderExplore;
             this.tsmiLocateInWindowsExplorer.Name = "tsmiLocateInWindowsExplorer";
             this.tsmiLocateInWindowsExplorer.Size = new System.Drawing.Size(219, 22);
             this.tsmiLocateInWindowsExplorer.Text = "Locate in Windows Explorer";
@@ -164,7 +164,7 @@ namespace EnvManager
             // btnBrowse
             // 
             this.btnBrowse.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnBrowse.Image = global::EnvManager.Properties.Resources.ValTypeFolder;
+            this.btnBrowse.Image = global::SFC.EnvMan.Properties.Resources.ValTypeFolder;
             this.btnBrowse.Location = new System.Drawing.Point(285, 225);
             this.btnBrowse.Name = "btnBrowse";
             this.btnBrowse.Size = new System.Drawing.Size(24, 23);
@@ -176,7 +176,7 @@ namespace EnvManager
             // btnMoveTop
             // 
             this.btnMoveTop.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnMoveTop.Image = global::EnvManager.Properties.Resources.MoveTop;
+            this.btnMoveTop.Image = global::SFC.EnvMan.Properties.Resources.MoveTop;
             this.btnMoveTop.Location = new System.Drawing.Point(285, 110);
             this.btnMoveTop.Name = "btnMoveTop";
             this.btnMoveTop.Size = new System.Drawing.Size(24, 23);
@@ -188,7 +188,7 @@ namespace EnvManager
             // btnMoveBottom
             // 
             this.btnMoveBottom.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnMoveBottom.Image = global::EnvManager.Properties.Resources.MoveBottom;
+            this.btnMoveBottom.Image = global::SFC.EnvMan.Properties.Resources.MoveBottom;
             this.btnMoveBottom.Location = new System.Drawing.Point(285, 196);
             this.btnMoveBottom.Name = "btnMoveBottom";
             this.btnMoveBottom.Size = new System.Drawing.Size(24, 23);
@@ -200,7 +200,7 @@ namespace EnvManager
             // btnMoveDown
             // 
             this.btnMoveDown.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnMoveDown.Image = global::EnvManager.Properties.Resources.MoveDown;
+            this.btnMoveDown.Image = global::SFC.EnvMan.Properties.Resources.MoveDown;
             this.btnMoveDown.Location = new System.Drawing.Point(285, 168);
             this.btnMoveDown.Name = "btnMoveDown";
             this.btnMoveDown.Size = new System.Drawing.Size(24, 23);
@@ -213,7 +213,7 @@ namespace EnvManager
             // btnMoveUp
             // 
             this.btnMoveUp.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnMoveUp.Image = global::EnvManager.Properties.Resources.MoveUp;
+            this.btnMoveUp.Image = global::SFC.EnvMan.Properties.Resources.MoveUp;
             this.btnMoveUp.Location = new System.Drawing.Point(285, 139);
             this.btnMoveUp.Name = "btnMoveUp";
             this.btnMoveUp.Size = new System.Drawing.Size(24, 23);
@@ -227,7 +227,7 @@ namespace EnvManager
             this.btnCancel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancel.Image = global::EnvManager.Properties.Resources.Cancel;
+            this.btnCancel.Image = global::SFC.EnvMan.Properties.Resources.Cancel;
             this.btnCancel.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnCancel.Location = new System.Drawing.Point(226, 375);
             this.btnCancel.Name = "btnCancel";
@@ -242,7 +242,7 @@ namespace EnvManager
             // 
             this.btnSave.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSave.Image = global::EnvManager.Properties.Resources.Save;
+            this.btnSave.Image = global::SFC.EnvMan.Properties.Resources.Save;
             this.btnSave.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSave.Location = new System.Drawing.Point(140, 375);
             this.btnSave.Name = "btnSave";
@@ -256,7 +256,7 @@ namespace EnvManager
             // btnDelete
             // 
             this.btnDelete.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnDelete.Image = global::EnvManager.Properties.Resources.delete;
+            this.btnDelete.Image = global::SFC.EnvMan.Properties.Resources.delete;
             this.btnDelete.Location = new System.Drawing.Point(285, 254);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(24, 23);
@@ -268,7 +268,7 @@ namespace EnvManager
             // btnImport
             // 
             this.btnImport.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnImport.Image = global::EnvManager.Properties.Resources.Import;
+            this.btnImport.Image = global::SFC.EnvMan.Properties.Resources.Import;
             this.btnImport.Location = new System.Drawing.Point(285, 39);
             this.btnImport.Name = "btnImport";
             this.btnImport.Size = new System.Drawing.Size(24, 23);
@@ -280,7 +280,7 @@ namespace EnvManager
             // btnExport
             // 
             this.btnExport.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnExport.Image = global::EnvManager.Properties.Resources.Export;
+            this.btnExport.Image = global::SFC.EnvMan.Properties.Resources.Export;
             this.btnExport.Location = new System.Drawing.Point(285, 68);
             this.btnExport.Name = "btnExport";
             this.btnExport.Size = new System.Drawing.Size(24, 23);
@@ -292,7 +292,7 @@ namespace EnvManager
             // btnUndo
             // 
             this.btnUndo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnUndo.Image = global::EnvManager.Properties.Resources.Undo;
+            this.btnUndo.Image = global::SFC.EnvMan.Properties.Resources.Undo;
             this.btnUndo.Location = new System.Drawing.Point(285, 297);
             this.btnUndo.Name = "btnUndo";
             this.btnUndo.Size = new System.Drawing.Size(24, 23);
@@ -304,7 +304,7 @@ namespace EnvManager
             // btnRedo
             // 
             this.btnRedo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnRedo.Image = global::EnvManager.Properties.Resources.Redo;
+            this.btnRedo.Image = global::SFC.EnvMan.Properties.Resources.Redo;
             this.btnRedo.Location = new System.Drawing.Point(285, 326);
             this.btnRedo.Name = "btnRedo";
             this.btnRedo.Size = new System.Drawing.Size(24, 23);
