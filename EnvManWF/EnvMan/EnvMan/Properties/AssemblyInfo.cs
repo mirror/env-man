@@ -28,6 +28,7 @@
 using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
+using System.Resources;
 
 //// General Information about an assembly is controlled through the following 
 //// set of attributes. Change these attribute values to modify the information
@@ -44,3 +45,4 @@ using System.Runtime.InteropServices;
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
 [assembly: Guid("6c0e7d02-7f78-4793-b3dc-5078432d9ca5")]
+[assembly: NeutralResourcesLanguageAttribute("en-AU")]

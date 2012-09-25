@@ -72,7 +72,7 @@
   <ItemGroup>
     <ProjectReference Include="..\..\EnvMan\EnvMan\EnvMan.csproj">
       <Project>{2704D52D-4FE5-49C1-8FCE-9619155B01F6}</Project>
-      <Name>EnvMan %28EnvMan\EnvMan%29</Name>
+      <Name>EnvMan</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
