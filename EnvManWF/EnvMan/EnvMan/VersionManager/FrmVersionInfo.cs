@@ -91,11 +91,11 @@ namespace SFC.EnvMan.VersionManager
         private void BtnClick(object sender, EventArgs e)
 #endif
         {
-            if (sender.Equals(btnCancel))
+            if (sender.Equals(this.btnCancel))
             {
                 this.DialogResult = DialogResult.Cancel;
             }
-            else if (sender.Equals(btnOK))
+            else if (sender.Equals(this.btnOK))
             {
                 this.DialogResult = DialogResult.OK;
             }

@@ -168,10 +168,10 @@ namespace SFC.EnvMan.Handlers
         /// Added by Mariusz Ficek
         /// </summary>
         /// <param name="rowIndex">Index of the row.</param>
-        /// <param name="varValue">The var value.</param>
-        public void SetRowIcon(int rowIndex, string varValue)
+        /// <param name="variableValue">The variable value.</param>
+        public void SetRowIcon(int rowIndex, string variableValue)
         {
-            string value = Environment.ExpandEnvironmentVariables(varValue);
+            string value = Environment.ExpandEnvironmentVariables(variableValue);
             string toolTipMsg = string.Empty;
             DataGridViewCell cell = this.dgv.Rows[rowIndex].Cells[0];
             cell.Value = this.IconValueType(value, ref toolTipMsg);
@@ -182,39 +182,39 @@ namespace SFC.EnvMan.Handlers
         /// Sets the string value to row.
         /// </summary>
         /// <param name="rowIndex">Index of the row.</param>
-        /// <param name="varValue">The variable value.</param>
-        public void SetRowValue(int rowIndex, string varValue)
+        /// <param name="variableValue">The variable value.</param>
+        public void SetRowValue(int rowIndex, string variableValue)
         {
             DataGridViewCell cell = this.dgv.Rows[rowIndex].Cells[1];
-            cell.Value = varValue;
+            cell.Value = variableValue;
         }
 
         /// <summary>
         /// Sets the cell tool tip.
         /// </summary>
         /// <param name="rowIndex">Index of the row.</param>
-        /// <param name="varValue">The variable value.</param>
-        public void SetCellToolTip(int rowIndex, string varValue)
+        /// <param name="variableValue">The variable value.</param>
+        public void SetCellToolTip(int rowIndex, string variableValue)
         {
-            if (varValue.Contains("%"))
+            if (variableValue.Contains("%"))
             {
                 DataGridViewCell cell = this.dgv.Rows[rowIndex].Cells[1];
-                cell.ToolTipText = Environment.ExpandEnvironmentVariables(varValue);
+                cell.ToolTipText = Environment.ExpandEnvironmentVariables(variableValue);
             }
         }
 
         /// <summary>
         /// Adds a new row to grid.
         /// </summary>
-        /// <param name="varValue">The variable value.</param>
+        /// <param name="variableValue">The variable value.</param>
         /// <returns>index of the added row</returns>
-        public int AddRow(string varValue)
+        public int AddRow(string variableValue)
         {
             int rowIndex = this.dgv.Rows.Add();
 
-            this.SetRowValue(rowIndex, varValue);
-            this.SetRowIcon(rowIndex, varValue);
-            this.SetCellToolTip(rowIndex, varValue);
+            this.SetRowValue(rowIndex, variableValue);
+            this.SetRowIcon(rowIndex, variableValue);
+            this.SetCellToolTip(rowIndex, variableValue);
 
             return rowIndex;
         }
@@ -222,10 +222,10 @@ namespace SFC.EnvMan.Handlers
         /// <summary>
         /// Adds the rows.
         /// </summary>
-        /// <param name="varValues">The variable values.</param>
-        public void AddRows(string varValues)
+        /// <param name="variableValues">The variable values.</param>
+        public void AddRows(string variableValues)
         {
-            string[] values = varValues.Split(Separator);
+            string[] values = variableValues.Split(Separator);
 
             foreach (string value in values)
             {
@@ -236,7 +236,7 @@ namespace SFC.EnvMan.Handlers
         /// <summary>
         /// Adds the rows.
         /// </summary>
-        /// <param name="varValues">The var values.</param>
+        /// <param name="varValues">The variable values.</param>
         /// <param name="markAsAdded">if set to <c>true</c> [mark as added].</param>
         public void AddRows(string varValues, bool markAsAdded)
         {

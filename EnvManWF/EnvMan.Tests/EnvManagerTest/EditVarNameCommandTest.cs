@@ -28,9 +28,8 @@
 namespace SFC.EnvMan.Tests
 {
     using System.Windows.Forms;
-
-    using global::SFC.EnvMan.Handlers;
     using NUnit.Framework;
+    using global::SFC.EnvMan.Handlers;
 
     /// <summary>
     /// Test Edit Environment Variable Command
@@ -41,12 +40,12 @@ namespace SFC.EnvMan.Tests
         /// <summary>
         /// Name of the variable
         /// </summary>
-        private const string VarName = "Var Name";
+        private const string VariableName = "Variable Name";
 
         /// <summary>
         /// Name of the new Variable Name
         /// </summary>
-        private const string NewVarName = "New Var Name";
+        private const string NewVarName = "New Variable Name";
 
         /// <summary>
         /// Text Box Control
@@ -65,7 +64,7 @@ namespace SFC.EnvMan.Tests
         public void SetUp()
         {
             this.txtBox = new TextBox();
-            this.txtBox.Text = VarName;
+            this.txtBox.Text = VariableName;
             this.editVarNameCommand = new EditVarNameCommand(this.txtBox);
         }
 
@@ -87,10 +86,10 @@ namespace SFC.EnvMan.Tests
             this.txtBox.Text = NewVarName;
             this.editVarNameCommand.NewVarName = NewVarName;
             Assert.AreNotEqual(
-                this.editVarNameCommand.CurrentVarName, this.txtBox.Text);
+                this.editVarNameCommand.CurrentVariableName, this.txtBox.Text);
             this.editVarNameCommand.Undo();
             Assert.AreEqual(
-                this.editVarNameCommand.CurrentVarName, this.txtBox.Text);
+                this.editVarNameCommand.CurrentVariableName, this.txtBox.Text);
         }
 
         /// <summary>
@@ -102,13 +101,13 @@ namespace SFC.EnvMan.Tests
             this.txtBox.Text = NewVarName;
             this.editVarNameCommand.NewVarName = NewVarName;
             Assert.AreNotEqual(
-                this.editVarNameCommand.CurrentVarName, this.txtBox.Text);
+                this.editVarNameCommand.CurrentVariableName, this.txtBox.Text);
             this.editVarNameCommand.Undo();
             Assert.AreEqual(
-                this.editVarNameCommand.CurrentVarName, this.txtBox.Text);
+                this.editVarNameCommand.CurrentVariableName, this.txtBox.Text);
             this.editVarNameCommand.Redo();
             Assert.AreNotEqual(
-                this.editVarNameCommand.CurrentVarName, this.txtBox.Text);
+                this.editVarNameCommand.CurrentVariableName, this.txtBox.Text);
         }
     }
 }

@@ -184,10 +184,10 @@ namespace SFC.EnvMan
         }
 
         /// <summary>
-        /// Handles the FormClosed event of the FrmMain control.
+        /// Handles the FormClosed event of the Form Main control.
         /// </summary>
         /// <param name="sender">The source of the event.</param>
-        /// <param name="e">The <see cref="System.Windows.Forms.FormClosedEventArgs"/> instance containing the event data.</param> 
+        /// <param name="e">The <see cref="System.Windows.Forms.FormClosedEventArgs"/> instance containing the event data.</param>
         private void FrmMain_FormClosed(object sender, FormClosedEventArgs e)
         {
             this.SaveSettings();
@@ -202,70 +202,70 @@ namespace SFC.EnvMan
         {
             try
             {
-                if (sender.Equals(TsmiExit))
+                if (sender.Equals(this.TsmiExit))
                 {
                     Application.Exit();
                 }
-                else if (sender.Equals(TsmiAbout))
+                else if (sender.Equals(this.TsmiAbout))
                 {
                     this.frmAbout.ShowDialog();
                 }
-                else if (sender.Equals(TsmiDonate))
+                else if (sender.Equals(this.TsmiDonate))
                 {
                     System.Diagnostics.Process.Start(
                         @"http://env-man.blogspot.com/2007/12/donate.html");
                 }
-                else if (sender.Equals(TsmiPostFeedbackOrBugReport))
+                else if (sender.Equals(this.TsmiPostFeedbackOrBugReport))
                 {
                     System.Diagnostics.Process.Start(
                         @"http://sourceforge.net/tracker/?group_id=193626");
                 }
-                else if (sender.Equals(TsmiProjectiWebsite))
+                else if (sender.Equals(this.TsmiProjectiWebsite))
                 {
                     System.Diagnostics.Process.Start(
                 @"http://env-man.blogspot.com/2007/04/envman-user-guide.html");
                 }
-                else if (sender.Equals(TsmiForumWebsite))
+                else if (sender.Equals(this.TsmiForumWebsite))
                 {
                     System.Diagnostics.Process.Start(
                         @"http://groups.google.com/group/envman-bug");
                 }
-                else if (sender.Equals(TsmiDonate))
+                else if (sender.Equals(this.TsmiDonate))
                 {
                     System.Diagnostics.Process.Start(
                         @"http://env-man.blogspot.com/2007/12/donate.html");
                 }
-                else if (sender.Equals(TsmiPostFeedbackOrBugReport))
+                else if (sender.Equals(this.TsmiPostFeedbackOrBugReport))
                 {
                     System.Diagnostics.Process.Start(
                         @"http://sourceforge.net/tracker/?group_id=193626");
                 }
-                else if (sender.Equals(TsmiProjectiWebsite))
+                else if (sender.Equals(this.TsmiProjectiWebsite))
                 {
                     System.Diagnostics.Process.Start(
             @"http://env-man.blogspot.com/2007/04/envman-user-guide.html");
                 }
-                else if (sender.Equals(TsmiJoinForum))
+                else if (sender.Equals(this.TsmiJoinForum))
                 {
                     System.Diagnostics.Process.Start(
                         "mailto:envman-subscribe@googlegroups.com");
                 }
-                else if (sender.Equals(TsmiAskAQuestion))
+                else if (sender.Equals(this.TsmiAskAQuestion))
                 {
                     System.Diagnostics.Process.Start(
                         "mailto:envman-dev@googlegroups.com");
                 }
-                else if (sender.Equals(TsmiCheckForUpdates))
+                else if (sender.Equals(this.TsmiCheckForUpdates))
                 {
                     Application.DoEvents();
                     this.WorkerDoWork(null, null);
                 }
-                else if (sender.Equals(TsmiNewVersionInfo))
+                else if (sender.Equals(this.TsmiNewVersionInfo))
                 {
                     System.Diagnostics.Process.Start(
                         this.versionInfo.DownloadWebpageAddress);
                 }
-                else if (sender.Equals(TsmiSettings))
+                else if (sender.Equals(this.TsmiSettings))
                 {
                     FrmOptions settingsForm = new FrmOptions();
                     settingsForm.ShowDialog();
@@ -284,7 +284,7 @@ namespace SFC.EnvMan
         }
 
         /// <summary>
-        /// Handles the Shown event of the FrmMain control.
+        /// Handles the Shown event of the Form Main control.
         /// </summary>
         /// <param name="sender">The source of the event.</param>
         /// <param name="e">The <see cref="System.EventArgs"/> instance containing the event data.</param>
@@ -333,4 +333,3 @@ namespace SFC.EnvMan
         #endregion Private Functions
     }
 }
-                                                                                                                         

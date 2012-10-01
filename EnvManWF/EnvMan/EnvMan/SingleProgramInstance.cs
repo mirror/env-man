@@ -36,7 +36,7 @@ namespace SFC.EnvMan
     using System.Threading;
 
     /// <summary>
-    /// SingleProgamInstance uses a mutex synchronization object
+    /// SingleProgramInstance uses a mutex synchronization object
     /// to ensure that only one copy of process is running at
     /// a particular time.  It also allows for UI identification
     /// of the initial process by bring that window to the foreground.

@@ -48,12 +48,12 @@ namespace SFC.EnvMan.Handlers
         /// <summary>
         /// Current Variable Name
         /// </summary>
-        private string currentVarName;
+        private string currentVariableName;
 
         /// <summary>
         /// Edited new Variable Name
         /// </summary>
-        private string newVarName;
+        private string newVariableName;
 
         /// <summary>
         /// Text Box Control
@@ -69,20 +69,20 @@ namespace SFC.EnvMan.Handlers
         public EditVarNameCommand(TextBox txtBox)
         {
             this.txtBox = txtBox;
-            this.currentVarName = string.Copy(this.txtBox.Text);
+            this.currentVariableName = string.Copy(this.txtBox.Text);
         }
         #endregion Constructor
 
         #region Properties
         /// <summary>
-        /// Gets the name of the current var.
+        /// Gets the name of the current variable.
         /// </summary>
         /// <value>
-        /// The name of the current var.
+        /// The name of the current variable.
         /// </value>
-        public string CurrentVarName
+        public string CurrentVariableName
         {
-            get { return this.currentVarName; }
+            get { return this.currentVariableName; }
         }
 
         /// <summary>
@@ -93,7 +93,7 @@ namespace SFC.EnvMan.Handlers
         /// </value>
         public string NewVarName
         {
-            set { this.newVarName = value; }
+            set { this.newVariableName = value; }
         }
 
         /// <summary>
@@ -122,7 +122,7 @@ namespace SFC.EnvMan.Handlers
         public void Undo()
         {
             this.txtBox.CausesValidation = false;
-            this.txtBox.Text = string.Copy(this.currentVarName);
+            this.txtBox.Text = string.Copy(this.currentVariableName);
             this.txtBox.CausesValidation = true;
         }
 
@@ -131,7 +131,7 @@ namespace SFC.EnvMan.Handlers
         /// </summary>
         public void Redo()
         {
-            this.txtBox.Text = string.Copy(this.newVarName);
+            this.txtBox.Text = string.Copy(this.newVariableName);
         }
         #endregion Public Functions
     }

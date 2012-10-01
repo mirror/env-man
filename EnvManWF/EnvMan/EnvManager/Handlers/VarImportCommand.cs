@@ -88,8 +88,8 @@ namespace SFC.EnvMan.Handlers
         /// <summary>
         /// Initializes a new instance of the <see cref="VarImportCommand"/> class.
         /// </summary>
-        /// <param name="txtVarName">Name of the TXT var.</param>
-        /// <param name="currentVarValues">The current var values.</param>
+        /// <param name="txtVarName">Name of the TXT variable.</param>
+        /// <param name="currentVarValues">The current variable values.</param>
         /// <param name="fileName">Name of the file.</param>
         /// <param name="dgvHandler">The DGV handler.</param>
         public VarImportCommand(

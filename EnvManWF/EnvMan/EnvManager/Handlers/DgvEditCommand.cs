@@ -56,7 +56,7 @@ namespace SFC.EnvMan.Handlers
         public DgvEditCommand(DgvHandler dgvHandler, DataGridViewRow row)
             : base(dgvHandler, DgvCommandName)
         {
-            this.CurrentRow = CloneRow(row);
+            this.CurrentRow = this.CloneRow(row);
             this.CurrentRowIndex = row.Index;
         }
     }

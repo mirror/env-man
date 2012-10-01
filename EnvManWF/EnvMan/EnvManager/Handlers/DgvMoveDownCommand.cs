@@ -49,7 +49,7 @@ namespace SFC.EnvMan.Handlers
         {
             this.CurrentRowIndex = this.Handler.CurrentRowIndex;
             this.NewRowIndex = this.CurrentRowIndex + 1;
-            Redo();
+            this.Redo();
         }
         #endregion Actions
     }

@@ -71,25 +71,25 @@ namespace SFC.EnvMan
 
         #region Private Functions
         /// <summary>
-        /// Handles the CheckedChanged event of the CbUseProxy control.
+        /// Handles the CheckedChanged event of the Check Box Use Proxy control.
         /// </summary>
         /// <param name="sender">The source of the event.</param>
         /// <param name="e">The <see cref="System.EventArgs"/> instance containing the event data.</param>
         private void CbUseProxy_CheckedChanged(object sender, EventArgs e)
         {
             this.errorProvider.Clear();
-            LblAddress.Enabled = CbUseProxy.Checked;
-            TxtAddress.Enabled = CbUseProxy.Checked;
-            LblPassword.Enabled = CbUseProxy.Checked;
-            TxtPassword.Enabled = CbUseProxy.Checked;
-            LblPasswordOptional.Enabled = CbUseProxy.Checked;
-            LblPort.Enabled = CbUseProxy.Checked;
-            TxtPort.Enabled = CbUseProxy.Checked;
-            LblUserName.Enabled = CbUseProxy.Checked;
-            TxtUserName.Enabled = CbUseProxy.Checked;
-            LblUserNameOptional.Enabled = CbUseProxy.Checked;
+            LblAddress.Enabled = this.CbUseProxy.Checked;
+            TxtAddress.Enabled = this.CbUseProxy.Checked;
+            LblPassword.Enabled = this.CbUseProxy.Checked;
+            TxtPassword.Enabled = this.CbUseProxy.Checked;
+            LblPasswordOptional.Enabled = this.CbUseProxy.Checked;
+            LblPort.Enabled = this.CbUseProxy.Checked;
+            TxtPort.Enabled = this.CbUseProxy.Checked;
+            LblUserName.Enabled = this.CbUseProxy.Checked;
+            TxtUserName.Enabled = this.CbUseProxy.Checked;
+            LblUserNameOptional.Enabled = this.CbUseProxy.Checked;
 
-            if (!CbUseProxy.Checked)
+            if (!this.CbUseProxy.Checked)
             {
                 this.InitProxySettings();
             }
@@ -139,10 +139,10 @@ namespace SFC.EnvMan
         /// </summary>
         private void SaveSettings()
         {
-            this.mainFormSettings.OnlyOneInstance = CbOneInstance.Checked;
+            this.mainFormSettings.OnlyOneInstance = this.CbOneInstance.Checked;
 
             // Proxy settings
-            this.proxySettings.UseProxy = CbUseProxy.Checked;
+            this.proxySettings.UseProxy = this.CbUseProxy.Checked;
             this.proxySettings.ServerAddress = TxtAddress.Text;
             this.proxySettings.ServerPort = TxtPort.Text;
             this.proxySettings.ServerUserName = TxtUserName.Text;
@@ -151,7 +151,7 @@ namespace SFC.EnvMan
         }
 
         /// <summary>
-        /// Handles the Click event of the BtnOK control.
+        /// Handles the Click event of the Button OK control.
         /// </summary>
         /// <param name="sender">The source of the event.</param>
         /// <param name="e">The <see cref="System.EventArgs"/> instance containing the event data.</param>
@@ -159,7 +159,7 @@ namespace SFC.EnvMan
         {
             // Validate controls
             CancelEventArgs cancelEvent = new CancelEventArgs();
-            this.TxtValidating(TxtAddress, cancelEvent);
+            this.TxtValidating(this.TxtAddress, cancelEvent);
 
             if (!cancelEvent.Cancel)
             {
@@ -178,11 +178,11 @@ namespace SFC.EnvMan
             // Validate Proxy
             if (CbUseProxy.Checked)
             {
-                if (sender.Equals(TxtAddress))
+                if (sender.Equals(this.TxtAddress))
                 {
-                    if (string.IsNullOrEmpty(TxtAddress.Text))
+                    if (string.IsNullOrEmpty(this.TxtAddress.Text))
                     {
-                        errorProvider.SetError(TxtAddress, "Address Cannot be Empty");
+                        errorProvider.SetError(this.TxtAddress, "Address Cannot be Empty");
                         e.Cancel = true;
                     }
                     else
@@ -190,11 +190,11 @@ namespace SFC.EnvMan
                         errorProvider.Clear();
                     }
                 }
-                else if (sender.Equals(TxtPort))
+                else if (sender.Equals(this.TxtPort))
                 {
-                    if (string.IsNullOrEmpty(TxtPort.Text))
+                    if (string.IsNullOrEmpty(this.TxtPort.Text))
                     {
-                        errorProvider.SetError(TxtPort, "Server Port cannot be empty");
+                        errorProvider.SetError(this.TxtPort, "Server Port cannot be empty");
                         e.Cancel = true;
                     }
                 }

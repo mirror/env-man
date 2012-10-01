@@ -138,7 +138,7 @@ namespace SFC.EnvMan.Tests
         [ExpectedException(ExpectedMessage = "Variable Name cannot be blank.")]
         public void TestValidateVariablesNullVarName()
         {
-            //this.variableManager.ValidateVariables(null, null);
+            ////this.variableManager.ValidateVariables(null, null);
         }
 
         /// <summary>
@@ -148,8 +148,8 @@ namespace SFC.EnvMan.Tests
         [ExpectedException(ExpectedMessage = "Variable should have a value.")]
         public void TestValidateVariablesEmptyVarValue()
         {
-            //this.variableManager.ValidateVariables(
-            //    "TestVariable", string.Empty);
+            ////this.variableManager.ValidateVariables(
+            ////    "TestVariable", string.Empty);
         }
     }
 }

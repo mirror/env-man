@@ -118,7 +118,7 @@ namespace SFC.EnvMan
         public FrmEditEnvVar(
             string variableName, EnvironmentVariableTarget variableType)
         {
-            InitializeComponent();
+            this.InitializeComponent();
             this.MinimumSize = new Size(327, 439);
             dgvValuesList.TabIndex = 0;
             this.LoadSettings();
@@ -187,7 +187,7 @@ namespace SFC.EnvMan
         #region Private Functions
         #region Data Grid View
         /// <summary>
-        /// Handles the UserAddedRow event of the dgvValuesList control.
+        /// Handles the UserAddedRow event of the Data Grid View Values List control.
         /// </summary>
         /// <param name="sender">The source of the event.</param>
         /// <param name="e">The <see cref="System.Windows.Forms.DataGridViewRowEventArgs"/> instance containing the event data.</param>
@@ -199,7 +199,7 @@ namespace SFC.EnvMan
         }
 
         /// <summary>
-        /// Handles the CellValidating event of the dgvValuesList control.
+        /// Handles the CellValidating event of the Data Grid View Values List control.
         /// </summary>
         /// <param name="sender">The source of the event.</param>
         /// <param name="e">The <see cref="System.Windows.Forms.DataGridViewCellValidatingEventArgs"/> instance containing the event data.</param>
@@ -244,7 +244,7 @@ namespace SFC.EnvMan
         }
 
         /// <summary>
-        /// Handles the CellEndEdit event of the dgvValuesList control.
+        /// Handles the CellEndEdit event of the Data Grid View ValuesList control.
         /// </summary>
         /// <param name="sender">The source of the event.</param>
         /// <param name="e">The <see cref="System.Windows.Forms.DataGridViewCellEventArgs"/> instance containing the event data.</param>
@@ -279,7 +279,7 @@ namespace SFC.EnvMan
         }
 
         /// <summary>
-        /// Handles the CellBeginEdit event of the dgvValuesList control.
+        /// Handles the CellBeginEdit event of the Data Grid View ValuesList control.
         /// </summary>
         /// <param name="sender">The source of the event.</param>
         /// <param name="e">The <see cref="System.Windows.Forms.DataGridViewCellCancelEventArgs"/> instance containing the event data.</param>
@@ -299,7 +299,7 @@ namespace SFC.EnvMan
         }
 
         /// <summary>
-        /// Handles the SelectionChanged event of the dgvValuesList control.
+        /// Handles the SelectionChanged event of the Data Grid View ValuesList control.
         /// </summary>
         /// <param name="sender">The source of the event.</param>
         /// <param name="e">The <see cref="System.EventArgs"/> instance containing the event data.</param>
@@ -309,7 +309,7 @@ namespace SFC.EnvMan
         }
 
         /// <summary>
-        /// Handles the UserDeletingRow event of the dgvValuesList control.
+        /// Handles the UserDeletingRow event of the Data Grid View ValuesList control.
         /// </summary>
         /// <param name="sender">The source of the event.</param>
         /// <param name="e">The <see cref="System.Windows.Forms.DataGridViewRowCancelEventArgs"/> instance containing the event data.</param>
@@ -505,7 +505,7 @@ namespace SFC.EnvMan
         ////PRANK!E code changes start here -->
 
         /// <summary>
-        /// Handles the CellMouseDown event of the dgvValuesList control.
+        /// Handles the CellMouseDown event of the Data Grid View ValuesList control.
         /// </summary>
         /// <param name="sender">The source of the event.</param>
         /// <param name="e">The <see cref="System.Windows.Forms.DataGridViewCellMouseEventArgs"/> instance containing the event data.</param>
@@ -642,32 +642,32 @@ namespace SFC.EnvMan
         {
             ICommand currentCommand = null;
 
-            if (sender.Equals(btnCancel))
+            if (sender.Equals(this.btnCancel))
             {
                 this.Close();
             }
-            else if (sender.Equals(btnUndo))
+            else if (sender.Equals(this.btnUndo))
             {
                 this.commandsList.Undo();
             }
-            else if (sender.Equals(btnRedo))
+            else if (sender.Equals(this.btnRedo))
             {
                 this.commandsList.Redo();
             }
-            else if (sender.Equals(btnSave))
+            else if (sender.Equals(this.btnSave))
             {
                 this.SaveEnvironmentVariable();
             }
-            else if (sender.Equals(btnExport))
+            else if (sender.Equals(this.btnExport))
             {
                 this.ExportEnvironmentVariable();
             }
-            else if (sender.Equals(btnImport))
+            else if (sender.Equals(this.btnImport))
             {
                 this.ImportEnvironmentVariable();
             }
 
-            if (sender.Equals(tsmiLocateInWindowsExplorer))
+            if (sender.Equals(this.tsmiLocateInWindowsExplorer))
             {
                 ////PRANK!E code changes start here -->
                 this.LocateInWindowsExplorer();
@@ -675,34 +675,34 @@ namespace SFC.EnvMan
             }            
             else
             {
-                if (sender.Equals(btnDelete))
+                if (sender.Equals(this.btnDelete))
                 {
                     this.DgvValuesList_UserDeletingRow(null, null);
                 }
-                else if (sender.Equals(btnBrowse))
+                else if (sender.Equals(this.btnBrowse))
                 {
                     this.BrowseFolder();
                 }
-                else if (sender.Equals(btnMoveUp))
+                else if (sender.Equals(this.btnMoveUp))
                 {
                     currentCommand = new DgvMoveUpCommand(this.dgvHandler);
                 }
-                else if (sender.Equals(btnMoveTop))
+                else if (sender.Equals(this.btnMoveTop))
                 {
                     currentCommand = new DgvMoveToTopCommand(this.dgvHandler);
                 }
-                else if (sender.Equals(btnMoveDown))
+                else if (sender.Equals(this.btnMoveDown))
                 {
                     currentCommand = new DgvMoveDownCommand(this.dgvHandler);
                 }
-                else if (sender.Equals(btnMoveBottom))
+                else if (sender.Equals(this.btnMoveBottom))
                 {
                     currentCommand 
                         = new DgvMoveToBottomCommand(this.dgvHandler);
                 }
             }
 
-            if (!sender.Equals(btnCancel))
+            if (!sender.Equals(this.btnCancel))
             {
                 this.AddCommand(currentCommand);
             }
@@ -813,12 +813,12 @@ namespace SFC.EnvMan
             // set Undo/Redo
             btnUndo.Enabled = this.commandsList.CanUndo;
             btnRedo.Enabled = this.commandsList.CanRedo;
-            toolTip.SetToolTip(btnUndo, this.commandsList.UndoMsg);
-            toolTip.SetToolTip(btnRedo, this.commandsList.RedoMsg);
+            toolTip.SetToolTip(this.btnUndo, this.commandsList.UndoMsg);
+            toolTip.SetToolTip(this.btnRedo, this.commandsList.RedoMsg);
         }
 
         /// <summary>
-        /// Handles the FormClosed event of the FrmEditEnvVar control.
+        /// Handles the FormClosed event of the Form EditEnvironmentVariable control.
         /// </summary>
         /// <param name="sender">The source of the event.</param>
         /// <param name="e">The <see cref="System.Windows.Forms.FormClosedEventArgs"/> instance containing the event data.</param>
@@ -829,7 +829,7 @@ namespace SFC.EnvMan
         }
 
         /// <summary>
-        /// Handles the FormClosing event of the FrmEditEnvVar control.
+        /// Handles the FormClosing event of the Form EditEnvVariable control.
         /// </summary>
         /// <param name="sender">The source of the event.</param>
         /// <param name="e">The <see cref="System.Windows.Forms.FormClosingEventArgs"/> instance containing the event data.</param>
@@ -894,7 +894,7 @@ namespace SFC.EnvMan
         {
             if (this.editVarNameCommand != null
                 && txtVariableName.Text 
-                != this.editVarNameCommand.CurrentVarName)
+                != this.editVarNameCommand.CurrentVariableName)
             {
                 this.isVarNameChanged = true;
             }
@@ -913,7 +913,7 @@ namespace SFC.EnvMan
         /// <value>The DataGridView reference.</value>
         public DataGridView DgView
         {
-            get { return dgvValuesList; }
+            get { return this.dgvValuesList; }
         }
 
         /// <summary>
@@ -924,11 +924,11 @@ namespace SFC.EnvMan
         public void LoadEnvironmentVariableValues(
             string varName, EnvironmentVariableTarget varType)
         {
-            txtVariableName.Text = varName;
-            variableType = varType;
-            dgvValuesList.Rows.Clear();
-            commandsList.Clear();
-            LoadEnvironmentVariableValues();
+            this.txtVariableName.Text = varName;
+            this.variableType = varType;
+            this.dgvValuesList.Rows.Clear();
+            this.commandsList.Clear();
+            this.LoadEnvironmentVariableValues();
         }
         #endregion Testing
 #endif

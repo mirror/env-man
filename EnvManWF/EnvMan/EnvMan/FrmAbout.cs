@@ -44,10 +44,10 @@ namespace SFC.EnvMan
         {
             this.InitializeComponent();
 
-            this.Text = String.Format("About {0}", this.AssemblyTitle);
+            this.Text = string.Format("About {0}", this.AssemblyTitle);
             this.lblProductName.Text = this.AssemblyProduct;
             this.lblVersion.Text
-                = String.Format(
+                = string.Format(
                 "Version {0} (Build {1})",
                 this.PackageVersion,
                 this.AssemblyVersion);

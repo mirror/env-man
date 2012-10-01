@@ -48,7 +48,7 @@ namespace SFC.EnvMan.Handlers
         {
             this.CurrentRowIndex = this.Handler.CurrentRowIndex;
             this.NewRowIndex = this.Handler.BottomRowIndex;
-            Redo();
+            this.Redo();
         }
     }
 }

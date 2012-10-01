@@ -66,7 +66,7 @@ namespace SFC.EnvMan
         /// </summary>
         public EnvManager()
         {
-            InitializeComponent();
+            this.InitializeComponent();
 
             gbUserVariables.Text += Environment.UserName;
             this.LoadEnvironmentVariables();
@@ -114,9 +114,9 @@ namespace SFC.EnvMan
         private void LoadEnvironmentVariables()
         {
             this.LoadEnvironmentVariables(
-                dgvSystemVariables, EnvironmentVariableTarget.Machine);
+                this.dgvSystemVariables, EnvironmentVariableTarget.Machine);
             this.LoadEnvironmentVariables(
-                dgvUserVariables, EnvironmentVariableTarget.User);
+                this.dgvUserVariables, EnvironmentVariableTarget.User);
         }
 
         /// <summary>
@@ -177,34 +177,34 @@ namespace SFC.EnvMan
         /// <param name="e">The <see cref="System.EventArgs"/> instance containing the event data.</param>
         private void BtnClick(object sender, EventArgs e)
         {
-            if (sender.Equals(btnEditUserVariable))
+            if (sender.Equals(this.btnEditUserVariable))
             {
                 this.EditEnvVar(
-                    dgvUserVariables, EnvironmentVariableTarget.User);
+                    this.dgvUserVariables, EnvironmentVariableTarget.User);
             }
-            else if (sender.Equals(btnEditSystemVariable))
+            else if (sender.Equals(this.btnEditSystemVariable))
             {
                 this.EditEnvVar(
-                    dgvSystemVariables, EnvironmentVariableTarget.Machine);
+                    this.dgvSystemVariables, EnvironmentVariableTarget.Machine);
             }
-            else if (sender.Equals(btnNewUserVariable))
+            else if (sender.Equals(this.btnNewUserVariable))
             {
                 this.EditEnvVar(string.Empty, EnvironmentVariableTarget.User);
             }
-            else if (sender.Equals(btnNewSystemVariable))
+            else if (sender.Equals(this.btnNewSystemVariable))
             {
                 this.EditEnvVar(
                     string.Empty, EnvironmentVariableTarget.Machine);
             }
-            else if (sender.Equals(btnDeleteSystemVariable))
+            else if (sender.Equals(this.btnDeleteSystemVariable))
             {
                 this.DeleteEnvVar(
-                    dgvSystemVariables, EnvironmentVariableTarget.Machine);
+                    this.dgvSystemVariables, EnvironmentVariableTarget.Machine);
             }
-            else if (sender.Equals(btnDeleteUserVariable))
+            else if (sender.Equals(this.btnDeleteUserVariable))
             {
                 this.DeleteEnvVar(
-                    dgvUserVariables, EnvironmentVariableTarget.User);
+                    this.dgvUserVariables, EnvironmentVariableTarget.User);
             }
 
             this.LoadEnvironmentVariables();
@@ -274,7 +274,7 @@ namespace SFC.EnvMan
             DialogResult dialogRresult = DialogResult.No;
             string varName = this.DgvVariableName(dgv);
 
-            if (!String.IsNullOrEmpty(varName))
+            if (!string.IsNullOrEmpty(varName))
             {
                 dialogRresult = MessageBox.Show(
                     "Are you sure to remove variable \"" + varName + "\"?",
@@ -313,7 +313,7 @@ namespace SFC.EnvMan
         {
             string varName = this.DgvVariableName(dgv);
 
-            if (!String.IsNullOrEmpty(varName))
+            if (!string.IsNullOrEmpty(varName))
             {
                 this.EditEnvVar(varName, variableType);
             }
@@ -374,17 +374,17 @@ namespace SFC.EnvMan
         {
             DialogResult dialogResult = DialogResult.No;
 
-            if (sender.Equals(dgvSystemVariables))
+            if (sender.Equals(this.dgvSystemVariables))
             {
                 dialogResult
                     = this.DeleteEnvVar(
-                    dgvSystemVariables, EnvironmentVariableTarget.Machine);
+                    this.dgvSystemVariables, EnvironmentVariableTarget.Machine);
             }
-            else if (sender.Equals(dgvUserVariables))
+            else if (sender.Equals(this.dgvUserVariables))
             {
                 dialogResult
                     = this.DeleteEnvVar(
-                    dgvUserVariables, EnvironmentVariableTarget.User);
+                    this.dgvUserVariables, EnvironmentVariableTarget.User);
             }
 
             if (dialogResult == DialogResult.No)

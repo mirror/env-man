@@ -115,11 +115,11 @@ namespace SFC.EnvMan
         /// <summary>
         /// Expands the environment variable.
         /// </summary>
-        /// <param name="varName">Name of the var.</param>
+        /// <param name="variableName">Name of the variable.</param>
         /// <returns>Expended Variable String</returns>
-        public string ExpandEnvironmentVariable(string varName)
+        public string ExpandEnvironmentVariable(string variableName)
         {
-            string varValue = Environment.ExpandEnvironmentVariables(varName);
+            string varValue = Environment.ExpandEnvironmentVariables(variableName);
 
             return varValue;
         }
@@ -128,13 +128,13 @@ namespace SFC.EnvMan
         /// Gets the environment variable.
         /// </summary>
         /// <param name="varName">Name of the variable.</param>
-        /// <param name="varType">Type of the variable.</param>
+        /// <param name="variableType">Type of the variable.</param>
         /// <returns>Environment Variable</returns>
         public string GetEnvironmentVariable(
-            string varName, EnvironmentVariableTarget varType)
+            string varName, EnvironmentVariableTarget variableType)
         {
             object objValue
-                = this.shell.RegRead(this.RegistryKey(varType) + varName);
+                = this.shell.RegRead(this.RegistryKey(variableType) + varName);
 
             return objValue.ToString();
         }
@@ -143,28 +143,28 @@ namespace SFC.EnvMan
         /// Sets the environment variable.
         /// </summary>
         /// <param name="varName">Name of the variable.</param>
-        /// <param name="varValue">The variable value.</param>
+        /// <param name="variableValue">The variable value.</param>
         /// <param name="varType">Type of the variable.</param>
         public void SetEnvironmentVariable(
-            string varName, string varValue, EnvironmentVariableTarget varType)
+            string varName, string variableValue, EnvironmentVariableTarget varType)
         {
-            this.ValidateVariables(varName, varValue);
+            this.ValidateVariables(varName, variableValue);
 
-            bool isRegExpandSz = varValue.Contains("%");
+            bool isRegExpandSz = variableValue.Contains("%");
 
             this.SetVariable(
-                this.RegistryKey(varType) + varName, varValue, isRegExpandSz);
+                this.RegistryKey(varType) + varName, variableValue, isRegExpandSz);
         }
 
         /// <summary>
         /// Deletes the environment variable.
         /// </summary>
-        /// <param name="varName">Name of the var.</param>
-        /// <param name="varType">Type of the var.</param>
+        /// <param name="varName">Name of the variable.</param>
+        /// <param name="variableType">Type of the variable.</param>
         public void DeleteEnvironmentVariable(
-            string varName, EnvironmentVariableTarget varType)
+            string varName, EnvironmentVariableTarget variableType)
         {
-            Environment.SetEnvironmentVariable(varName, null, varType);
+            Environment.SetEnvironmentVariable(varName, null, variableType);
         } 
         #endregion Public Functions
 
@@ -230,9 +230,9 @@ namespace SFC.EnvMan
         /// <summary>
         /// Sets the variable.
         /// </summary>
-        /// <param name="fullpath">The fullpath.</param>
+        /// <param name="fullpath">The full path.</param>
         /// <param name="value">The value.</param>
-        /// <param name="isRegExpandSz">if set to <c>true</c> [is reg expand sz].</param>
+        /// <param name="isRegExpandSz">if set to <c>true</c> [is registry expand variable].</param>
         private void SetVariable(
             string fullpath, string value, bool isRegExpandSz)
         {
