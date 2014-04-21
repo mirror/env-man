@@ -27,12 +27,12 @@
 
 namespace SFC.EnvMan
 {
+    using SFC.EnvMan.VersionManager;
+    using SFC.EnvMan.VersionManager.VersionInformation;
     using System;
     using System.ComponentModel;
     using System.Drawing;
     using System.Windows.Forms;
-    using SFC.EnvMan.VersionManager;
-    using SFC.EnvMan.VersionManager.VersionInformation;
 
     /// <summary>
     /// Main Form Class
@@ -300,16 +300,28 @@ namespace SFC.EnvMan
         /// </summary>
         private void LoadSettings()
         {
-            if (this.settings.FrmWindowState == FormWindowState.Normal)
+            try
             {
-                this.Location = this.settings.FrmWindowLocation;
-                this.Width = this.settings.FrmSize.Width;
-                this.Height = this.settings.FrmSize.Height;
+                if (this.settings.FrmWindowState == FormWindowState.Normal)
+                {
+                    this.Location = this.settings.FrmWindowLocation;
+                    this.Size = this.settings.FrmSize;
+                }
+                else
+                {
+                    this.WindowState = this.settings.FrmWindowState;
+                }
             }
-            else
+            catch (Exception)
             {
-                this.WindowState = this.settings.FrmWindowState;
+                // load default settings
+                this.Location = new Point(10, 10);
+                this.Size = new Size(377, 448);
+
+                // save default settings
+                this.SaveSettings();
             }
+            
         }
 
         /// <summary>

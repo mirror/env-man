@@ -39,7 +39,7 @@ namespace SFC.EnvMan
     public partial class EnvManager : UserControl
     {
         #region Constants
-
+        private const int SplitterDistance = 197;
         #endregion Constants
 
         #region Variables
@@ -75,26 +75,6 @@ namespace SFC.EnvMan
                 += new EventHandler(this.EnvManager_HandleDestroyed);
         }
         #endregion Constructor
-
-        #region Events
-
-        #endregion Events
-
-        #region Properties
-
-        #endregion Properties
-
-        #region Public Functions
-
-        #endregion Public Functions
-
-        #region Internal Functions
-
-        #endregion Internal Functions
-
-        #region Protected Functions
-
-        #endregion Protected Functions
 
         #region Private Functions
         /// <summary>
@@ -339,8 +319,17 @@ namespace SFC.EnvMan
         /// </summary>
         private void LoadSettings()
         {
-            this.splitContainer.SplitterDistance 
-                = this.settings.SpliterPosition;
+            try
+            {
+                this.splitContainer.SplitterDistance = this.settings.SpliterPosition;
+            }
+            catch (Exception)
+            {
+                // load default settings
+                this.splitContainer.SplitterDistance = EnvManager.SplitterDistance;
+
+                this.SaveSettings(); 
+            }
         }
 
         /// <summary>
