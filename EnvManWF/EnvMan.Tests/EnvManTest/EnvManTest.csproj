@@ -67,6 +67,7 @@
     <Compile Include="VersionManager\VersionCheckerTest.cs" />
     <Compile Include="VersionManager\VersionInformation\VersionInfoManagerTest.cs" />
     <Compile Include="VersionManager\VersionInformation\VersionInfoTest.cs" />
+    <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
     <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
   </ItemGroup>
   <ItemGroup>
