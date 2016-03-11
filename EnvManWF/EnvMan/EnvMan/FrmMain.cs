@@ -1,6 +1,6 @@
 //------------------------------------------------------------------------
 // <copyright file="FrmMain.cs" company="SETCHIN Freelance Consulting">
-// Copyright (C) 2006-2015 SETCHIN Freelance Consulting
+// Copyright (C) 2006-2016 SETCHIN Freelance Consulting
 // </copyright>
 // <author>
 // Vlad Setchin
@@ -8,10 +8,10 @@
 //------------------------------------------------------------------------
 
 // EnvMan - The Open-Source Environment Variables Manager
-// Copyright (C) 2006-2015 SETCHIN Freelance Consulting 
+// Copyright (C) 2006-2016 SETCHIN Freelance Consulting 
 // <http://www.setchinfc.com.au>
 // EnvMan Development Group: <mailto:envman-dev@googlegroups.com>
-//  
+//
 // This program is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
 // the Free Software Foundation, either version 3 of the License, or
@@ -73,7 +73,7 @@ namespace SFC.EnvMan
         /// <summary>
         /// Main Form Settings
         /// </summary>
-        private Properties.FrmMainSettings settings 
+        private Properties.FrmMainSettings settings
             = Properties.FrmMainSettings.Default;
         #endregion Variables
 
@@ -89,7 +89,7 @@ namespace SFC.EnvMan
             this.Text += " " + this.frmAbout.PackageVersion;
             this.MinimumSize = new Size(472, 504);
 
-            this.versionChecker 
+            this.versionChecker
                 = new VersionChecker(Properties.Resources.EnvManICO);
             this.versionChecker.VersionChecked
                 += new EventHandler<NewVersionEventArgs>(
@@ -127,9 +127,9 @@ namespace SFC.EnvMan
                 if (this.showFrmVersionInfo)
                 {
                     MessageBox.Show(
-                        ex.Message, 
+                        ex.Message,
                         "Network Error",
-                        MessageBoxButtons.OK, 
+                        MessageBoxButtons.OK,
                         MessageBoxIcon.Exclamation);
                 }
             }
@@ -175,9 +175,9 @@ namespace SFC.EnvMan
                 if (this.showFrmVersionInfo)
                 {
                     MessageBox.Show(
-                        msg, 
-                        "EnvMan", 
-                        MessageBoxButtons.OK, 
+                        msg,
+                        "EnvMan",
+                        MessageBoxButtons.OK,
                         MessageBoxIcon.Information);
                 }
             }
@@ -276,9 +276,9 @@ namespace SFC.EnvMan
             {
                 //// TODO: Review what Exceptions could be raised in this method
                 MessageBox.Show(
-                    ex.Message, 
-                    "EnvMan ERROR", 
-                    MessageBoxButtons.OK, 
+                    ex.Message,
+                    "EnvMan ERROR",
+                    MessageBoxButtons.OK,
                     MessageBoxIcon.Error);
             }
         }
@@ -321,7 +321,7 @@ namespace SFC.EnvMan
                 // save default settings
                 this.SaveSettings();
             }
-            
+
         }
 
         /// <summary>

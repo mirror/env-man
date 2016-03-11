@@ -1,6 +1,6 @@
 /*
    EnvMan - The Open-Source Environment Variables Manager
-   Copyright (C) 2006-2009 Vlad Setchin <envman-dev@googlegroups.com>
+   Copyright (C) 2006-2016 Vlad Setchin <envman-dev@googlegroups.com>
 
    This program is free software: you can redistribute it and/or modify
    it under the terms of the GNU General Public License as published by
@@ -76,9 +76,9 @@ namespace SFC.EnvMan
             ((System.ComponentModel.ISupportInitialize)(this.dgvValuesList)).BeginInit();
             this.cmsValuesDGV.SuspendLayout();
             this.SuspendLayout();
-            // 
+            //
             // label1
-            // 
+            //
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(12, 9);
@@ -86,18 +86,18 @@ namespace SFC.EnvMan
             this.label1.Size = new System.Drawing.Size(91, 13);
             this.label1.TabIndex = 1;
             this.label1.Text = "Variable &name:";
-            // 
+            //
             // txtVariableName
-            // 
+            //
             this.txtVariableName.Location = new System.Drawing.Point(103, 6);
             this.txtVariableName.Name = "txtVariableName";
             this.txtVariableName.Size = new System.Drawing.Size(177, 20);
             this.txtVariableName.TabIndex = 3;
             this.txtVariableName.Validated += new System.EventHandler(this.TxtVariableName_Validated);
             this.txtVariableName.TextChanged += new System.EventHandler(this.TxtVariableName_TextChanged);
-            // 
+            //
             // dgvValuesList
-            // 
+            //
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(253)))), ((int)(((byte)(254)))));
             this.dgvValuesList.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvValuesList.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
@@ -129,9 +129,9 @@ namespace SFC.EnvMan
             this.dgvValuesList.CellValidating += new System.Windows.Forms.DataGridViewCellValidatingEventHandler(this.DgvValuesList_CellValidating);
             this.dgvValuesList.CellEndEdit += new System.Windows.Forms.DataGridViewCellEventHandler(this.DgvValuesList_CellEndEdit);
             this.dgvValuesList.SelectionChanged += new System.EventHandler(this.DgvValuesList_SelectionChanged);
-            // 
+            //
             // ValueType
-            // 
+            //
             this.ValueType.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.ValueType.Frozen = true;
             this.ValueType.HeaderText = "";
@@ -139,30 +139,30 @@ namespace SFC.EnvMan
             this.ValueType.ReadOnly = true;
             this.ValueType.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.ValueType.Width = 21;
-            // 
+            //
             // Value
-            // 
+            //
             this.Value.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.Value.HeaderText = "Variable value";
             this.Value.Name = "Value";
-            // 
+            //
             // cmsValuesDGV
-            // 
+            //
             this.cmsValuesDGV.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tsmiLocateInWindowsExplorer});
             this.cmsValuesDGV.Name = "cmsValuesDGV";
             this.cmsValuesDGV.Size = new System.Drawing.Size(220, 26);
-            // 
+            //
             // tsmiLocateInWindowsExplorer
-            // 
+            //
             this.tsmiLocateInWindowsExplorer.Image = global::SFC.EnvMan.Properties.Resources.FolderExplore;
             this.tsmiLocateInWindowsExplorer.Name = "tsmiLocateInWindowsExplorer";
             this.tsmiLocateInWindowsExplorer.Size = new System.Drawing.Size(219, 22);
             this.tsmiLocateInWindowsExplorer.Text = "Locate in Windows Explorer";
             this.tsmiLocateInWindowsExplorer.Click += new System.EventHandler(this.BtnClick);
-            // 
+            //
             // btnBrowse
-            // 
+            //
             this.btnBrowse.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnBrowse.Image = global::SFC.EnvMan.Properties.Resources.ValTypeFolder;
             this.btnBrowse.Location = new System.Drawing.Point(285, 225);
@@ -172,9 +172,9 @@ namespace SFC.EnvMan
             this.toolTip.SetToolTip(this.btnBrowse, "Browse Folder");
             this.btnBrowse.UseVisualStyleBackColor = true;
             this.btnBrowse.Click += new System.EventHandler(this.BtnClick);
-            // 
+            //
             // btnMoveTop
-            // 
+            //
             this.btnMoveTop.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnMoveTop.Image = global::SFC.EnvMan.Properties.Resources.MoveTop;
             this.btnMoveTop.Location = new System.Drawing.Point(285, 110);
@@ -184,9 +184,9 @@ namespace SFC.EnvMan
             this.toolTip.SetToolTip(this.btnMoveTop, "Move to the top");
             this.btnMoveTop.UseVisualStyleBackColor = true;
             this.btnMoveTop.Click += new System.EventHandler(this.BtnClick);
-            // 
+            //
             // btnMoveBottom
-            // 
+            //
             this.btnMoveBottom.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnMoveBottom.Image = global::SFC.EnvMan.Properties.Resources.MoveBottom;
             this.btnMoveBottom.Location = new System.Drawing.Point(285, 196);
@@ -196,9 +196,9 @@ namespace SFC.EnvMan
             this.toolTip.SetToolTip(this.btnMoveBottom, "Move to bottom");
             this.btnMoveBottom.UseVisualStyleBackColor = true;
             this.btnMoveBottom.Click += new System.EventHandler(this.BtnClick);
-            // 
+            //
             // btnMoveDown
-            // 
+            //
             this.btnMoveDown.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnMoveDown.Image = global::SFC.EnvMan.Properties.Resources.MoveDown;
             this.btnMoveDown.Location = new System.Drawing.Point(285, 168);
@@ -209,9 +209,9 @@ namespace SFC.EnvMan
             this.toolTip.SetToolTip(this.btnMoveDown, "Move down");
             this.btnMoveDown.UseVisualStyleBackColor = true;
             this.btnMoveDown.Click += new System.EventHandler(this.BtnClick);
-            // 
+            //
             // btnMoveUp
-            // 
+            //
             this.btnMoveUp.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnMoveUp.Image = global::SFC.EnvMan.Properties.Resources.MoveUp;
             this.btnMoveUp.Location = new System.Drawing.Point(285, 139);
@@ -221,9 +221,9 @@ namespace SFC.EnvMan
             this.toolTip.SetToolTip(this.btnMoveUp, "Move up");
             this.btnMoveUp.UseVisualStyleBackColor = true;
             this.btnMoveUp.Click += new System.EventHandler(this.BtnClick);
-            // 
+            //
             // btnCancel
-            // 
+            //
             this.btnCancel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -237,9 +237,9 @@ namespace SFC.EnvMan
             this.toolTip.SetToolTip(this.btnCancel, "Cancel Changes (Alt+F4)");
             this.btnCancel.UseVisualStyleBackColor = true;
             this.btnCancel.Click += new System.EventHandler(this.BtnClick);
-            // 
+            //
             // btnSave
-            // 
+            //
             this.btnSave.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSave.Image = global::SFC.EnvMan.Properties.Resources.Save;
@@ -252,9 +252,9 @@ namespace SFC.EnvMan
             this.toolTip.SetToolTip(this.btnSave, "Save Changes");
             this.btnSave.UseVisualStyleBackColor = true;
             this.btnSave.Click += new System.EventHandler(this.BtnClick);
-            // 
+            //
             // btnDelete
-            // 
+            //
             this.btnDelete.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnDelete.Image = global::SFC.EnvMan.Properties.Resources.delete;
             this.btnDelete.Location = new System.Drawing.Point(285, 254);
@@ -264,9 +264,9 @@ namespace SFC.EnvMan
             this.toolTip.SetToolTip(this.btnDelete, "Delete Value");
             this.btnDelete.UseVisualStyleBackColor = true;
             this.btnDelete.Click += new System.EventHandler(this.BtnClick);
-            // 
+            //
             // btnImport
-            // 
+            //
             this.btnImport.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnImport.Image = global::SFC.EnvMan.Properties.Resources.Import;
             this.btnImport.Location = new System.Drawing.Point(285, 39);
@@ -276,9 +276,9 @@ namespace SFC.EnvMan
             this.toolTip.SetToolTip(this.btnImport, "Import");
             this.btnImport.UseVisualStyleBackColor = true;
             this.btnImport.Click += new System.EventHandler(this.BtnClick);
-            // 
+            //
             // btnExport
-            // 
+            //
             this.btnExport.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnExport.Image = global::SFC.EnvMan.Properties.Resources.Export;
             this.btnExport.Location = new System.Drawing.Point(285, 68);
@@ -288,9 +288,9 @@ namespace SFC.EnvMan
             this.toolTip.SetToolTip(this.btnExport, "Export");
             this.btnExport.UseVisualStyleBackColor = true;
             this.btnExport.Click += new System.EventHandler(this.BtnClick);
-            // 
+            //
             // btnUndo
-            // 
+            //
             this.btnUndo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnUndo.Image = global::SFC.EnvMan.Properties.Resources.Undo;
             this.btnUndo.Location = new System.Drawing.Point(285, 297);
@@ -300,9 +300,9 @@ namespace SFC.EnvMan
             this.toolTip.SetToolTip(this.btnUndo, "Undo");
             this.btnUndo.UseVisualStyleBackColor = true;
             this.btnUndo.Click += new System.EventHandler(this.BtnClick);
-            // 
+            //
             // btnRedo
-            // 
+            //
             this.btnRedo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnRedo.Image = global::SFC.EnvMan.Properties.Resources.Redo;
             this.btnRedo.Location = new System.Drawing.Point(285, 326);
@@ -312,19 +312,19 @@ namespace SFC.EnvMan
             this.toolTip.SetToolTip(this.btnRedo, "Redo");
             this.btnRedo.UseVisualStyleBackColor = true;
             this.btnRedo.Click += new System.EventHandler(this.BtnClick);
-            // 
+            //
             // openFileDialog
-            // 
+            //
             this.openFileDialog.DefaultExt = "*.env";
             this.openFileDialog.Filter = "Env Files|*.env";
-            // 
+            //
             // saveFileDialog
-            // 
+            //
             this.saveFileDialog.DefaultExt = "*.env";
             this.saveFileDialog.Filter = "Env Files|*.env";
-            // 
+            //
             // FrmEditEnvVar
-            // 
+            //
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.btnCancel;

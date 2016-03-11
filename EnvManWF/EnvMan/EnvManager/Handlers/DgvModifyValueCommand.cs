@@ -1,6 +1,6 @@
 //------------------------------------------------------------------------
 // <copyright file="DgvModifyValueCommand.cs" company="SETCHIN Freelance Consulting">
-// Copyright (C) 2006-2015 SETCHIN Freelance Consulting
+// Copyright (C) 2006-2016 SETCHIN Freelance Consulting
 // </copyright>
 // <author>
 // Vlad Setchin
@@ -8,10 +8,10 @@
 //------------------------------------------------------------------------
 
 // EnvMan - The Open-Source Environment Variables Manager
-// Copyright (C) 2006-2015 SETCHIN Freelance Consulting 
+// Copyright (C) 2006-2016 SETCHIN Freelance Consulting 
 // <http://www.setchinfc.com.au>
 // EnvMan Development Group: <mailto:envman-dev@googlegroups.com>
-//  
+//
 // This program is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
 // the Free Software Foundation, either version 3 of the License, or
@@ -59,7 +59,7 @@ namespace SFC.EnvMan.Handlers
         {
         }
         #endregion Constructor
-        
+
         #region Properties
         /// <summary>
         /// Gets or sets the current row.
@@ -108,7 +108,7 @@ namespace SFC.EnvMan.Handlers
             if (this.currentRow != null)
             {
                 Console.WriteLine(
-                    "Write Old Row: " 
+                    "Write Old Row: "
                     + this.currentRow.Cells[1].Value.ToString());
                 this.Handler.InsertRow(
                     this.CurrentRowIndex, this.CloneRow(this.currentRow));
@@ -129,7 +129,7 @@ namespace SFC.EnvMan.Handlers
                 this.NewRowIndex, this.CloneRow(this.newRow));
         }
         #endregion Public Functions
-        
+
         #region Protected Functions
         /// <summary>
         /// Clones the row.

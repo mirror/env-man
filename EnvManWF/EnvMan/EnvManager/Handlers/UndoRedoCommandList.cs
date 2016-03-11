@@ -1,6 +1,6 @@
 //------------------------------------------------------------------------
 // <copyright file="UndoRedoCommandList.cs" company="SETCHIN Freelance Consulting">
-// Copyright (C) 2006-2015 SETCHIN Freelance Consulting
+// Copyright (C) 2006-2016 SETCHIN Freelance Consulting
 // </copyright>
 // <author>
 // Vlad Setchin
@@ -8,10 +8,10 @@
 //------------------------------------------------------------------------
 
 // EnvMan - The Open-Source Environment Variables Manager
-// Copyright (C) 2006-2015 SETCHIN Freelance Consulting 
+// Copyright (C) 2006-2016 SETCHIN Freelance Consulting 
 // <http://www.setchinfc.com.au>
 // EnvMan Development Group: <mailto:envman-dev@googlegroups.com>
-//  
+//
 // This program is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
 // the Free Software Foundation, either version 3 of the License, or
@@ -158,7 +158,7 @@ namespace SFC.EnvMan.Handlers
                     this.commandsList.RemoveRange(
                         this.currentCommandIndex + 1,
                         this.commandsList.Count - currCommandIndex - 1);
-                }   
+                }
             }
 
             // add command to a list and increment index
@@ -183,13 +183,13 @@ namespace SFC.EnvMan.Handlers
         {
             this.undoMsg = this.CanUndo == true
                 ? Resources.ToolTipUndo + " "
-                + (this.commandsList[this.currentCommandIndex] 
+                + (this.commandsList[this.currentCommandIndex]
                     as ICommand).CommandName
                 : Resources.ToolTipUndo;
             this.redoMsg = this.CanRedo == true
-                ? Resources.ToolTipRedo 
+                ? Resources.ToolTipRedo
                 + " "
-                + (this.commandsList[this.currentCommandIndex + 1] 
+                + (this.commandsList[this.currentCommandIndex + 1]
                     as ICommand).CommandName
                 : Resources.ToolTipRedo;
         }

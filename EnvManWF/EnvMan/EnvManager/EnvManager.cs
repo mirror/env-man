@@ -1,6 +1,6 @@
 //------------------------------------------------------------------------
 // <copyright file="EnvManager.cs" company="SETCHIN Freelance Consulting">
-// Copyright (C) 2006-2015 SETCHIN Freelance Consulting
+// Copyright (C) 2006-2016 SETCHIN Freelance Consulting
 // </copyright>
 // <author>
 // Vlad Setchin
@@ -8,10 +8,10 @@
 //------------------------------------------------------------------------
 
 // EnvMan - The Open-Source Environment Variables Manager
-// Copyright (C) 2006-2015 SETCHIN Freelance Consulting 
+// Copyright (C) 2006-2016 SETCHIN Freelance Consulting 
 // <http://www.setchinfc.com.au>
 // EnvMan Development Group: <mailto:envman-dev@googlegroups.com>
-//  
+//
 // This program is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
 // the Free Software Foundation, either version 3 of the License, or
@@ -138,7 +138,7 @@ namespace SFC.EnvMan
             }
             catch
             {   // if row was deleted this will set it to first one
-                // TODO: Implement this by searching for var name in the grid. 
+                // TODO: Implement this by searching for var name in the grid.
                 // Catching Exceptions makes program slow
                 if (dgv.Rows.Count != 0)
                 {
@@ -201,7 +201,7 @@ namespace SFC.EnvMan
 
             if (dgv.CurrentRow.Index != -1)
             {
-                varName 
+                varName
                     = dgv.Rows[dgv.CurrentRow.Index].Cells[0].Value.ToString();
             }
 
@@ -236,7 +236,7 @@ namespace SFC.EnvMan
         private void SplitContainer_MouseDoubleClick(
             object sender, MouseEventArgs e)
         {
-            this.splitContainer.SplitterDistance 
+            this.splitContainer.SplitterDistance
                 = splitContainer.Size.Height / 2;
         }
         #endregion Controls Events
@@ -328,7 +328,7 @@ namespace SFC.EnvMan
                 // load default settings
                 this.splitContainer.SplitterDistance = EnvManager.SplitterDistance;
 
-                this.SaveSettings(); 
+                this.SaveSettings();
             }
         }
 
@@ -337,7 +337,7 @@ namespace SFC.EnvMan
         /// </summary>
         private void SaveSettings()
         {
-            this.settings.SpliterPosition 
+            this.settings.SpliterPosition
                 = this.splitContainer.SplitterDistance;
             this.settings.Save();
         }

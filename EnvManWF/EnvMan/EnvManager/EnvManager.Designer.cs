@@ -1,6 +1,6 @@
 //------------------------------------------------------------------------
 // <copyright file="EnvManager.cs" company="SETCHIN Freelance Consulting">
-// Copyright (C) 2006-2015 SETCHIN Freelance Consulting
+// Copyright (C) 2006-2016 SETCHIN Freelance Consulting
 // </copyright>
 // <author>
 // Vlad Setchin
@@ -8,10 +8,10 @@
 //------------------------------------------------------------------------
 
 // EnvMan - The Open-Source Environment Variables Manager
-// Copyright (C) 2006-2015 SETCHIN Freelance Consulting 
+// Copyright (C) 2006-2016 SETCHIN Freelance Consulting 
 // <http://www.setchinfc.com.au>
 // EnvMan Development Group: <mailto:envman-dev@googlegroups.com>
-//  
+//
 // This program is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
 // the Free Software Foundation, either version 3 of the License, or
@@ -52,7 +52,7 @@ namespace SFC.EnvMan
         #region Component Designer generated code
 
         /// <summary>
-        /// Required method for Designer support - do not modify 
+        /// Required method for Designer support - do not modify
         /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent ( )
@@ -86,28 +86,28 @@ namespace SFC.EnvMan
             this.gbSystemVariables.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSystemVariables)).BeginInit();
             this.SuspendLayout();
-            // 
+            //
             // splitContainer
-            // 
+            //
             this.splitContainer.Dock = System.Windows.Forms.DockStyle.Fill;
             this.splitContainer.Location = new System.Drawing.Point(0, 0);
             this.splitContainer.Name = "splitContainer";
             this.splitContainer.Orientation = System.Windows.Forms.Orientation.Horizontal;
-            // 
+            //
             // splitContainer.Panel1
-            // 
+            //
             this.splitContainer.Panel1.Controls.Add(this.gbUserVariables);
-            // 
+            //
             // splitContainer.Panel2
-            // 
+            //
             this.splitContainer.Panel2.Controls.Add(this.gbSystemVariables);
             this.splitContainer.Size = new System.Drawing.Size(359, 416);
             this.splitContainer.SplitterDistance = 197;
             this.splitContainer.TabIndex = 0;
             this.splitContainer.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.SplitContainer_MouseDoubleClick);
-            // 
+            //
             // gbUserVariables
-            // 
+            //
             this.gbUserVariables.Controls.Add(this.btnDeleteUserVariable);
             this.gbUserVariables.Controls.Add(this.btnEditUserVariable);
             this.gbUserVariables.Controls.Add(this.btnNewUserVariable);
@@ -120,9 +120,9 @@ namespace SFC.EnvMan
             this.gbUserVariables.TabIndex = 4;
             this.gbUserVariables.TabStop = false;
             this.gbUserVariables.Text = "&User Variables for ";
-            // 
+            //
             // btnDeleteUserVariable
-            // 
+            //
             this.btnDeleteUserVariable.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnDeleteUserVariable.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDeleteUserVariable.Image = global::SFC.EnvMan.Properties.Resources.delete;
@@ -135,9 +135,9 @@ namespace SFC.EnvMan
             this.toolTip.SetToolTip(this.btnDeleteUserVariable, global::SFC.EnvMan.Properties.Resources.ToolTipDeleteVariable);
             this.btnDeleteUserVariable.UseVisualStyleBackColor = true;
             this.btnDeleteUserVariable.Click += new System.EventHandler(this.BtnClick);
-            // 
+            //
             // btnEditUserVariable
-            // 
+            //
             this.btnEditUserVariable.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnEditUserVariable.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEditUserVariable.Image = global::SFC.EnvMan.Properties.Resources.Edit;
@@ -150,9 +150,9 @@ namespace SFC.EnvMan
             this.toolTip.SetToolTip(this.btnEditUserVariable, global::SFC.EnvMan.Properties.Resources.ToolTipEditVariable);
             this.btnEditUserVariable.UseVisualStyleBackColor = true;
             this.btnEditUserVariable.Click += new System.EventHandler(this.BtnClick);
-            // 
+            //
             // btnNewUserVariable
-            // 
+            //
             this.btnNewUserVariable.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnNewUserVariable.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNewUserVariable.Image = global::SFC.EnvMan.Properties.Resources.NewRecord;
@@ -165,9 +165,9 @@ namespace SFC.EnvMan
             this.toolTip.SetToolTip(this.btnNewUserVariable, global::SFC.EnvMan.Properties.Resources.ToolTipCreateNewVariable);
             this.btnNewUserVariable.UseVisualStyleBackColor = true;
             this.btnNewUserVariable.Click += new System.EventHandler(this.BtnClick);
-            // 
+            //
             // dgvUserVariables
-            // 
+            //
             this.dgvUserVariables.AllowUserToAddRows = false;
             this.dgvUserVariables.AllowUserToResizeRows = false;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(253)))), ((int)(((byte)(254)))));
@@ -192,23 +192,23 @@ namespace SFC.EnvMan
             this.dgvUserVariables.TabIndex = 4;
             this.dgvUserVariables.UserDeletingRow += new System.Windows.Forms.DataGridViewRowCancelEventHandler(this.DgvUserDeletingRow);
             this.dgvUserVariables.CellMouseDoubleClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.DgvCellMouseDoubleClick);
-            // 
+            //
             // Variable
-            // 
+            //
             this.Variable.HeaderText = "Variable";
             this.Variable.Name = "Variable";
             this.Variable.ReadOnly = true;
             this.Variable.Width = 78;
-            // 
+            //
             // Value
-            // 
+            //
             this.Value.HeaderText = "Value";
             this.Value.Name = "Value";
             this.Value.ReadOnly = true;
             this.Value.Width = 64;
-            // 
+            //
             // gbSystemVariables
-            // 
+            //
             this.gbSystemVariables.Controls.Add(this.btnDeleteSystemVariable);
             this.gbSystemVariables.Controls.Add(this.btnEditSystemVariable);
             this.gbSystemVariables.Controls.Add(this.btnNewSystemVariable);
@@ -221,9 +221,9 @@ namespace SFC.EnvMan
             this.gbSystemVariables.TabIndex = 6;
             this.gbSystemVariables.TabStop = false;
             this.gbSystemVariables.Text = "&System variables";
-            // 
+            //
             // btnDeleteSystemVariable
-            // 
+            //
             this.btnDeleteSystemVariable.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnDeleteSystemVariable.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDeleteSystemVariable.Image = global::SFC.EnvMan.Properties.Resources.delete;
@@ -236,9 +236,9 @@ namespace SFC.EnvMan
             this.toolTip.SetToolTip(this.btnDeleteSystemVariable, global::SFC.EnvMan.Properties.Resources.ToolTipDeleteVariable);
             this.btnDeleteSystemVariable.UseVisualStyleBackColor = true;
             this.btnDeleteSystemVariable.Click += new System.EventHandler(this.BtnClick);
-            // 
+            //
             // btnEditSystemVariable
-            // 
+            //
             this.btnEditSystemVariable.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnEditSystemVariable.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEditSystemVariable.Image = global::SFC.EnvMan.Properties.Resources.Edit;
@@ -251,9 +251,9 @@ namespace SFC.EnvMan
             this.toolTip.SetToolTip(this.btnEditSystemVariable, global::SFC.EnvMan.Properties.Resources.ToolTipEditVariable);
             this.btnEditSystemVariable.UseVisualStyleBackColor = true;
             this.btnEditSystemVariable.Click += new System.EventHandler(this.BtnClick);
-            // 
+            //
             // btnNewSystemVariable
-            // 
+            //
             this.btnNewSystemVariable.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnNewSystemVariable.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNewSystemVariable.Image = global::SFC.EnvMan.Properties.Resources.NewRecord;
@@ -266,9 +266,9 @@ namespace SFC.EnvMan
             this.toolTip.SetToolTip(this.btnNewSystemVariable, global::SFC.EnvMan.Properties.Resources.ToolTipCreateNewVariable);
             this.btnNewSystemVariable.UseVisualStyleBackColor = true;
             this.btnNewSystemVariable.Click += new System.EventHandler(this.BtnClick);
-            // 
+            //
             // dgvSystemVariables
-            // 
+            //
             this.dgvSystemVariables.AllowUserToAddRows = false;
             this.dgvSystemVariables.AllowUserToResizeRows = false;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(253)))), ((int)(((byte)(254)))));
@@ -293,23 +293,23 @@ namespace SFC.EnvMan
             this.dgvSystemVariables.TabIndex = 4;
             this.dgvSystemVariables.UserDeletingRow += new System.Windows.Forms.DataGridViewRowCancelEventHandler(this.DgvUserDeletingRow);
             this.dgvSystemVariables.CellMouseDoubleClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.DgvCellMouseDoubleClick);
-            // 
+            //
             // dataGridViewTextBoxColumn1
-            // 
+            //
             this.dataGridViewTextBoxColumn1.HeaderText = "Variable";
             this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
             this.dataGridViewTextBoxColumn1.ReadOnly = true;
             this.dataGridViewTextBoxColumn1.Width = 78;
-            // 
+            //
             // dataGridViewTextBoxColumn2
-            // 
+            //
             this.dataGridViewTextBoxColumn2.HeaderText = "Value";
             this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
             this.dataGridViewTextBoxColumn2.ReadOnly = true;
             this.dataGridViewTextBoxColumn2.Width = 64;
-            // 
+            //
             // EnvManager
-            // 
+            //
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.splitContainer);

@@ -1,6 +1,6 @@
 //------------------------------------------------------------------------
 // <copyright file="FrmEditEnvVar.cs" company="SETCHIN Freelance Consulting">
-// Copyright (C) 2006-2015 SETCHIN Freelance Consulting
+// Copyright (C) 2006-2016 SETCHIN Freelance Consulting
 // </copyright>
 // <author>
 // Vlad Setchin
@@ -8,10 +8,10 @@
 //------------------------------------------------------------------------
 
 // EnvMan - The Open-Source Environment Variables Manager
-// Copyright (C) 2006-2015 SETCHIN Freelance Consulting 
+// Copyright (C) 2006-2016 SETCHIN Freelance Consulting 
 // <http://www.setchinfc.com.au>
 // EnvMan Development Group: <mailto:envman-dev@googlegroups.com>
-//  
+//
 // This program is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
 // the Free Software Foundation, either version 3 of the License, or
@@ -48,7 +48,7 @@ namespace SFC.EnvMan
         private const string DefaultFilterExtension = "*.env";
 
         /// <summary>
-        /// File Dialog Filter String 
+        /// File Dialog Filter String
         /// </summary>
         private const string FileFilter = "Env Files|*.env";
         #endregion Constants
@@ -105,7 +105,7 @@ namespace SFC.EnvMan
         /// <summary>
         /// Environment Variable Target
         /// </summary>
-        private EnvironmentVariableTarget variableType 
+        private EnvironmentVariableTarget variableType
             = EnvironmentVariableTarget.Machine;
         #endregion Variables
 
@@ -136,7 +136,7 @@ namespace SFC.EnvMan
             this.validator = new EnvVarValueValidator();
 
             if (txtVariableName.Text.Length != 0)
-            {   
+            {
                 // Check if we are editing variable
                 this.LoadEnvironmentVariableValues();
             }
@@ -150,7 +150,7 @@ namespace SFC.EnvMan
             this.commandsList = new UndoRedoCommandList();
             this.dgvHandler.SetCurrentCell(0);
             this.editVarNameCommand = new EditVarNameCommand(txtVariableName);
-            
+
             // disable buttons
             this.SetBtnState();
             txtVariableName.CausesValidation = true;
@@ -262,7 +262,7 @@ namespace SFC.EnvMan
                 || editRowCommandValue.ToString() != dgvValue.ToString()))
             {
                 // dgvHandler.SetRowIcon(e.RowIndex, dgvValue.ToString());
-                this.editRowCommand.NewRow 
+                this.editRowCommand.NewRow
                     = this.dgvValuesList.Rows[e.RowIndex];
                 this.AddCommand(this.editRowCommand);
             }
@@ -321,7 +321,7 @@ namespace SFC.EnvMan
             if (e == null || !e.Row.IsNewRow)
             {   // Don't show on deletion of new rows
                 dialogResult = MessageBox.Show(
-                    "Are you sure to delete value?", 
+                    "Are you sure to delete value?",
                     "Delete Confirmation",
                     MessageBoxButtons.YesNo,
                     MessageBoxIcon.Question);
@@ -393,24 +393,24 @@ namespace SFC.EnvMan
         {
             try
             {
-                saveFileDialog.InitialDirectory 
+                saveFileDialog.InitialDirectory
                     = Environment.SpecialFolder.MyDocuments.ToString();
                 if (saveFileDialog.ShowDialog() == DialogResult.OK)
                 {
                     EnvironmentVariable envVar = new EnvironmentVariable();
                     envVar.VarName = txtVariableName.Text;
-                    envVar.VarValues 
+                    envVar.VarValues
                         = this.EnvironmentVariableValue().ToString();
-                    ImportExportManager importExportManager 
+                    ImportExportManager importExportManager
                         = new ImportExportManager();
                     importExportManager.EnvVariable = envVar;
                     importExportManager.Save(saveFileDialog.FileName);
                     MessageBox.Show(
                         "'" + txtVariableName.Text
-                        + "' successfully exported to " 
-                        + saveFileDialog.FileName + " file.", 
-                        "Export Success!", 
-                        MessageBoxButtons.OK, 
+                        + "' successfully exported to "
+                        + saveFileDialog.FileName + " file.",
+                        "Export Success!",
+                        MessageBoxButtons.OK,
                         MessageBoxIcon.Information);
                 }
             }
@@ -427,15 +427,15 @@ namespace SFC.EnvMan
         {
             try
             {
-                openFileDialog.InitialDirectory 
+                openFileDialog.InitialDirectory
                     = Environment.SpecialFolder.MyDocuments.ToString();
                 if (openFileDialog.ShowDialog() == DialogResult.OK)
                 {
-                    VarImportCommand importCommand 
+                    VarImportCommand importCommand
                         = new VarImportCommand(
                             txtVariableName,
-                            this.EnvironmentVariableValue().ToString(), 
-                            openFileDialog.FileName, 
+                            this.EnvironmentVariableValue().ToString(),
+                            openFileDialog.FileName,
                             this.dgvHandler);
                     if (importCommand.IsAbleToImport)
                     {
@@ -472,7 +472,7 @@ namespace SFC.EnvMan
 
                 if (this.variableName.Length != 0
                     && this.variableName != txtVariableName.Text)
-                {   
+                {
                     // name of the variable has changed
                     // remove variable with old name
                     this.variableManager.DeleteEnvironmentVariable(
@@ -480,8 +480,8 @@ namespace SFC.EnvMan
                 }
 
                 this.variableManager.SetEnvironmentVariable(
-                    txtVariableName.Text, 
-                    envVarValue.ToString(), 
+                    txtVariableName.Text,
+                    envVarValue.ToString(),
                     this.variableType);
 
                 // Set initial program state
@@ -493,9 +493,9 @@ namespace SFC.EnvMan
             catch (Exception ex)
             {
                 MessageBox.Show(
-                    ex.Message, 
-                    "Validation", 
-                    MessageBoxButtons.OK, 
+                    ex.Message,
+                    "Validation",
+                    MessageBoxButtons.OK,
                     MessageBoxIcon.Exclamation);
             }
         }
@@ -596,7 +596,7 @@ namespace SFC.EnvMan
             System.Diagnostics.Process.Start("Explorer", "/n," + parameters);
         }
 
-        // PRANK!E code changes end here --> 
+        // PRANK!E code changes end here -->
         #endregion Open in Windows Explorer
 
 #if DEBUG   // Testing
@@ -632,7 +632,7 @@ namespace SFC.EnvMan
         #endregion Private Functions
 
         #region Form Functions
-        
+
         /// <summary>
         /// Handles Control Click Events.
         /// </summary>
@@ -672,7 +672,7 @@ namespace SFC.EnvMan
                 ////PRANK!E code changes start here -->
                 this.LocateInWindowsExplorer();
                 ////PRANK!E code changes end here -->
-            }            
+            }
             else
             {
                 if (sender.Equals(this.btnDelete))
@@ -697,7 +697,7 @@ namespace SFC.EnvMan
                 }
                 else if (sender.Equals(this.btnMoveBottom))
                 {
-                    currentCommand 
+                    currentCommand
                         = new DgvMoveToBottomCommand(this.dgvHandler);
                 }
             }
@@ -728,8 +728,8 @@ namespace SFC.EnvMan
         /// </summary>
         private void BrowseFolder()
         {
-            bool isBottomRow 
-                = dgvValuesList.CurrentCell.RowIndex 
+            bool isBottomRow
+                = dgvValuesList.CurrentCell.RowIndex
                 == dgvValuesList.Rows.Count - 1;
 
             if (!isBottomRow
@@ -838,12 +838,12 @@ namespace SFC.EnvMan
         {
             if (btnUndo.Enabled || txtVariableName.Text != this.variableName)
             {
-                DialogResult result 
+                DialogResult result
                     = MessageBox.Show(
-                    "Would you like to save your changes?", 
-                    "Save?", 
-                    MessageBoxButtons.YesNoCancel, 
-                    MessageBoxIcon.Question, 
+                    "Would you like to save your changes?",
+                    "Save?",
+                    MessageBoxButtons.YesNoCancel,
+                    MessageBoxIcon.Question,
                     MessageBoxDefaultButton.Button3);
 
                 switch (result)
@@ -860,7 +860,7 @@ namespace SFC.EnvMan
                         }
 
                         break;
-                    default:    // No - just close a form                        
+                    default:    // No - just close a form
                         break;
                 }
             }
@@ -879,7 +879,7 @@ namespace SFC.EnvMan
                 this.AddCommand(this.editVarNameCommand);
 
                 // create command with new variable name
-                this.editVarNameCommand 
+                this.editVarNameCommand
                     = new EditVarNameCommand(txtVariableName);
                 this.isVarNameChanged = false;
             }
@@ -893,7 +893,7 @@ namespace SFC.EnvMan
         private void TxtVariableName_TextChanged(object sender, EventArgs e)
         {
             if (this.editVarNameCommand != null
-                && txtVariableName.Text 
+                && txtVariableName.Text
                 != this.editVarNameCommand.CurrentVariableName)
             {
                 this.isVarNameChanged = true;
@@ -904,7 +904,7 @@ namespace SFC.EnvMan
             }
         }
         #endregion Form Functions
-        
+
 #if DEBUG
         #region Testing
         /// <summary>

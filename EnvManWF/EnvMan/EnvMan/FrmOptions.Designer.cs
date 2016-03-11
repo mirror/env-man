@@ -1,6 +1,6 @@
 ﻿//------------------------------------------------------------------------
 // <copyright file="FrmMain.Designer.cs" company="SETCHIN Freelance Consulting">
-// Copyright (C) 2006-2015 SETCHIN Freelance Consulting
+// Copyright (C) 2006-2016 SETCHIN Freelance Consulting
 // </copyright>
 // <author>
 // Vlad Setchin
@@ -8,10 +8,10 @@
 //------------------------------------------------------------------------
 
 // EnvMan - The Open-Source Environment Variables Manager
-// Copyright (C) 2006-2015 SETCHIN Freelance Consulting 
+// Copyright (C) 2006-2016 SETCHIN Freelance Consulting 
 // <http://www.setchinfc.com.au>
 // EnvMan Development Group: <mailto:envman-dev@googlegroups.com>
-//  
+//
 // This program is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
 // the Free Software Foundation, either version 3 of the License, or
@@ -80,9 +80,9 @@ namespace SFC.EnvMan
             this.TpUpdateChecker.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider)).BeginInit();
             this.SuspendLayout();
-            // 
+            //
             // TctrlSettings
-            // 
+            //
             this.TctrlSettings.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
                         | System.Windows.Forms.AnchorStyles.Left)
                         | System.Windows.Forms.AnchorStyles.Right)));
@@ -93,9 +93,9 @@ namespace SFC.EnvMan
             this.TctrlSettings.SelectedIndex = 0;
             this.TctrlSettings.Size = new System.Drawing.Size(302, 165);
             this.TctrlSettings.TabIndex = 0;
-            // 
+            //
             // TpGeneral
-            // 
+            //
             this.TpGeneral.Controls.Add(this.CbOneInstance);
             this.TpGeneral.Location = new System.Drawing.Point(4, 22);
             this.TpGeneral.Name = "TpGeneral";
@@ -104,9 +104,9 @@ namespace SFC.EnvMan
             this.TpGeneral.TabIndex = 0;
             this.TpGeneral.Text = "General";
             this.TpGeneral.UseVisualStyleBackColor = true;
-            // 
+            //
             // CbOneInstance
-            // 
+            //
             this.CbOneInstance.AutoSize = true;
             this.CbOneInstance.Checked = true;
             this.CbOneInstance.CheckState = System.Windows.Forms.CheckState.Checked;
@@ -117,9 +117,9 @@ namespace SFC.EnvMan
             this.CbOneInstance.TabIndex = 0;
             this.CbOneInstance.Text = "&Allow Only One Instance";
             this.CbOneInstance.UseVisualStyleBackColor = true;
-            // 
+            //
             // TpUpdateChecker
-            // 
+            //
             this.TpUpdateChecker.Controls.Add(this.LblPasswordOptional);
             this.TpUpdateChecker.Controls.Add(this.LblUserNameOptional);
             this.TpUpdateChecker.Controls.Add(this.TxtPort);
@@ -138,9 +138,9 @@ namespace SFC.EnvMan
             this.TpUpdateChecker.TabIndex = 1;
             this.TpUpdateChecker.Text = "Release Checker";
             this.TpUpdateChecker.UseVisualStyleBackColor = true;
-            // 
+            //
             // LblPasswordOptional
-            // 
+            //
             this.LblPasswordOptional.AutoSize = true;
             this.LblPasswordOptional.Enabled = false;
             this.LblPasswordOptional.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -149,9 +149,9 @@ namespace SFC.EnvMan
             this.LblPasswordOptional.Size = new System.Drawing.Size(62, 13);
             this.LblPasswordOptional.TabIndex = 10;
             this.LblPasswordOptional.Text = "(Optional)";
-            // 
+            //
             // LblUserNameOptional
-            // 
+            //
             this.LblUserNameOptional.AutoSize = true;
             this.LblUserNameOptional.Enabled = false;
             this.LblUserNameOptional.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -160,9 +160,9 @@ namespace SFC.EnvMan
             this.LblUserNameOptional.Size = new System.Drawing.Size(62, 13);
             this.LblUserNameOptional.TabIndex = 9;
             this.LblUserNameOptional.Text = "(Optional)";
-            // 
+            //
             // TxtPort
-            // 
+            //
             this.TxtPort.Enabled = false;
             this.TxtPort.Location = new System.Drawing.Point(232, 45);
             this.TxtPort.Name = "TxtPort";
@@ -170,9 +170,9 @@ namespace SFC.EnvMan
             this.TxtPort.TabIndex = 8;
             this.TxtPort.Text = "80";
             this.TxtPort.Validating += new System.ComponentModel.CancelEventHandler(this.TxtValidating);
-            // 
+            //
             // LblPort
-            // 
+            //
             this.LblPort.AutoSize = true;
             this.LblPort.Enabled = false;
             this.LblPort.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -182,9 +182,9 @@ namespace SFC.EnvMan
             this.LblPort.TabIndex = 7;
             this.LblPort.Text = "Port";
             this.LblPort.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
+            //
             // LblPassword
-            // 
+            //
             this.LblPassword.AutoSize = true;
             this.LblPassword.Enabled = false;
             this.LblPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -193,18 +193,18 @@ namespace SFC.EnvMan
             this.LblPassword.Size = new System.Drawing.Size(61, 13);
             this.LblPassword.TabIndex = 6;
             this.LblPassword.Text = "&Password";
-            // 
+            //
             // TxtPassword
-            // 
+            //
             this.TxtPassword.Enabled = false;
             this.TxtPassword.Location = new System.Drawing.Point(88, 97);
             this.TxtPassword.Name = "TxtPassword";
             this.TxtPassword.PasswordChar = '*';
             this.TxtPassword.Size = new System.Drawing.Size(100, 20);
             this.TxtPassword.TabIndex = 5;
-            // 
+            //
             // LblUserName
-            // 
+            //
             this.LblUserName.AutoSize = true;
             this.LblUserName.Enabled = false;
             this.LblUserName.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -213,17 +213,17 @@ namespace SFC.EnvMan
             this.LblUserName.Size = new System.Drawing.Size(69, 13);
             this.LblUserName.TabIndex = 4;
             this.LblUserName.Text = "User &Name";
-            // 
+            //
             // TxtUserName
-            // 
+            //
             this.TxtUserName.Enabled = false;
             this.TxtUserName.Location = new System.Drawing.Point(88, 71);
             this.TxtUserName.Name = "TxtUserName";
             this.TxtUserName.Size = new System.Drawing.Size(100, 20);
             this.TxtUserName.TabIndex = 3;
-            // 
+            //
             // LblAddress
-            // 
+            //
             this.LblAddress.AutoSize = true;
             this.LblAddress.Enabled = false;
             this.LblAddress.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -232,18 +232,18 @@ namespace SFC.EnvMan
             this.LblAddress.Size = new System.Drawing.Size(52, 13);
             this.LblAddress.TabIndex = 2;
             this.LblAddress.Text = "&Address";
-            // 
+            //
             // TxtAddress
-            // 
+            //
             this.TxtAddress.Enabled = false;
             this.TxtAddress.Location = new System.Drawing.Point(88, 45);
             this.TxtAddress.Name = "TxtAddress";
             this.TxtAddress.Size = new System.Drawing.Size(100, 20);
             this.TxtAddress.TabIndex = 1;
             this.TxtAddress.Validating += new System.ComponentModel.CancelEventHandler(this.TxtValidating);
-            // 
+            //
             // CbUseProxy
-            // 
+            //
             this.CbUseProxy.AutoSize = true;
             this.CbUseProxy.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.CbUseProxy.Location = new System.Drawing.Point(16, 16);
@@ -253,9 +253,9 @@ namespace SFC.EnvMan
             this.CbUseProxy.Text = "&Use Proxy";
             this.CbUseProxy.UseVisualStyleBackColor = true;
             this.CbUseProxy.CheckedChanged += new System.EventHandler(this.CbUseProxy_CheckedChanged);
-            // 
+            //
             // BtnOK
-            // 
+            //
             this.BtnOK.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.BtnOK.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.BtnOK.Location = new System.Drawing.Point(144, 177);
@@ -265,9 +265,9 @@ namespace SFC.EnvMan
             this.BtnOK.Text = "&Save";
             this.BtnOK.UseVisualStyleBackColor = true;
             this.BtnOK.Click += new System.EventHandler(this.BtnOK_Click);
-            // 
+            //
             // BtnCancel
-            // 
+            //
             this.BtnCancel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.BtnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.BtnCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -277,13 +277,13 @@ namespace SFC.EnvMan
             this.BtnCancel.TabIndex = 2;
             this.BtnCancel.Text = "&Cancel";
             this.BtnCancel.UseVisualStyleBackColor = true;
-            // 
+            //
             // errorProvider
-            // 
+            //
             this.errorProvider.ContainerControl = this;
-            // 
+            //
             // FrmOptions
-            // 
+            //
             this.AcceptButton = this.BtnOK;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;

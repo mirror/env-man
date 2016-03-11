@@ -1,6 +1,6 @@
 //------------------------------------------------------------------------
 // <copyright file="FrmMain.Designer.cs" company="SETCHIN Freelance Consulting">
-// Copyright (C) 2006-2015 SETCHIN Freelance Consulting
+// Copyright (C) 2006-2016 SETCHIN Freelance Consulting
 // </copyright>
 // <author>
 // Vlad Setchin
@@ -8,10 +8,10 @@
 //------------------------------------------------------------------------
 
 // EnvMan - The Open-Source Environment Variables Manager
-// Copyright (C) 2006-2015 SETCHIN Freelance Consulting 
+// Copyright (C) 2006-2016 SETCHIN Freelance Consulting 
 // <http://www.setchinfc.com.au>
 // EnvMan Development Group: <mailto:envman-dev@googlegroups.com>
-//  
+//
 // This program is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
 // the Free Software Foundation, either version 3 of the License, or
@@ -81,9 +81,9 @@ namespace SFC.EnvMan
             this.msMain.SuspendLayout();
             this.tsMain.SuspendLayout();
             this.SuspendLayout();
-            // 
+            //
             // msMain
-            // 
+            //
             this.msMain.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.TsmiFile,
             this.TsmiHelp,
@@ -93,9 +93,9 @@ namespace SFC.EnvMan
             this.msMain.Size = new System.Drawing.Size(369, 24);
             this.msMain.TabIndex = 2;
             this.msMain.Text = "menuStrip1";
-            // 
+            //
             // TsmiFile
-            // 
+            //
             this.TsmiFile.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.TsmiSettings,
             this.toolStripMenuItem3,
@@ -103,21 +103,21 @@ namespace SFC.EnvMan
             this.TsmiFile.Name = "TsmiFile";
             this.TsmiFile.Size = new System.Drawing.Size(37, 20);
             this.TsmiFile.Text = "&File";
-            // 
+            //
             // TsmiSettings
-            // 
+            //
             this.TsmiSettings.Name = "TsmiSettings";
             this.TsmiSettings.Size = new System.Drawing.Size(133, 22);
             this.TsmiSettings.Text = "Settings...";
             this.TsmiSettings.Click += new System.EventHandler(this.TsmiClick);
-            // 
+            //
             // toolStripMenuItem3
-            // 
+            //
             this.toolStripMenuItem3.Name = "toolStripMenuItem3";
             this.toolStripMenuItem3.Size = new System.Drawing.Size(130, 6);
-            // 
+            //
             // TsmiExit
-            // 
+            //
             this.TsmiExit.Image = global::SFC.EnvMan.Properties.Resources.ShutDown;
             this.TsmiExit.Name = "TsmiExit";
             this.TsmiExit.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.X)));
@@ -125,9 +125,9 @@ namespace SFC.EnvMan
             this.TsmiExit.Text = "E&xit";
             this.TsmiExit.ToolTipText = "Close Application";
             this.TsmiExit.Click += new System.EventHandler(this.TsmiClick);
-            // 
+            //
             // TsmiHelp
-            // 
+            //
             this.TsmiHelp.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.TsmiProjectiWebsite,
             this.TsmiForum,
@@ -142,17 +142,17 @@ namespace SFC.EnvMan
             this.TsmiHelp.Size = new System.Drawing.Size(44, 20);
             this.TsmiHelp.Text = "&Help";
             this.TsmiHelp.Click += new System.EventHandler(this.TsmiClick);
-            // 
+            //
             // TsmiProjectiWebsite
-            // 
+            //
             this.TsmiProjectiWebsite.Image = global::SFC.EnvMan.Properties.Resources.Website;
             this.TsmiProjectiWebsite.Name = "TsmiProjectiWebsite";
             this.TsmiProjectiWebsite.Size = new System.Drawing.Size(233, 22);
             this.TsmiProjectiWebsite.Text = "EnvMan &Project Website...";
             this.TsmiProjectiWebsite.Click += new System.EventHandler(this.TsmiClick);
-            // 
+            //
             // TsmiForum
-            // 
+            //
             this.TsmiForum.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.TsmiJoinForum,
             this.TsmiAskAQuestion,
@@ -161,92 +161,92 @@ namespace SFC.EnvMan
             this.TsmiForum.Name = "TsmiForum";
             this.TsmiForum.Size = new System.Drawing.Size(233, 22);
             this.TsmiForum.Text = "EnvMan &Forum...";
-            // 
+            //
             // TsmiJoinForum
-            // 
+            //
             this.TsmiJoinForum.Image = global::SFC.EnvMan.Properties.Resources.Members;
             this.TsmiJoinForum.Name = "TsmiJoinForum";
             this.TsmiJoinForum.Size = new System.Drawing.Size(163, 22);
             this.TsmiJoinForum.Text = "&Join Forum...";
             this.TsmiJoinForum.Click += new System.EventHandler(this.TsmiClick);
-            // 
+            //
             // TsmiAskAQuestion
-            // 
+            //
             this.TsmiAskAQuestion.Image = global::SFC.EnvMan.Properties.Resources.Mail;
             this.TsmiAskAQuestion.Name = "TsmiAskAQuestion";
             this.TsmiAskAQuestion.Size = new System.Drawing.Size(163, 22);
             this.TsmiAskAQuestion.Text = "Ask a &Question...";
             this.TsmiAskAQuestion.Click += new System.EventHandler(this.TsmiClick);
-            // 
+            //
             // TsmiForumWebsite
-            // 
+            //
             this.TsmiForumWebsite.Image = global::SFC.EnvMan.Properties.Resources.Forum;
             this.TsmiForumWebsite.Name = "TsmiForumWebsite";
             this.TsmiForumWebsite.Size = new System.Drawing.Size(163, 22);
             this.TsmiForumWebsite.Text = "Forum Website...";
             this.TsmiForumWebsite.Click += new System.EventHandler(this.TsmiClick);
-            // 
+            //
             // TsmiDonate
-            // 
+            //
             this.TsmiDonate.Image = global::SFC.EnvMan.Properties.Resources.SupportProject;
             this.TsmiDonate.Name = "TsmiDonate";
             this.TsmiDonate.Size = new System.Drawing.Size(233, 22);
             this.TsmiDonate.Text = "&Support this Project...";
             this.TsmiDonate.Click += new System.EventHandler(this.TsmiClick);
-            // 
+            //
             // TsmiPostFeedbackOrBugReport
-            // 
+            //
             this.TsmiPostFeedbackOrBugReport.Image = global::SFC.EnvMan.Properties.Resources.SendFeedback;
             this.TsmiPostFeedbackOrBugReport.Name = "TsmiPostFeedbackOrBugReport";
             this.TsmiPostFeedbackOrBugReport.Size = new System.Drawing.Size(233, 22);
             this.TsmiPostFeedbackOrBugReport.Text = "Post feedback or bug report ...";
             this.TsmiPostFeedbackOrBugReport.Click += new System.EventHandler(this.TsmiClick);
-            // 
+            //
             // toolStripMenuItem2
-            // 
+            //
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
             this.toolStripMenuItem2.Size = new System.Drawing.Size(230, 6);
-            // 
+            //
             // TsmiLanguage
-            // 
+            //
             this.TsmiLanguage.Image = global::SFC.EnvMan.Properties.Resources.Language;
             this.TsmiLanguage.Name = "TsmiLanguage";
             this.TsmiLanguage.Size = new System.Drawing.Size(233, 22);
             this.TsmiLanguage.Text = "&Language";
             this.TsmiLanguage.Visible = false;
-            // 
+            //
             // TsmiCheckForUpdates
-            // 
+            //
             this.TsmiCheckForUpdates.Image = global::SFC.EnvMan.Properties.Resources.Updates;
             this.TsmiCheckForUpdates.Name = "TsmiCheckForUpdates";
             this.TsmiCheckForUpdates.Size = new System.Drawing.Size(233, 22);
             this.TsmiCheckForUpdates.Text = "Check for &Updates...";
             this.TsmiCheckForUpdates.Click += new System.EventHandler(this.TsmiClick);
-            // 
+            //
             // toolStripMenuItem1
-            // 
+            //
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
             this.toolStripMenuItem1.Size = new System.Drawing.Size(230, 6);
-            // 
+            //
             // TsmiAbout
-            // 
+            //
             this.TsmiAbout.Image = global::SFC.EnvMan.Properties.Resources.EnvManAbout;
             this.TsmiAbout.Name = "TsmiAbout";
             this.TsmiAbout.Size = new System.Drawing.Size(233, 22);
             this.TsmiAbout.Text = "&About";
             this.TsmiAbout.Click += new System.EventHandler(this.TsmiClick);
-            // 
+            //
             // TsmiNewVersionInfo
-            // 
+            //
             this.TsmiNewVersionInfo.Image = global::SFC.EnvMan.Properties.Resources.Updates;
             this.TsmiNewVersionInfo.Name = "TsmiNewVersionInfo";
             this.TsmiNewVersionInfo.Size = new System.Drawing.Size(101, 20);
             this.TsmiNewVersionInfo.Text = " Version Info";
             this.TsmiNewVersionInfo.Visible = false;
             this.TsmiNewVersionInfo.Click += new System.EventHandler(this.TsmiClick);
-            // 
+            //
             // tsMain
-            // 
+            //
             this.tsMain.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tslblStatus});
             this.tsMain.Location = new System.Drawing.Point(0, 392);
@@ -254,14 +254,14 @@ namespace SFC.EnvMan
             this.tsMain.Size = new System.Drawing.Size(369, 22);
             this.tsMain.TabIndex = 3;
             this.tsMain.Text = "statusStrip1";
-            // 
+            //
             // tslblStatus
-            // 
+            //
             this.tslblStatus.Name = "tslblStatus";
             this.tslblStatus.Size = new System.Drawing.Size(0, 17);
-            // 
+            //
             // envManager
-            // 
+            //
             this.envManager.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
                         | System.Windows.Forms.AnchorStyles.Left)
                         | System.Windows.Forms.AnchorStyles.Right)));
@@ -270,9 +270,9 @@ namespace SFC.EnvMan
             this.envManager.Name = "envManager";
             this.envManager.Size = new System.Drawing.Size(364, 362);
             this.envManager.TabIndex = 0;
-            // 
+            //
             // FrmMain
-            // 
+            //
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(369, 414);
@@ -322,4 +322,3 @@ namespace SFC.EnvMan
         private System.Windows.Forms.ToolStripSeparator toolStripMenuItem3;
     }
 }
-

@@ -1,6 +1,6 @@
 //------------------------------------------------------------------------
 // <copyright file="DgvMoveToBottomCommand.cs" company="SETCHIN Freelance Consulting">
-// Copyright (C) 2006-2015 SETCHIN Freelance Consulting
+// Copyright (C) 2006-2016 SETCHIN Freelance Consulting
 // </copyright>
 // <author>
 // Vlad Setchin
@@ -8,10 +8,10 @@
 //------------------------------------------------------------------------
 
 // EnvMan - The Open-Source Environment Variables Manager
-// Copyright (C) 2006-2015 SETCHIN Freelance Consulting 
+// Copyright (C) 2006-2016 SETCHIN Freelance Consulting 
 // <http://www.setchinfc.com.au>
 // EnvMan Development Group: <mailto:envman-dev@googlegroups.com>
-//  
+//
 // This program is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
 // the Free Software Foundation, either version 3 of the License, or
@@ -36,7 +36,7 @@ namespace SFC.EnvMan.Handlers
         /// Initializes a new instance of the <see cref="DgvMoveToBottomCommand"/> class.
         /// </summary>
         /// <param name="dgvHandler">The DGV handler.</param>
-        public DgvMoveToBottomCommand(DgvHandler dgvHandler) 
+        public DgvMoveToBottomCommand(DgvHandler dgvHandler)
             : base(dgvHandler, "Move Value to Bottom")
         {
         }

@@ -1,6 +1,6 @@
 //------------------------------------------------------------------------
 // <copyright file="SingleProgramInstance.cs" company="SETCHIN Freelance Consulting">
-// Copyright (C) 2006-2015 SETCHIN Freelance Consulting
+// Copyright (C) 2006-2016 SETCHIN Freelance Consulting
 // </copyright>
 // <author>
 // Vlad Setchin
@@ -8,10 +8,10 @@
 //------------------------------------------------------------------------
 
 // EnvMan - The Open-Source Environment Variables Manager
-// Copyright (C) 2006-2015 SETCHIN Freelance Consulting 
+// Copyright (C) 2006-2016 SETCHIN Freelance Consulting 
 // <http://www.setchinfc.com.au>
 // EnvMan Development Group: <mailto:envman-dev@googlegroups.com>
-//  
+//
 // This program is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
 // the Free Software Foundation, either version 3 of the License, or
@@ -69,7 +69,7 @@ namespace SFC.EnvMan
         public SingleProgramInstance()
         {
             // Initialize a named mutex and attempt to
-            // get ownership immediately 
+            // get ownership immediately
             this.processSync = new Mutex(
                 true, // desire initial ownership
                 Assembly.GetExecutingAssembly().GetName().Name,
@@ -100,12 +100,12 @@ namespace SFC.EnvMan
         /// </summary>
         ~SingleProgramInstance()
         {
-            // Release mutex (if necessary) 
-            // This should have been accomplished using Dispose() 
+            // Release mutex (if necessary)
+            // This should have been accomplished using Dispose()
             this.Release();
         }
         #endregion Constructor
-        
+
         #region Properties
         /// <summary>
         /// Gets a value indicating whether this instance is single instance.
@@ -131,7 +131,7 @@ namespace SFC.EnvMan
             // the name exceeds 15 characters. Using the assembly name
             // takes care of this problem and is more accurate than other
             // work around.
-            string assemblyName 
+            string assemblyName
                 = Assembly.GetExecutingAssembly().GetName().Name;
             foreach (Process otherProc in Process.GetProcessesByName(assemblyName))
             {
@@ -161,7 +161,7 @@ namespace SFC.EnvMan
         /// </summary>
         public void Dispose()
         {
-            // release mutex (if necessary) and notify 
+            // release mutex (if necessary) and notify
             // the garbage collector to ignore the destructor
             this.Release();
             GC.SuppressFinalize(this);

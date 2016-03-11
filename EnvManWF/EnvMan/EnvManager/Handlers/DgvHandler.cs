@@ -1,6 +1,6 @@
 //------------------------------------------------------------------------
 // <copyright file="DgvHandler.cs" company="SETCHIN Freelance Consulting">
-// Copyright (C) 2006-2015 SETCHIN Freelance Consulting
+// Copyright (C) 2006-2016 SETCHIN Freelance Consulting
 // </copyright>
 // <author>
 // Vlad Setchin
@@ -8,10 +8,10 @@
 //------------------------------------------------------------------------
 
 // EnvMan - The Open-Source Environment Variables Manager
-// Copyright (C) 2006-2015 SETCHIN Freelance Consulting 
+// Copyright (C) 2006-2016 SETCHIN Freelance Consulting 
 // <http://www.setchinfc.com.au>
 // EnvMan Development Group: <mailto:envman-dev@googlegroups.com>
-//  
+//
 // This program is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
 // the Free Software Foundation, either version 3 of the License, or
@@ -94,7 +94,7 @@ namespace SFC.EnvMan.Handlers
         {
             get
             {
-                return this.dgv.Rows.Count - 2; ////(dgv.Rows.Count == 1 ? 0 : dgv.Rows.Count - 2); 
+                return this.dgv.Rows.Count - 2; ////(dgv.Rows.Count == 1 ? 0 : dgv.Rows.Count - 2);
             }
         }
         #endregion Properties
@@ -156,9 +156,9 @@ namespace SFC.EnvMan.Handlers
             catch (Exception ex)
             {
                 MessageBox.Show(
-                    ex.Message, 
-                    "Error", 
-                    MessageBoxButtons.OK, 
+                    ex.Message,
+                    "Error",
+                    MessageBoxButtons.OK,
                     MessageBoxIcon.Error);
             }
         }
@@ -263,35 +263,35 @@ namespace SFC.EnvMan.Handlers
             {
                 case EnvironmentValueType.Number:
                     icon
-                        = this.markAsAdded 
+                        = this.markAsAdded
                         ? Properties.Resources.ValTypeNumberAdd
                         : Properties.Resources.ValTypeNumber;
                     toolTipMsg = "Number";
                     break;
                 case EnvironmentValueType.String:
                     icon
-                        = this.markAsAdded 
+                        = this.markAsAdded
                         ? Properties.Resources.ValTypeStringAdd
                         : Properties.Resources.ValTypeString;
                     toolTipMsg = "Word";
                     break;
                 case EnvironmentValueType.Folder:
-                    icon 
-                        = this.markAsAdded 
+                    icon
+                        = this.markAsAdded
                         ? Properties.Resources.ValTypeFolderAdd
                         : Properties.Resources.ValTypeFolder;
                     toolTipMsg = "Folder";
                     break;
                 case EnvironmentValueType.File:
-                    icon 
-                        = this.markAsAdded 
+                    icon
+                        = this.markAsAdded
                         ? Properties.Resources.ValTypeFileAdd
                         : Properties.Resources.ValTypeFile;
                     toolTipMsg = "File";
                     break;
-                default:  // Error 
-                    icon 
-                        = this.markAsAdded 
+                default:  // Error
+                    icon
+                        = this.markAsAdded
                         ? Properties.Resources.ValTypeErrorAdd
                         : Properties.Resources.ValTypeError;
                     toolTipMsg = "No File or Folder found";

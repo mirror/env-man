@@ -1,6 +1,6 @@
 //------------------------------------------------------------------------
 // <copyright file="EnvVarManager.cs" company="SETCHIN Freelance Consulting">
-// Copyright (C) 2006-2015 SETCHIN Freelance Consulting
+// Copyright (C) 2006-2016 SETCHIN Freelance Consulting
 // </copyright>
 // <author>
 // Vlad Setchin
@@ -8,10 +8,10 @@
 //------------------------------------------------------------------------
 
 // EnvMan - The Open-Source Environment Variables Manager
-// Copyright (C) 2006-2015 SETCHIN Freelance Consulting 
+// Copyright (C) 2006-2016 SETCHIN Freelance Consulting 
 // <http://www.setchinfc.com.au>
 // EnvMan Development Group: <mailto:envman-dev@googlegroups.com>
-//  
+//
 // This program is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
 // the Free Software Foundation, either version 3 of the License, or
@@ -165,7 +165,7 @@ namespace SFC.EnvMan
             string varName, EnvironmentVariableTarget variableType)
         {
             Environment.SetEnvironmentVariable(varName, null, variableType);
-        } 
+        }
         #endregion Public Functions
 
         #region Internal Functions
@@ -197,7 +197,7 @@ namespace SFC.EnvMan
 #if DEBUG
         public void ValidateVariables(string varName, string varValue)
 #else
-        private void ValidateVariables(string varName, string varValue) 
+        private void ValidateVariables(string varName, string varValue)
 #endif
         {
             if (string.IsNullOrEmpty(varName))
@@ -210,7 +210,7 @@ namespace SFC.EnvMan
                 throw new Exception("Variable should have a value.");
             }
         }
-        #endregion Validation   
+        #endregion Validation
 
         /// <summary>
         /// Gets the registry key for variable type.

@@ -1,6 +1,6 @@
 //------------------------------------------------------------------------
 // <copyright file="VarImportCommand.cs" company="SETCHIN Freelance Consulting">
-// Copyright (C) 2006-2015 SETCHIN Freelance Consulting
+// Copyright (C) 2006-2016 SETCHIN Freelance Consulting
 // </copyright>
 // <author>
 // Vlad Setchin
@@ -8,10 +8,10 @@
 //------------------------------------------------------------------------
 
 // EnvMan - The Open-Source Environment Variables Manager
-// Copyright (C) 2006-2015 SETCHIN Freelance Consulting 
+// Copyright (C) 2006-2016 SETCHIN Freelance Consulting 
 // <http://www.setchinfc.com.au>
 // EnvMan Development Group: <mailto:envman-dev@googlegroups.com>
-//  
+//
 // This program is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
 // the Free Software Foundation, either version 3 of the License, or
@@ -29,7 +29,7 @@ namespace SFC.EnvMan.Handlers
 {
     using System.Windows.Forms;
     using global::SFC.EnvMan.ImportExport;
-    
+
     /// <summary>
     /// Variable Import Command class
     /// Responsible for performing import of Environment Variables from file
@@ -93,9 +93,9 @@ namespace SFC.EnvMan.Handlers
         /// <param name="fileName">Name of the file.</param>
         /// <param name="dgvHandler">The DGV handler.</param>
         public VarImportCommand(
-            TextBox txtVarName, 
+            TextBox txtVarName,
             string currentVarValues,
-            string fileName, 
+            string fileName,
             DgvHandler dgvHandler)
         {
             this.txtVarName = txtVarName;
@@ -108,7 +108,7 @@ namespace SFC.EnvMan.Handlers
             this.GetValuesToImport();
         }
         #endregion Constructor
-        
+
         #region Properties
         /// <summary>
         /// Gets a value indicating whether this instance is able to import.
@@ -141,7 +141,7 @@ namespace SFC.EnvMan.Handlers
 
         #region Public Functions
         /// <summary>
-        /// Performs Execute action. Remembers a current state 
+        /// Performs Execute action. Remembers a current state
         /// and calls Redo function.
         /// </summary>
         public void Execute()
@@ -152,9 +152,9 @@ namespace SFC.EnvMan.Handlers
             {
                 this.Redo();
                 MessageBox.Show(
-                    "Import successfully completed!", 
+                    "Import successfully completed!",
                     "Import Success!",
-                    MessageBoxButtons.OK, 
+                    MessageBoxButtons.OK,
                     MessageBoxIcon.Information);
             }
         }
@@ -184,7 +184,7 @@ namespace SFC.EnvMan.Handlers
             if (this.txtVarName.Text.Length == 0)
             {
                 this.isNewVariable = true;
-                this.txtVarName.Text 
+                this.txtVarName.Text
                     = this.importExportManager.EnvVariable.VarName;
             }
 
@@ -220,9 +220,9 @@ namespace SFC.EnvMan.Handlers
                 else
                 {
                     MessageBox.Show(
-                        "There are no values to import.", 
+                        "There are no values to import.",
                         "Nothing to import",
-                        MessageBoxButtons.OK, 
+                        MessageBoxButtons.OK,
                         MessageBoxIcon.Warning);
                 }
             }
@@ -230,8 +230,8 @@ namespace SFC.EnvMan.Handlers
             {   // Variable names are not the same
                 MessageBox.Show(
                     "Cannot import values from different variable.",
-                    "Variable names are not the same", 
-                    MessageBoxButtons.OK, 
+                    "Variable names are not the same",
+                    MessageBoxButtons.OK,
                     MessageBoxIcon.Error);
             }
         }
